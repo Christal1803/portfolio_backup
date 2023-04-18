@@ -1,21 +1,19 @@
 
 
+.widthlisy {
+    visibility: hidden;
+}
+
  
   body {
     margin: 0;
    
   }
 
-  
-  
-  
 
 /* body::-webkit-scrollbar {
   display: none;
 } */
-
-
-
 
 
 .react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {

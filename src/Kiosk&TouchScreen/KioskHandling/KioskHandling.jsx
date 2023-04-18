@@ -44,38 +44,7 @@ function KioskHandling() {
     afterChange: (index) => setCurrentPage(index),
     customPaging: (i) => <div style={{ backgroundColor: 'red', width: '10px', height: '10px', borderRadius: '50%', margin: '0 5px' }} />,
   };
-  // const settings = {
-  //   infinite: true,
-  //   dots: true,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   lazyLoad: true,
-  //   autoplay: true,
-  // autoplaySpeed: 2000,
-  // appendDots: dots => (
-    
-  //       <div>
-  //         <CustomDots>
-  //           debugger;
-  //           {dots.map((dot, index) => (
-              
-  //             <CustomDot key={index} isActive={index === dot.props['data-index']} />
-  //           ))}
-  //         </CustomDots>
-  //         </div>
-  // )
-   
-  // };
-  // const settings = {
-  //   dots: true,
-  //   appendDots: renderDots,
-  //   lazyLoad: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   initialSlide: 2
-  // };
+  
 
   function onWheel(apiObj, ev) {
     const isThouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;
@@ -89,19 +58,56 @@ function KioskHandling() {
     } else if (ev.deltaY > 0) {
       apiObj.scrollNext();
     }
-  }
+    }
 
-  const pages = [
-    { id: 1, Element: <Partnership_Discovery /> , width: '100vw'},
-    { id: 2, Element: <OnBoarding /> , width: '100vw' },
-    { id: 3, Element: <ExecutionPhase01 /> , width: '100vw'},
-    { id: 4, Element: <ExecutionPhase02 /> , width: '100vw'},
-    { id: 5, Element: <ExecutionPhase03 /> , width: '100vw'},
-    { id: 6, Element: <ExecutionPhase04 /> , width: '100vw'},
-    { id: 7, Element: <ExecutionPhase05 /> , width: '100vw'},
-    { id: 8, Element: <ExecutionPhase06 /> , width: '100vw'},
+    const elementRef = useRef(null);
 
-  ];
+    useEffect(() => {
+        if (elementRef.current) {
+            const elementWidth = elementRef.current.offsetWidth;
+            console.log(`Element width: ${elementWidth}`);
+            window.$name = elementWidth;
+        }
+    }, []);
+
+    console.log(window.$name)
+
+    const [elementWidth, setElementWidth] = useState(null);
+    let mystyle = {};
+    function handleElementLoad(event) {
+        debugger
+        const elementWidth = event.target.offsetWidth;
+        setElementWidth(elementWidth);
+        console.log(`Element width: ${elementWidth}`);
+        window.$name = elementWidth;
+    }
+    if (elementWidth) {
+        mystyle.width = elementWidth + "px";
+    }
+
+    const pages = [
+        { id: 1, Element: <Partnership_Discovery />, width: window.$name },
+        { id: 2, Element: <OnBoarding />, width: window.$name },
+        { id: 3, Element: <ExecutionPhase01 />, width: window.$name },
+        { id: 4, Element: <ExecutionPhase02 />, width: window.$name },
+        { id: 5, Element: <ExecutionPhase03 />, width: window.$name },
+        { id: 6, Element: <ExecutionPhase04 />, width: window.$name },
+        { id: 7, Element: <ExecutionPhase05 />, width: window.$name },
+        { id: 8, Element: <ExecutionPhase06 />, width: window.$name },
+
+    ];
+
+  //const pages = [
+  //  { id: 1, Element: <Partnership_Discovery /> , width: '100vw'},
+  //  { id: 2, Element: <OnBoarding /> , width: '100vw' },
+  //  { id: 3, Element: <ExecutionPhase01 /> , width: '100vw'},
+  //  { id: 4, Element: <ExecutionPhase02 /> , width: '100vw'},
+  //  { id: 5, Element: <ExecutionPhase03 /> , width: '100vw'},
+  //  { id: 6, Element: <ExecutionPhase04 /> , width: '100vw'},
+  //  { id: 7, Element: <ExecutionPhase05 /> , width: '100vw'},
+  //  { id: 8, Element: <ExecutionPhase06 /> , width: '100vw'},
+
+  //];
  
  
   
@@ -119,19 +125,6 @@ function KioskHandling() {
   const [progress, setProgress] = useState(0);
   const articleRef = useRef();
   console.log("articleRef:",articleRef)
-
-  // const settings = {
-    
-  //   dots: true,
-  //   // infinite: true,
-  //   // speed: 500,
-  //   // slidesToShow: 3,
-  //   // slidesToScroll: 1,
-  //   // autoplay: true,
-  //   // autoplaySpeed: 2000,
-  //   // afterChange: (index) => setCurrentPage(index),
-  //   appendDots: renderDots
-  // };
 
   const CustomDots = styled.ul`
   display: flex;
@@ -206,7 +199,7 @@ const CustomDot = styled.li`
   const CIRCUMFERENCE = Math.PI * RADIUS * 2;
   return (
 <div >
-  <NavBar02/>
+  {/*<NavBar02/>*/}
     
 
   {isMobile?(
@@ -232,8 +225,8 @@ const CustomDot = styled.li`
      
     
     <div>
+      <div ref={elementRef} onLoad={handleElementLoad} className="widthlisy">This is my element</div>
      
-      
     <div onMouseEnter={disableScroll} onMouseLeave={enableScroll}>
    
     <ScrollMenu onWheel={onWheel}  >

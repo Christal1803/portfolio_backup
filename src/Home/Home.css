@@ -1,0 +1,113 @@
+body {
+    background: transparent !important;
+    font-family: -apple-system, BlinkMacSystemFont, Gilroy, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container-align {
+  margin: 0px 70px !important;
+  
+}
+.row.container-align {
+  height: 90vh;
+}
+.para1 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+  color: #21272C;
+  }
+  .para2 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 150%;
+    color: #767676;
+  }
+  .para3 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 150%;
+    color: #21272C;
+  }
+  .highlights {
+    color: #0EC79B;
+  }
+
+  .form-select {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 1.2rem !important;
+    line-height: 35px !important;
+    align-items: center;
+    /* color: #FFFFFF !important; */
+    text-align: center !important;
+    /* background: #0EC79B !important; */
+    border-radius: 15px !important;
+  }
+
+  @media only screen and (max-device-width: 640px) {
+    body {
+      font-size: 2px;
+    }
+    .container-align {
+      margin: 0px 24px !important;
+  }
+  .para1 {
+    font-size: 35px;
+  }
+  .row.container-align {
+    height: auto;
+}
+  }
+  
+  /* Tabs/ Medium */
+  @media only screen and (min-device-width: 641px) and (max-device-width: 1024px) {
+    
+    .container-align {
+      margin: 0px 24px !important;
+  }
+     
+  }
+  
+  /* Laptop/ MAC */
+  @media only screen and (min-device-width: 1025px) and (max-device-width: 1919px) {
+  
+  }
+  
+  /* Desktop */
+  @media only screen and (min-device-width: 1920px) {
+     
+  }
+  .arrow {
+    animation: slide 1s ease-in-out infinite;
+    margin-left: 9px;
+  }
+  
+  @keyframes slide {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+  
+    50% {
+      transform: translate(10px, 0);
+    }
+  }
+  
+ .spin {
+  width: 60%;
+    animation: landingpage__mainimg-spin infinite 10s linear;
+ }
+
+ @keyframes landingpage__mainimg-spin {
+  100% { transform: rotate(360deg); }
+}

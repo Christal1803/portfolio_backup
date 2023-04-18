@@ -1,0 +1,260 @@
+body {
+  background: transparent !important;
+  /* font-family: -apple-system, BlinkMacSystemFont, Gilroy, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container-align {
+margin: 0px 70px !important;
+}
+.main-heading {
+
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+color: #515151;
+}
+
+.q{
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 35px;
+color: #515151;
+}
+
+.partnership-content-head {
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 26px;
+line-height: 31px;
+color: #515151;
+}
+
+.partnership-content-para {
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 150%;
+color: #888888;
+margin: 0;
+}
+img.img-fluid.number-align {
+  margin-left: -2.3rem;
+}
+.form-select {
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 500 !important;
+font-size: 1.2rem !important;
+line-height: 35px !important;
+align-items: center;
+/* color: #FFFFFF !important; */
+text-align: center !important;
+/* background: #0EC79B !important; */
+border-radius: 15px !important;
+}
+
+.partnership-content {
+  background: #fff;
+  border-radius: 26px;
+  padding-left: 0;
+  padding-right: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+}
+.b-color {
+background: radial-gradient(98.29% 354.82% at 98.29% 3.38%, #0EC79B 0%, rgba(57, 141, 238, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+radial-gradient(98.16% 354.35% at 98.16% 96.62%, #398DEE 0%, rgba(118, 123, 241, 0) 100%, rgba(57, 141, 238, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+radial-gradient(98.48% 326.98% at 0% 3.35%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+linear-gradient(104.71deg, #FFFFFF 1.09%, rgba(255, 255, 255, 0) 100%);
+padding: 2px;
+border-radius: 26px;
+margin: 2rem 0rem;
+}
+
+.up-down-pdp {
+  -webkit-animation: up-down 1s infinite  alternate;
+  animation: up-down 1s infinite  alternate;
+}
+@-webkit-keyframes up-down {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-6px); }
+}
+@keyframes up-down {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-6px); }
+}
+
+.up-down-pdp1 {
+  -webkit-animation: up-down1 0.8s infinite  alternate;
+  animation: up-down1 0.8s infinite  alternate;
+}
+@-webkit-keyframes up-down1 {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-3px); }
+}
+@keyframes up-down1 {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-3px); }
+}
+.plant-movement {
+  animation: right-left .9s infinite alternate;
+}
+@keyframes right-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-2px);}
+}
+
+@keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+
+@keyframes blinker1 {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink1{
+	text-decoration: blink;
+	-webkit-animation-name: blinker1;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction: alternate;
+}
+
+@keyframes blinker2 {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink2{
+	text-decoration: blink;
+	-webkit-animation-name: blinker1;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction: alternate;
+}
+
+/* execution phase1 */
+.up-rocket{
+  animation: up linear 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+@keyframes up{
+  0% {
+    transform:  translate(1px,60px)  ;
+  }
+  100% {
+    transform:  translate(1px,-40px)  ;
+  }
+}
+.vibration {
+  animation: shake 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.rocket-exe5{
+  animation: up-exe5 linear 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes up-exe5{
+  0% {
+    transform:  translate(0px,0px)  ;
+  }
+  100% {
+    transform:  translate(140px,-90px)  ;
+  }
+}
+
+
+
+.box {
+  animation: loader 5s infinite linear;
+  width: 122px;
+height: 122px;
+  /* display: block; */
+  /* background-color: red;
+  width: 50px;
+  height: 50px;
+  color: #00136c;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+@keyframes loader {
+  0% {
+    rotate: 0deg;
+  } 
+ 100% {
+    rotate:360deg;
+  }
+  /* 0% { transform: rotate(0deg);}
+100% { transform: rotate(360deg);} */
+}
+@media only screen and (max-device-width: 640px) {
+  body {
+    font-size: 20px;
+  }
+  .container-align {
+    margin: 0px 24px !important;
+}
+.main-heading {
+  font-size: 30px;
+
+}
+.img-fluid.number-align{
+  width:30%;
+}
+.img-fluid{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+}
+@media only screen and (min-device-width: 641px) and (max-device-width: 1024px) {
+  
+  /* body {
+    font-size: 2px;
+  } */
+  .container-align {
+    margin: 0px 24px !important;
+}
+
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1919px) {
+
+}
+@media only screen and (min-device-width: 1920px) {
+   
+}

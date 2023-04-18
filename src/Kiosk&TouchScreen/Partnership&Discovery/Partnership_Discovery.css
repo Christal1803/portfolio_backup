@@ -1,0 +1,126 @@
+body {
+    background: transparent !important;
+    font-family: -apple-system, BlinkMacSystemFont, Gilroy, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container-align {
+  margin: 0px 70px !important;
+}
+.main-heading {
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: #515151;
+}
+
+.sub-heading {
+  font-family: 'Gilroy' !important;
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 35px;
+color: #515151;
+}
+
+.partnership-content-head {
+  font-family: 'Gilroy' !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  color: #515151;
+}
+
+.partnership-content-para {
+  font-family: 'Gilroy' !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #888888;
+  margin: 0;
+}
+
+.form-select {
+  font-family: 'Gilroy' !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 1.2rem !important;
+  line-height: 35px !important;
+  align-items: center;
+  /* color: #FFFFFF !important; */
+  text-align: center !important;
+  /* background: #0EC79B !important; */
+  border-radius: 15px !important;
+}
+
+.partnership-content {
+  background: #fff;
+  padding: 30px 0px;
+  border-radius: 26px;
+
+}
+.b-color {
+  background: radial-gradient(98.29% 354.82% at 98.29% 3.38%, #0EC79B 0%, rgba(57, 141, 238, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+  radial-gradient(98.16% 354.35% at 98.16% 96.62%, #398DEE 0%, rgba(118, 123, 241, 0) 100%, rgba(57, 141, 238, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+  radial-gradient(98.48% 326.98% at 0% 3.35%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+  linear-gradient(104.71deg, #FFFFFF 1.09%, rgba(255, 255, 255, 0) 100%);
+  padding: 2px;
+  border-radius: 26px;
+  margin: 2rem 0rem;
+}
+
+.plant-movement {
+  animation: right-left .9s infinite alternate;
+}
+@keyframes right-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-2px);}
+}
+
+.up-down-pdp {
+  -webkit-animation: up-down 2s infinite  alternate;
+  animation: up-down 2s infinite  alternate;
+}
+.up-down-pdp {
+  -webkit-animation: up-down 1s infinite  alternate;
+  animation: up-down 1s infinite  alternate;
+}
+@-webkit-keyframes up-down {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-3px); }
+}
+@keyframes up-down {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-3px); }
+}
+
+@keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink{
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+
+@keyframes blinker1 {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.blink1{
+	text-decoration: blink;
+	-webkit-animation-name: blinker1;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction: alternate;
+}

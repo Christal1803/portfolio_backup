@@ -1,0 +1,15 @@
+@media only screen and (min-width: 768px) {
+    section.dashboard .slick-list .slick-track {
+      display: flex;
+    }
+    section.dashboard .slick-list .slide {
+      opacity: 1;
+    }
+    header .wrapper .article h1 span.arrow {
+      display:none;
+    }
+  
+    header .wrapper .article .description {
+      max-height: 300px
+    }
+  } 

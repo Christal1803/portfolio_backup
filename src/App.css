@@ -1,0 +1,97 @@
+html {
+  background:  url("https://imgur.com/BdMue6b.png") no-repeat fixed center;}
+
+  body {
+    background: transparent !important;
+    font-family: -apple-system, BlinkMacSystemFont, Gilroy, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px; 
+}
+
+
+
+.App-logo {
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+  
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.para1 {
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 700;
+font-size: 44px;
+line-height: 53px;
+color: #21272C;
+}
+.para2 {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 150%;
+  color: #767676;
+}
+
+
+/* Media Query */
+
+/* Mobile */
+/* @media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+} */
+
+/* Phone/ Small */
+@media only screen and (max-device-width: 640px) {
+  body {
+    font-size: 2px;
+  }
+  .container-align {
+    margin: 0px 24px !important;
+}
+}
+
+/* Tabs/ Medium */
+@media only screen and (min-device-width: 641px) and (max-device-width: 1024px) {
+  body {
+    font-size: 2px;
+  }
+  .container-align {
+    margin: 0px 24px !important;
+}
+   
+}
+
+/* Laptop/ MAC */
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1919px) {
+
+}
+
+/* Desktop */
+@media only screen and (min-device-width: 1920px) {
+   
+}
+
+/* .hide-root-font {
+  font-family: unset !important;
+} */

@@ -13,6 +13,7 @@ import ExecutionPhase03 from './Kiosk&TouchScreen/ExecutionPhase03/ExecutionPhas
 import ExecutionPhase04 from './Kiosk&TouchScreen/ExecutionPhase04/ExecutionPhase04';
 import ExecutionPhase05 from './Kiosk&TouchScreen/ExecutionPhase05/ExecutionPhase05';
 import ExecutionPhase06 from './Kiosk&TouchScreen/ExecutionPhase06/ExecutionPhase06';
+import Mversioncloud from './Mversion/Mversioncloud/Mversioncloud';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -30,6 +31,7 @@ root.render(
       <Route path="ExecutionPhase04" element={<ExecutionPhase04 />} />
       <Route path="ExecutionPhase05" element={<ExecutionPhase05 />} />
       <Route path="ExecutionPhase06" element={<ExecutionPhase06 />} />
+      <Route path="demo" element={<Mversioncloud />} />
       
      
       </Routes>

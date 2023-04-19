@@ -11,9 +11,12 @@ import cusposc from "../../../src/assets/cusposc.svg";
 import pct from "../../../src/assets/pct.svg";
 import ct from "../../../src/assets/ct.svg";
 import tivo from "../../../src/assets/tivo.svg";
+import { useNavigate } from 'react-router';
 
 
 function Mversionmob() {
+    let navigate = useNavigate();
+    const Cloud = () => navigate(-1);
   return (
     <div className='container-fluid m-main mt-5 mb-5'>
         <div className='mokis mt-5'>
@@ -322,7 +325,7 @@ function Mversionmob() {
       
 
       <div className='text-center mb-4'>
-      <button type="button"  className='btn mo-go'>Go back to menu</button>
+                  <button type="button" className='btn mo-go' onClick={Cloud}>Go back to menu</button>
     </div>
 
 

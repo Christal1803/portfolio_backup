@@ -5,10 +5,12 @@ import papp from "../../../src/assets/papp.svg";
 import webad from "../../../src/assets/webad.svg";
 import kis from "../../../src/assets/kis.svg";
 import fs from "../../../src/assets/fs.svg";
-
+import { useNavigate } from 'react-router';
 
 
 function MversionData() {
+    let navigate = useNavigate();
+    const Cloud = () => navigate(-1);
   return (
     <div className='container-fluid m-main mt-5 mb-5'>
         <div className='mokis mt-5'>
@@ -220,7 +222,7 @@ function MversionData() {
       </div>
 
       <div className='text-center mb-4'>
-      <button type="button"  className='btn mo-go'>Go back to menu</button>
+                  <button type="button" className='btn mo-go' onClick={Cloud}>Go back to menu</button>
     </div>
 
 

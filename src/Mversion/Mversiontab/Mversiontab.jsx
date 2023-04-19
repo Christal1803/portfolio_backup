@@ -1,8 +1,51 @@
 import React from 'react'
 import darrow from "../../../src/assets/darrow.svg";
 import './Mversiontab.css';
+import { useNavigate } from 'react-router';
 
 function Mversiontab() {
+    let navigate = useNavigate();
+    const submitThis = () => {
+
+        let path = `enagementModel`;
+        navigate(path);
+    }
+
+    let navigateKiosk = useNavigate();
+    const kiosk = () => {
+
+        let path = `kisok`;
+        navigateKiosk(path);
+    }
+
+    let navigateMobile = useNavigate();
+    const Mobile = () => {
+
+        let path = `mobile`;
+        navigateMobile(path);
+    }
+
+    let navigateWeb = useNavigate();
+    const Web = () => {
+
+        let path = `web`;
+        navigateWeb(path);
+    }
+
+    let navigateData = useNavigate();
+    const Data = () => {
+
+        let path = `data`;
+        navigateData(path);
+    }
+
+    let navigateCloud = useNavigate();
+    const Cloud = () => {
+
+        let path = `cloud`;
+        navigateCloud(path);
+    }
+
   return (
     <div className='container-fluid m-main'>
           <div className='m-menu mt-5 mb-3 text-center'>
@@ -15,36 +58,36 @@ function Mversiontab() {
       
       
       <div className='m-btn mt-4 text-center'>
-        <button type="button" class="btn m-menubtn">Engagement model</button>
+                      <button type="button" class="btn m-menubtn" onClick={submitThis}>Engagement model</button>
       </div>
       
       <p className='m-mainheads mt-4'>Solutions</p>
 
       <div className='m-btn mt-4 text-center'>
-      <button type="button" class="btn m-menubtn">Kiosk & Touchscreen</button>
+                      <button type="button" class="btn m-menubtn" onClick={kiosk}>Kiosk & Touchscreen</button>
       
       </div>
 
       <div className='m-btn mt-4 text-center'>
-      <button type="button" class="btn m-menubtn">Mobile Development</button>
+                      <button type="button" class="btn m-menubtn" onClick={Mobile}>Mobile Development</button>
 
       </div>
 
 
       <div className='m-btn mt-4 text-center'>
-      <button type="button" class="btn m-menubtn">Web Applications</button>
+                      <button type="button" class="btn m-menubtn" onClick={Web}>Web Applications</button>
 
       </div>
 
 
       <div className='m-btn mt-4 text-center'>
-      <button type="button" class="btn m-menubtn">Data Science & Engineering</button>
+                      <button type="button" class="btn m-menubtn" onClick={Data}>Data Science & Engineering</button>
 
       </div>
 
 
       <div className='m-btn mt-4 text-center'>
-      <button type="button" class="btn m-menubtn">Cloud Solutions</button>
+                      <button type="button" class="btn m-menubtn" onClick={Cloud}>Cloud Solutions</button>
 
       </div>
 

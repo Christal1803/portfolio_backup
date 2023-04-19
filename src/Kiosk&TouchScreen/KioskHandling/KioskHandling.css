@@ -4,7 +4,122 @@
     visibility: hidden;
 }
 
- 
+
+nav#myTab {
+    background: #f7f7f7;
+    border-radius: 26px;
+    padding: 1rem;
+}
+
+a.nav-link.active {
+    justify-content: center;
+    align-items: center;
+    background: #0EC79B !important;
+    border-radius: 82px !important;
+    text-align: center;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    border: none !important;
+}
+
+
+a.nav-link {
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF !important;
+    border-radius: 82px !important;
+    text-align: center;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #515151;
+    border: 0.5px solid #0ec79b !important;
+    margin-top: 20px;
+}
+
+.solution_name {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+    align-items: center;
+    color: #0EC79B;
+}
+
+.solution_desc {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    align-items: center;
+    color: #888888;
+}
+
+.tech-stack {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #515151;
+}
+
+svg {
+    background: #fff;
+    margin-right: 0.5rem;
+}
+
+.technology {
+    padding: 8px 25px 8px 7px;
+    width: auto;
+    text-align: left;
+    background: #F7F7F7;
+}
+
+    .technology span {
+        color: #0EC79B;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15.297px;
+        line-height: 22px;
+        letter-spacing: 0.163896px;
+    }
+
+span.technology.badge.rounded-pill.mt-2 {
+    padding: 8px 25px 8px 7px;
+    width: auto;
+    text-align: left;
+}
+
+span.technology.badge.rounded-pill.ms-3 {
+    padding: 8px 25px 8px 7px;
+    width: auto;
+    text-align: left;
+}
+
+.col-md-9.tab-content {
+    padding: 1.5rem;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+}
+
+.tab-head {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #515151;
+}
+
   body {
     margin: 0;
    

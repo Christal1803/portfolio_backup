@@ -2,10 +2,13 @@ import React from 'react'
 import './Mversionweb.css';
 import webad from "../../../src/assets/webad.svg";
 import swp from "../../../src/assets/swp.svg";
+import { useNavigate } from 'react-router';
 
 
 
 function Mversionweb() {
+    let navigate = useNavigate();
+    const Cloud = () => navigate(-1);
   return (
     <div className='container-fluid m-main mt-5 mb-5'>
         <div className='mokis mt-5'>
@@ -210,7 +213,7 @@ function Mversionweb() {
     
 
       <div className='text-center mb-4'>
-      <button type="button"  className='btn mo-go'>Go back to menu</button>
+                  <button type="button" className='btn mo-go' onClick={Cloud}>Go back to menu</button>
     </div>
 
 

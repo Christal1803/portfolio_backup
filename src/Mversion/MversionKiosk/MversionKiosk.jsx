@@ -5,8 +5,11 @@ import aliad from "../../../src/assets/aliad.svg";
 import flc from "../../../src/assets/flc.svg";
 import kis from "../../../src/assets/kis.svg";
 import alic from "../../../src/assets/alic.svg";
+import { useNavigate } from 'react-router';
 
 function MversionKiosk() {
+    let navigate = useNavigate();
+    const Cloud = () => navigate(-1);
   return (
     <div className='container-fluid m-main mt-5 mb-5'>
         <div className='mokis mt-5'>
@@ -174,7 +177,7 @@ function MversionKiosk() {
       
 
       <div className='text-center mb-4'>
-      <button type="button"  className='btn mo-go'>Go back to menu</button>
+                  <button type="button" className='btn mo-go' onClick={Cloud}>Go back to menu</button>
     </div>
 
 

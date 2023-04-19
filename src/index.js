@@ -14,6 +14,12 @@ import ExecutionPhase04 from './Kiosk&TouchScreen/ExecutionPhase04/ExecutionPhas
 import ExecutionPhase05 from './Kiosk&TouchScreen/ExecutionPhase05/ExecutionPhase05';
 import ExecutionPhase06 from './Kiosk&TouchScreen/ExecutionPhase06/ExecutionPhase06';
 import Mversioncloud from './Mversion/Mversioncloud/Mversioncloud';
+import Mversionenage from './Mversion/Mversionenage/Mversionenage';
+import MversionKiosk from './Mversion/MversionKiosk/MversionKiosk';
+import Mversionmob from './Mversion/Mversionmob/Mversionmob';
+import Mversionweb from './Mversion/Mversionweb/Mversionweb';
+import MversionData from './Mversion/MversionData/MversionData';
+import Mversiontab from './Mversion/Mversiontab/Mversiontab';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,7 +28,7 @@ root.render(
     <Router>
       <Routes>
       <Route path="/" element={<App />} />
-      <Route path="kioskHandling" element={<KioskHandling />} />
+      <Route path="home" element={<KioskHandling />} />
       <Route path="partnership_Discovery" element={<Partnership_Discovery />} />
       <Route path="OnBoarding" element={<OnBoarding />} />
       <Route path="ExecutionPhase01" element={<ExecutionPhase01 />} />
@@ -31,7 +37,18 @@ root.render(
       <Route path="ExecutionPhase04" element={<ExecutionPhase04 />} />
       <Route path="ExecutionPhase05" element={<ExecutionPhase05 />} />
       <Route path="ExecutionPhase06" element={<ExecutionPhase06 />} />
-      <Route path="demo" element={<Mversioncloud />} />
+                <Route path="home/enagementModel" element={<Mversionenage />} />
+                <Route path="home/kisok" element={<MversionKiosk />} />
+
+                <Route path="home/mobile" element={<Mversionmob />} />
+                <Route path="home/web" element={<Mversionweb />} />
+                <Route path="home/data" element={<MversionData />} />
+                <Route path="home/cloud" element={<Mversioncloud />} />
+                <Route path="home" element={<Mversiontab />} />
+
+
+
+
       
      
       </Routes>

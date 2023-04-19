@@ -8,8 +8,11 @@ import exp3 from "../../../src/assets/exp3.svg";
 import exp4 from "../../../src/assets/exp4.svg";
 import exp5 from "../../../src/assets/exp5.svg";
 import exp6 from "../../../src/assets/exp6.svg";
+import { useNavigate } from 'react-router';
 
 function Mversionenage() {
+    let navigate = useNavigate();
+    const Cloud = () => navigate(-1);
   return (
     <div className='container-fluid m-main mt-5 mb-5'>
        <div className='mop&d'>
@@ -471,7 +474,7 @@ of your audience.</p>
     </div>
 
     <div className='text-center'>
-      <button type="button"  className='btn mo-go'>Go back to menu</button>
+              <button type="button" className='btn mo-go' onClick={Cloud}>Go back to menu</button>
     </div>
     </div>
   )

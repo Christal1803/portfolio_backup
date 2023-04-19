@@ -1,0 +1,137 @@
+.mo-head {
+    font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #515151;
+  }
+  .mo-para {
+    font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #515151;
+  }
+  .accordion-button:not(.collapsed) {
+    color: #fff !important;
+    background-color: #0EC79B !important;
+    box-shadow: none !important; }
+  .accordion-body {
+    background-color: #0EC79B;
+    color: #fff;
+  }
+  /* .accordion-button::after {
+  
+    background-image: url('assets/pd.png') !important;
+  
+  } */
+  .accordion-button:focus {
+    border-color: none !important; 
+    outline: 0;
+    box-shadow: none !important; 
+  }
+
+  .accordion-item {
+    margin-top: 1rem;
+  }
+  button.btn.mo-go {
+    justify-content: center;
+    align-items: center;
+    padding: 7.5px 12px;
+    gap: 7.5px;
+    background: #FFFFFF;
+    border-radius: 80px;
+    color: #515151;
+    border: 1px solid #0EC79B;
+    margin-top: 2rem;
+  }
+  
+  svg {
+    border-radius: 50%;
+    background: #fff;
+    margin-right: 0.5rem;
+  }
+  .mo-technology {
+    padding: 8px 25px 8px 7px;
+    width: auto;
+    text-align: left;
+    background: #F7F7F7;
+  }
+  .mo-technology span{
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.4727px;
+  line-height: 16px;
+  letter-spacing: 0.122922px;
+  
+  color: #0EC79B;
+  }
+  span.mo-technology.badge.rounded-pill.mt-2 {
+  
+      width: auto;
+      text-align: left;
+      margin-top: 10px;
+  }
+  span.mo-technology.badge.rounded-pill.ms-3 {
+    margin-top: 10px;
+    width: auto;
+    text-align: left;
+  }
+  .mo-kishead {
+    font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0EC79B;
+  }
+  
+  .mo-kispara {
+    font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #888888;
+  }
+  
+  .mo-kistech {
+    font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16.5px;
+  line-height: 20px;
+  color: #515151;
+  }
+  
+  h5.card-title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #515151;
+  }
+  a.btn.mo-knowmore {
+    justify-content: center;
+    align-items: center;
+    padding: 6.86911px 10.3037px;
+    gap: 10.3px;
+    background: #0EC79B;
+    border-radius: 49.801px;
+    color: #fff;
+    font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.1346px;
+  line-height: 19px;
+  align-items: center;
+  letter-spacing: 0.140728px;
+  }
+  .card {
+    border-radius: 30px;
+}

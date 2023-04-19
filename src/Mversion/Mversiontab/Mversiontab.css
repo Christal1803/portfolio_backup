@@ -1,0 +1,33 @@
+
+.m-menuhead {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: #515151;
+    }
+    .m-mainheads {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    
+    color: #515151;
+    }
+    button.btn.m-menubtn {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 7.5px 35px;
+      gap: 7.5px;
+      background: #0EC79B;
+      border-radius: 80px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      align-items: center;
+      color: #FFFFFF;
+      width: 260px;
+    }

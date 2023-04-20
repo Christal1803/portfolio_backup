@@ -1,0 +1,102 @@
+.ReactModal__Overlay {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 500ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  .ReactModal__Content.ReactModal__Content--after-open {
+    inset: 0px !important;
+    background: transparent !important;
+}
+.nav-head {
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 45px;
+display: flex;
+align-items: center;
+
+color: #515151;
+}
+
+img.img-fluid.float-end.xc{
+    height: 25px;
+    width: 25px;
+}
+.col-4 {
+    background-image: url('../../assets/bglines.svg');
+    height: 100vh;
+}
+.ReactModalPortal {
+  background: transparent !important;
+}
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+    background: transparent !important;
+}
+.ReactModal__Content.ReactModal__Content--after-open {
+    padding: 0 !important;
+}
+
+ul.dropdown-menu.show {
+    background: #FAFAFA;
+    border-radius: 14px;
+    width: 528p;
+}
+a.dropdown-item {
+    padding: 0px 35px 0px 0px;
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+color: #515151;
+}
+a.dropdown-item:hover {
+    padding: 0px 35px 0px 0px;
+    font-family: 'Gilroy';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+color: #0EC79B;
+text-decoration: underline;
+background-color: transparent;
+}
+li {
+    list-style: disc;
+    color: #515151;
+}
+a.dropdown-item:hover li {
+    color: #0EC79B;
+}
+
+.sidebar {
+    background: #fff;
+}
+
+.as {
+    background-color: rgb(165 165 165 / 40%);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  height: 100vh;
+}
+
+.col-4.sidebar {
+    padding: 2rem;
+}
+.col-lg-4.col-sm-12.sidebar {
+    height: 100vh;
+    padding: 2rem;
+}
+

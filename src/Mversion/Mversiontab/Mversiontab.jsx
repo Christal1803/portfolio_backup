@@ -2,6 +2,7 @@ import React from 'react'
 import darrow from "../../../src/assets/darrow.svg";
 import './Mversiontab.css';
 import { useNavigate } from 'react-router';
+import Newnav from '../../Kiosk&TouchScreen/Newnav/Newnav';
 
 function Mversiontab() {
     let navigate = useNavigate();
@@ -47,8 +48,10 @@ function Mversiontab() {
     }
 
   return (
+    
     <div className='container-fluid m-main'>
-          <div className='m-menu mt-5 mb-3 text-center'>
+      <Newnav/>
+          <div className='m-menu  mb-3 text-center'>
     <p className="m-menuhead">Choose what you want to see </p>
     <img src={darrow} className='img-fluid'/>
     
@@ -96,6 +99,7 @@ function Mversiontab() {
   </div>
     </div>
   )
+
 }
 
 export default Mversiontab

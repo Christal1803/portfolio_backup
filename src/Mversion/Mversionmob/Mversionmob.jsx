@@ -12,13 +12,21 @@ import pct from "../../../src/assets/pct.svg";
 import ct from "../../../src/assets/ct.svg";
 import tivo from "../../../src/assets/tivo.svg";
 import { useNavigate } from 'react-router';
+import Newnav from '../../Kiosk&TouchScreen/Newnav/Newnav';
+import flutter from "../../../src/assets/flutter.svg";
+import xamarin from "../../../src/assets/xamarin.svg";
+import react from "../../../src/assets/react.svg";
+import ios from "../../../src/assets/ios.svg";
+import andriod from "../../../src/assets/andriod.svg";
+import Newnav from '../Newnav/Newnav'
 
 
 function Mversionmob() {
     let navigate = useNavigate();
     const Cloud = () => navigate(-1);
   return (
-    <div className='container-fluid m-main mt-5 mb-5'>
+    <div className='container-fluid m-main  mb-5'>
+      <Newnav/>
         <div className='mokis mt-5'>
       <p className='mo-kishead'>Mobile Development</p>
       <p className='mo-kispara'>Addant offers design, development, deployment, and maintenance of value-added mobile applications across iOS & Android platforms. Our team has significant experience when it comes to native or cross-platform development, and they focus on creating intuitive interfaces ensuring seamless user engagement.</p>
@@ -27,113 +35,33 @@ function Mversionmob() {
 
       <div className='mo-techs'>
       <span className='mo-technology badge rounded-pill mt-2 '>
-        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-          <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8"/>
-          <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1"/>
-          <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5"/>
-          <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)"/>
-          <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)"/>
-          <defs>
-          <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-          <stop offset="0.2" stop-opacity="0.15"/>
-          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01"/>
-          </linearGradient>
-          <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-          <stop offset="0.2" stop-opacity="0.55"/>
-          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01"/>
-          </linearGradient>
-          </defs>
-        </svg>
+        <img src={flutter} className='img-fluid bg-white rounded-circle'/>
         <span>Flutter</span>
       </span>
 
 
 
       <span className='mo-technology badge rounded-pill '>
-        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-          <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8"/>
-          <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1"/>
-          <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5"/>
-          <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)"/>
-          <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)"/>
-          <defs>
-          <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-          <stop offset="0.2" stop-opacity="0.15"/>
-          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01"/>
-          </linearGradient>
-          <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-          <stop offset="0.2" stop-opacity="0.55"/>
-          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01"/>
-          </linearGradient>
-          </defs>
-        </svg>
+      <img src={xamarin} className='img-fluid rounded-circle bg-white' />
         <span>Xamarin</span>
       </span>
 
 
 
       <span className='mo-technology badge rounded-pill '>
-        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-          <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8"/>
-          <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1"/>
-          <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5"/>
-          <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)"/>
-          <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)"/>
-          <defs>
-          <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-          <stop offset="0.2" stop-opacity="0.15"/>
-          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01"/>
-          </linearGradient>
-          <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-          <stop offset="0.2" stop-opacity="0.55"/>
-          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01"/>
-          </linearGradient>
-          </defs>
-        </svg>
+      <img src={react} className='img-fluid rounded-circle bg-white' />
         <span>React Native</span>
       </span>
 
 
       <span className='mo-technology badge rounded-pill '>
-        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-          <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8"/>
-          <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1"/>
-          <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5"/>
-          <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)"/>
-          <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)"/>
-          <defs>
-          <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-          <stop offset="0.2" stop-opacity="0.15"/>
-          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01"/>
-          </linearGradient>
-          <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-          <stop offset="0.2" stop-opacity="0.55"/>
-          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01"/>
-          </linearGradient>
-          </defs>
-        </svg>
+      <img src={ios} className='img-fluid rounded-circle bg-white' />
         <span>Native iOS</span>
       </span>
 
 
       <span className='mo-technology badge rounded-pill '>
-        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-          <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8"/>
-          <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1"/>
-          <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5"/>
-          <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)"/>
-          <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)"/>
-          <defs>
-          <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-          <stop offset="0.2" stop-opacity="0.15"/>
-          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01"/>
-          </linearGradient>
-          <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-          <stop offset="0.2" stop-opacity="0.55"/>
-          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01"/>
-          </linearGradient>
-          </defs>
-        </svg>
+      <img src={andriod} className='img-fluid rounded-circle bg-white' />
         <span> Android Native</span>
       </span>
 

@@ -10,9 +10,9 @@ import './OnBoarding.css';
 function OnBoarding() {
   return (
     <div class="container-fluid">
-      <div class="row container-align">
-        <div class="col-lg-8 col-sm-12 col-md-12 text-center my-auto">
-        <svg class="img-fluid" width="855" height="570" viewBox="0 0 855 570" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 col-md-12 text-center my-auto">
+        <svg class="img-fluid svgpd" width="855" height="570" viewBox="0 0 855 570" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path class="plant-movement" d="M88.4071 443.665C88.5334 437.212 91.0241 431.03 95.4067 426.292C97.5157 435.013 88.4071 443.665 88.4071 443.665Z" fill="#EBEBEB"/>
           <path class="plant-movement" d="M98.5645 438.752C104.528 436.282 111.193 436.1 117.283 438.239C110.135 443.654 98.5645 438.752 98.5645 438.752Z" fill="#EBEBEB"/>
           <path class="plant-movement" d="M99.7159 433.109C98.7512 428.107 99.6601 422.925 102.269 418.551C105.336 424.935 99.7159 433.109 99.7159 433.109Z" fill="#EBEBEB"/>
@@ -362,16 +362,16 @@ function OnBoarding() {
           <path d="M103.25 238.42C103.159 237.908 103.124 237.388 103.147 236.869C103.147 235.866 103.079 234.418 102.953 232.628C102.626 227.988 101.863 223.389 100.673 218.891C99.4522 214.395 97.807 210.024 95.76 205.838C94.9848 204.231 94.3122 202.943 93.822 202.065C93.5448 201.622 93.3119 201.152 93.1266 200.663C93.4747 201.057 93.7769 201.489 94.0272 201.951C94.5744 202.783 95.304 204.049 96.1476 205.645C98.3061 209.812 100.011 214.2 101.232 218.732C102.447 223.25 103.166 227.886 103.375 232.56C103.444 234.361 103.444 235.82 103.375 236.824C103.394 237.359 103.352 237.894 103.25 238.42Z" fill="#263238"/>
         </svg>
         </div>
-        <div class="col-lg-4 col-sm-12 col-md-12 my-auto">
-          <p class="main-heading">Onboarding & Kickoff phase</p>
+        <div class="col-lg-6 col-sm-12 col-md-12 my-auto">
+          <p class="main-heading m-0">Onboarding & Kickoff phase</p>
           <p class="sub-heading">What space your touchscreen is going into?</p>
           <div class="b-color">
           <div class="partnership-content">
             <p class="partnership-content-head">How</p>
             <p class="partnership-content-para">Research on its physical fitness in the targeted space, types of hardware devices it needs to interact with, internet availability in the location, light exposure of that location, use of object recognition etc.</p>
-            <p class="partnership-content-head mt-4">Who</p>
+            <p class="partnership-content-head mt-3 mb-2">Who</p>
             <p class="partnership-content-para">SME, Project Manager,<br/> Software Architect, UX Designer</p>
-            <p class="partnership-content-head mt-4">Outcome</p>
+            <p class="partnership-content-head mt-3 mb-2">Outcome</p>
             <p class="partnership-content-para">Software & Hardware spec</p>
           </div>
           </div>

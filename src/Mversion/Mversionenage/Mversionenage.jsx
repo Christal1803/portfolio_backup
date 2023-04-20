@@ -8,13 +8,15 @@ import exp3 from "../../../src/assets/exp3.svg";
 import exp4 from "../../../src/assets/exp4.svg";
 import exp5 from "../../../src/assets/exp5.svg";
 import exp6 from "../../../src/assets/exp6.svg";
+import Newnav from '../../Kiosk&TouchScreen/Newnav/Newnav';
 import { useNavigate } from 'react-router';
 
 function Mversionenage() {
     let navigate = useNavigate();
     const Cloud = () => navigate(-1);
   return (
-    <div className='container-fluid m-main mt-5 mb-5'>
+    <div className='container-fluid m-main mb-5'>
+      <Newnav/>
        <div className='mop&d'>
       <p className='mo-head'>Partnership & Discovery phase</p>
       <p className='mo-para'>What does success look for you?</p>

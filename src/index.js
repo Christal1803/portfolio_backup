@@ -21,12 +21,14 @@ import Mversionweb from './Mversion/Mversionweb/Mversionweb';
 import MversionData from './Mversion/MversionData/MversionData';
 import Mversiontab from './Mversion/Mversiontab/Mversiontab';
 
+import Newnav from './Kiosk&TouchScreen/Newnav/Newnav';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
       <Routes>
+      <Route path="Newnav" element={<Newnav />} />
       <Route path="/" element={<App />} />
       <Route path="home" element={<KioskHandling />} />
       <Route path="partnership_Discovery" element={<Partnership_Discovery />} />
@@ -37,6 +39,9 @@ root.render(
       <Route path="ExecutionPhase04" element={<ExecutionPhase04 />} />
       <Route path="ExecutionPhase05" element={<ExecutionPhase05 />} />
       <Route path="ExecutionPhase06" element={<ExecutionPhase06 />} />
+
+
+    
                 <Route path="home/enagementModel" element={<Mversionenage />} />
                 <Route path="home/kisok" element={<MversionKiosk />} />
 
@@ -45,6 +50,8 @@ root.render(
                 <Route path="home/data" element={<MversionData />} />
                 <Route path="home/cloud" element={<Mversioncloud />} />
                 <Route path="home" element={<Mversiontab />} />
+
+
 
 
 

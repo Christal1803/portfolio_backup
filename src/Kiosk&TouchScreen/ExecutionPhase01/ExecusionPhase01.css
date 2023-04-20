@@ -7,6 +7,11 @@ body {
   margin: 0px 70px !important;
 }
 
+img.img-fluid.number-align.d-inline {
+  height: 40px;
+  position: relative;
+  left: -23px;
+}
 .main-heading {
 
 font-style: normal;

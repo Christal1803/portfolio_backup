@@ -19,6 +19,36 @@ import 'react-magic-slider-dots/dist/magic-dots.css';
 import styled from 'styled-components'
 import Mversiontab from '../../Mversion/Mversiontab/Mversiontab'
 
+
+import wpf from "../../../src/assets/wpf.svg";
+import flutter from "../../../src/assets/flutter.svg";
+import xaml from "../../../src/assets/xaml.svg";
+
+
+import xamarin from "../../../src/assets/xamarin.svg";
+import react from "../../../src/assets/react.svg";
+import ios from "../../../src/assets/ios.svg";
+import andriod from "../../../src/assets/andriod.svg";
+
+
+import angular from "../../../src/assets/angular.svg";
+import net from "../../../src/assets/net.svg";
+import node from "../../../src/assets/node.svg";
+import js from "../../../src/assets/js.svg";
+import html from "../../../src/assets/html.svg";
+import bootstrap from "../../../src/assets/bootstrap.svg";
+
+
+import python from "../../../src/assets/python.svg";
+import apache from "../../../src/assets/apache.svg";
+import auto from "../../../src/assets/auto.svg";
+import nosql from "../../../src/assets/nosql.svg";
+import mongo from "../../../src/assets/mongo.svg";
+
+import aws from "../../../src/assets/auto.svg";
+import amplify from "../../../src/assets/nosql.svg";
+import app from "../../../src/assets/mongo.svg";
+import Newnav from '../Newnav/Newnav'
 //import { Tab, Tabs, Carousel } from 'react-bootstrap';
 
 
@@ -225,14 +255,15 @@ const CustomDot = styled.li`
 
   ):(
     <div >
+        <Newnav/>
                       <div class="container-fluid mt-5">
 
 
                           <div class="row g-3">
-                              <div class="col-md-3">
+                              <div class="col-md-3 my-auto">
                                   <nav id="myTab" class="nav nav-pills flex-column">
                                       <p className='m-0'><b className='tab-head'>Our Engagement model</b></p>
-                                      <a href="#category_tab1" data-bs-toggle="pill" class="active nav-link mb-4" >Engagement model</a>
+                                      <a href="#category_tab1" data-bs-toggle="pill" class="active nav-link mb-3 mt-3" >Engagement model</a>
                                       <p className='m-0'><b className='tab-head'>Our Solutions</b></p>
                                       <a href="#category_tab2" data-bs-toggle="pill" class="nav-link">Kiosk & Touchscreen</a>
                                       <a href="#category_tab3" data-bs-toggle="pill" class="nav-link">Mobile development</a>
@@ -277,74 +308,26 @@ const CustomDot = styled.li`
 
                                   <article class="tab-pane fade" id="category_tab2">
                                       <h6 className='solution_name'>Kiosk & Touchscreen</h6>
-                                      <p className='solution_desc'>We provide custom kiosk software development for our customer’s current and future needs. Our kiosk & touchscreen development team builds efficient UIs, multi-tenant services, hardware interfaces, branding management, resource management, and remote administration.</p>
+                                      <p className='solution_desc'>We provide custom kiosk software development for our customerï¿½s current and future needs. Our kiosk & touchscreen development team builds efficient UIs, multi-tenant services, hardware interfaces, branding management, resource management, and remote administration.</p>
                                       <h4 className='tech-stack'>Tech Stack</h4>
 
                                       <div className='techs'>
                                           <span className='technology badge rounded-pill mt-2 '>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={flutter} className='img-fluid rounded-circle bg-white' />
                                               <span>Flutter</span>
                                           </span>
 
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={wpf} className='img-fluid rounded-circle' />
                                               <span>WPF</span>
                                           </span>
 
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={xaml} className='img-fluid rounded-circle' />
                                               <span>XAML</span>
                                           </span>
 
@@ -367,135 +350,38 @@ const CustomDot = styled.li`
 
                                       <div className='techs'>
                                           <span className='technology badge rounded-pill mt-2 '>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                              <img src={flutter} className='img-fluid rounded-circle bg-white' />
                                               <span>Flutter</span>
                                           </span>
 
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={xamarin} className='img-fluid rounded-circle bg-white' />
                                               <span>Xamarin</span>
                                           </span>
 
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={react} className='img-fluid rounded-circle bg-white' />
+
                                               <span>React Native</span>
                                           </span>
 
 
-                                          <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
-                                              <span>XAML</span>
-                                          </span>
-
+                                          
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={ios} className='img-fluid rounded-circle bg-white' />
+
                                               <span>Native iOS</span>
                                           </span>
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={andriod} className='img-fluid rounded-circle bg-white' />
+
                                               <span>Android Native</span>
                                           </span>
 
@@ -527,162 +413,50 @@ const CustomDot = styled.li`
 
                                   <article class="tab-pane fade" id="category_tab4">
                                       <h6 className='solution_name'>Web Applications</h6>
-                                      <p className='solution_desc'>We build custom tailored web solutions to fit our customer’s business goals. Our team work backwards from customer requirements and focuses on user experience (UX), high performance, availability, and scalability. We always use the most apt technology while staying focused on the business requirements.</p>
+                                      <p className='solution_desc'>We build custom tailored web solutions to fit our customerï¿½s business goals. Our team work backwards from customer requirements and focuses on user experience (UX), high performance, availability, and scalability. We always use the most apt technology while staying focused on the business requirements.</p>
                                       <h4 className='tech-stack'>Tech Stack</h4>
 
                                       <div className='techs'>
                                           <span className='technology badge rounded-pill mt-2 '>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={react} className='img-fluid rounded-circle bg-white' />
                                               <span>React </span>
                                           </span>
 
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={angular} className='img-fluid rounded-circle bg-white' />
                                               <span>Angular</span>
                                           </span>
 
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={net} className='img-fluid rounded-circle bg-white' />
                                               <span>.NET Core</span>
                                           </span>
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={node} className='img-fluid rounded-circle bg-white' />
                                               <span>Node</span>
                                           </span>
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={js} className='img-fluid rounded-circle bg-white' />
                                               <span>JavaScript</span>
                                           </span>
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={html} className='img-fluid rounded-circle bg-white' />
                                               <span>HTML 5</span>
                                           </span>
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={bootstrap} className='img-fluid rounded-circle bg-white' />
                                               <span>Bootstrap</span>
                                           </span>
                                       </div>
@@ -696,113 +470,33 @@ const CustomDot = styled.li`
 
                                       <div className='techs'>
                                           <span className='technology badge rounded-pill mt-2 '>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={python} className='img-fluid rounded-circle bg-white' />
                                               <span>Python </span>
                                           </span>
 
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={apache} className='img-fluid rounded-circle bg-white' />
                                               <span>Apache Spark</span>
                                           </span>
 
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
-                                              <span>.AutoGluon</span>
+                                          <img src={auto} className='img-fluid rounded-circle bg-white' />
+                                              <span>AutoGluon</span>
                                           </span>
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={nosql} className='img-fluid rounded-circle bg-white' />
                                               <span>NOSQL - Dynamo DB</span>
                                           </span>
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={mongo} className='img-fluid rounded-circle bg-white' />
                                               <span>Mongo DB</span>
                                           </span>
                                       </div>
@@ -817,69 +511,24 @@ const CustomDot = styled.li`
 
                                       <div className='techs'>
                                           <span className='technology badge rounded-pill mt-2 '>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={aws} className='img-fluid rounded-circle bg-white' />
+
                                               <span>AWS Serverless </span>
                                           </span>
 
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={amplify} className='img-fluid rounded-circle bg-white' />
+
                                               <span>Amplify</span>
                                           </span>
 
 
 
                                           <span className='technology badge rounded-pill ms-3'>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
-                                                  <path d="M10.6112 16.3947L8.21582 13.9993L15.9936 6.22217H20.7837L10.6112 16.3947ZM20.7837 13.3989H15.9936L14.1993 15.1932L16.5946 17.5886" fill="#42A5F5" fill-opacity="0.8" />
-                                                  <path d="M14.1992 19.9834L15.9936 21.7777H20.7837L16.5946 17.5886" fill="#0D47A1" />
-                                                  <path d="M11.8096 17.5899L14.2012 15.1976L16.5928 17.5892L14.2012 19.9815L11.8096 17.5899Z" fill="#42A5F5" />
-                                                  <path d="M14.2012 19.9815L16.5928 17.5898L16.9266 17.9237L14.535 20.3153L14.2012 19.9815Z" fill="url(#paint0_linear_2_3660)" />
-                                                  <path d="M14.1992 19.9834L17.7533 18.7555L16.5946 17.588" fill="url(#paint1_linear_2_3660)" />
-                                                  <defs>
-                                                      <linearGradient id="paint0_linear_2_3660" x1="15.3974" y1="18.7852" x2="15.7313" y2="19.1191" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.15" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                      <linearGradient id="paint1_linear_2_3660" x1="14.2001" y1="18.7858" x2="17.7541" y2="18.7858" gradientUnits="userSpaceOnUse">
-                                                          <stop offset="0.2" stop-opacity="0.55" />
-                                                          <stop offset="0.85" stop-color="#616161" stop-opacity="0.01" />
-                                                      </linearGradient>
-                                                  </defs>
-                                              </svg>
+                                          <img src={app} className='img-fluid rounded-circle bg-white' />
+
                                               <span>App Sync</span>
                                           </span>
 

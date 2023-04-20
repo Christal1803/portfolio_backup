@@ -10,6 +10,7 @@ import Button from "../../src/assets/hamburger.svg";
 import NavBar01 from '../Kiosk&TouchScreen/NavBar/NavBar01';
 import '../Responsive.css'
 import KioskHandling from '../Kiosk&TouchScreen/KioskHandling/KioskHandling';
+import Newnav from '../Kiosk&TouchScreen/Newnav/Newnav';
 
 function Home() {
   let navigate = useNavigate(); 
@@ -20,19 +21,10 @@ function Home() {
         }
   return (
     <div class="container-fluid nav-align">
-      <nav class="navbar container-align">
-          <a class="navbar-brand"><img src={logo} class="img-fluid"/></a>
-          <div class="select-btn">
-          
-          </div>
-          
-          
-          <img src={Button} class="img-fluid" />
-          
-      </nav>
-
+      
+      <Newnav/>
       <div class="row container-align">
-        <div class="col-lg-7 col-sm-12 col-md-12 my-auto">
+        <div class="col-lg-7 col-sm-12 col-md-12 my-auto ">
           <p class="para1">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia <span class="highlights">consequat duis enim velit mollit.</span></p>
 
           <p class="para2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
@@ -43,7 +35,7 @@ function Home() {
           <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#21272C"/>
           </svg></span></p>
         </div>
-        <div class="col-lg-5 col-sm-12 col-md-12 text-center my-auto">
+        <div class="col-lg-5 col-sm-12 col-md-12 text-center my-auto ">
           <svg class="img-fluid spin" width="531" height="645" viewBox="0 0 531 645" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path opacity="0.05" d="M547.703 435.724L167.413 3.00001L1.99986 620.329L547.703 435.724Z" stroke="url(#paint0_linear_217_2777)" stroke-width="2.5"/>
           <path opacity="0.08" d="M543.935 422.1L153.016 21.6495L23.9346 628.929L543.935 422.1Z" stroke="url(#paint1_linear_217_2777)" stroke-width="2.5"/>

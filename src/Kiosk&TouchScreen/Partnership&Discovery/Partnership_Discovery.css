@@ -22,7 +22,7 @@ body {
   font-family: 'Gilroy' !important;
 font-style: normal;
 font-weight: 400;
-font-size: 30px;
+font-size: 16px;
 line-height: 35px;
 color: #515151;
 }
@@ -64,6 +64,10 @@ color: #515151;
   padding: 30px 0px;
   border-radius: 26px;
 
+}
+
+.svgpd {
+  background-color: transparent !important;
 }
 .b-color {
   background: radial-gradient(98.29% 354.82% at 98.29% 3.38%, #0EC79B 0%, rgba(57, 141, 238, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,

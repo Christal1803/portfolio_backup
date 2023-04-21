@@ -18,7 +18,7 @@ import xamarin from "../../../src/assets/xamarin.svg";
 import react from "../../../src/assets/react.svg";
 import ios from "../../../src/assets/ios.svg";
 import andriod from "../../../src/assets/andriod.svg";
-import Newnav from '../Newnav/Newnav'
+
 
 
 function Mversionmob() {

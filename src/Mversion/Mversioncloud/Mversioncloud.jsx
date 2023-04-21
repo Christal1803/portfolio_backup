@@ -7,7 +7,7 @@ import Newnav from '../../Kiosk&TouchScreen/Newnav/Newnav';
 import aws from "../../../src/assets/auto.svg";
 import amplify from "../../../src/assets/nosql.svg";
 import app from "../../../src/assets/mongo.svg";
-import Newnav from '../Newnav/Newnav'
+
 
 
 

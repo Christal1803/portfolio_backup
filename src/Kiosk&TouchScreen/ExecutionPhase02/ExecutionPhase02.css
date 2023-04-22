@@ -9,7 +9,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
-  line-height: 47px;
+  line-height: 26px;
   color: #515151;
   }
   
@@ -18,7 +18,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
-  line-height: 35px;
+  line-height: 26px;
   color: #515151;
   }
   
@@ -27,7 +27,7 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 26px;
   color: #515151;
   }
   
@@ -36,7 +36,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 150%;
+  line-height: 26px;
   color: #888888;
   margin: 0;
   }
@@ -46,7 +46,7 @@ body {
   font-style: normal;
   font-weight: 500 !important;
   font-size: 1.2rem !important;
-  line-height: 35px !important;
+  line-height: 26px;
   align-items: center;
   /* color: #FFFFFF !important; */
   text-align: center !important;

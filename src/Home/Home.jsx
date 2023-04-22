@@ -20,7 +20,7 @@ function Home() {
         navigate(path);
         }
   return (
-    <div class="container-fluid nav-align">
+    <div class="container-fluid nav-align ">
       
       <Newnav/>
       <div class="row container-align">
@@ -28,7 +28,7 @@ function Home() {
           <p class="para1">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia <span class="highlights">consequat duis enim velit mollit.</span></p>
 
           <p class="para2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-          <p class="para3">Get Started <span><svg width="60" height="60" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" onClick={submitThis} xmlns="http://www.w3.org/2000/svg">
+          <p class="para3">Get Started <span><svg width="50" height="50" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" onClick={submitThis} xmlns="http://www.w3.org/2000/svg">
           <ellipse cx="20" cy="20" rx="20" ry="20" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 55 50)" fill="#0EC79B"/>
           <path d="M14.7 30C14.7 18.7886 23.7886 9.7 35 9.7C46.2114 9.7 55.3 18.7886 55.3 30C55.3 41.2114 46.2114 50.3 35 50.3C23.7886 50.3 14.7 41.2114 14.7 30Z" stroke="#2A4157" stroke-opacity="0.24" stroke-width="0.6"/>
           <path d="M12.3223 47.6777C15.8186 51.174 20.2732 53.555 25.1227 54.5196C29.9723 55.4843 34.9989 54.9892 39.5671 53.097C44.1352 51.2048 48.0397 48.0005 50.7867 43.8893C53.5338 39.778 55 34.9445 55 30C55 25.0555 53.5338 20.222 50.7867 16.1107C48.0397 11.9995 44.1352 8.7952 39.5671 6.90301C34.9989 5.01082 29.9723 4.51574 25.1227 5.48037C20.2732 6.445 15.8186 8.82602 12.3223 12.3223" stroke="#21272C" stroke-width="1.2"/>

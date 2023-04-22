@@ -1,4 +1,11 @@
-
+.react-horizontal-scrolling-menu--scroll-container {
+  background: transparent !important;
+  height: 500px !important;
+}
+.react-horizontal-scrolling-menu--item {
+  background-color: transparent !important;
+  height: 500px !important;
+}
 
 .widthlisy {
     visibility: hidden;
@@ -9,6 +16,7 @@ nav#myTab {
     background: #f7f7f7;
     border-radius: 26px;
     padding: 1rem;
+  
 }
 
 a.nav-link.active {
@@ -109,6 +117,7 @@ span.technology.badge.rounded-pill.ms-3 {
     padding: 1.5rem;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
+    height: 615px;
 }
 
 .tab-head {
@@ -180,8 +189,66 @@ span.technology.badge.rounded-pill.ms-3 {
   
 
 
+@media (max-width: 767px) {
+  .carousel-inner .carousel-item > div {
+      display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+      display: block;
+  }
+}
 
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
   
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  
+  .carousel-inner .carousel-item-start.active, 
+  .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+  }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+  .card {
+    width: 20rem;
+  }
+
+  .btn-arrow {
+    background: #0EC79B;
+    padding: 0.5rem;
+    border-radius: 50%;
+    height: 35px !important;
+    width: 35px;
+  }
+  /* span.carousel-control-prev-icon {
+    display: none;
+}
+span.carousel-control-next-icon {
+    display: none;
+} */
+
+.carousel {
+  min-width: 900px;
+  max-width: 1236px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+}
   
 
   

@@ -11,8 +11,6 @@ import node from "../../../src/assets/node.svg";
 import js from "../../../src/assets/js.svg";
 import html from "../../../src/assets/html.svg";
 import bootstrap from "../../../src/assets/bootstrap.svg";
-//import Newnav from '../Newnav/Newnav'
-
 
 
 function Mversionweb() {

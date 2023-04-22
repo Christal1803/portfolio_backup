@@ -12,7 +12,6 @@ import apache from "../../../src/assets/apache.svg";
 import auto from "../../../src/assets/auto.svg";
 import nosql from "../../../src/assets/nosql.svg";
 import mongo from "../../../src/assets/mongo.svg";
-//import Newnav from '../Newnav/Newnav'
 
 
 function MversionData() {

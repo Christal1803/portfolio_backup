@@ -20,6 +20,7 @@ import Mversionmob from './Mversion/Mversionmob/Mversionmob';
 import Mversionweb from './Mversion/Mversionweb/Mversionweb';
 import MversionData from './Mversion/MversionData/MversionData';
 import Mversiontab from './Mversion/Mversiontab/Mversiontab';
+import Demo from './Mversion/Demo/Demo';
 
 import Newnav from './Kiosk&TouchScreen/Newnav/Newnav';
 
@@ -28,6 +29,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
+      <Route path="demo" element={<Demo />} />
       <Route path="Newnav" element={<Newnav />} />
       <Route path="/" element={<App />} />
       <Route path="home" element={<KioskHandling />} />

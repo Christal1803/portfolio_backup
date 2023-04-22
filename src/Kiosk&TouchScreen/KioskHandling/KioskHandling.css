@@ -19,6 +19,10 @@ nav#myTab {
   
 }
 
+.card-space{
+    padding:20px
+}
+
 a.nav-link.active {
     justify-content: center;
     align-items: center;

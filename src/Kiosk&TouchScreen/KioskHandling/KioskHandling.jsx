@@ -1,4 +1,4 @@
-import React , { useRef,  useState ,useEffect,useLayoutEffect} from 'react'
+import React, { useRef, useState, useEffect, useLayoutEffect, useCallback } from 'react'
 import Partnership_Discovery from '../Partnership&Discovery/Partnership_Discovery'
 import OnBoarding from '../OnBoarding/OnBoarding'
 import ExecutionPhase01 from '../ExecutionPhase01/ExecutionPhase01'
@@ -272,7 +272,27 @@ const CustomDot = styled.li`
   const DIAMETER = 50;
   const STROKE_WIDTH = 6;
   const RADIUS = DIAMETER / 2 - STROKE_WIDTH / 2;
-  const CIRCUMFERENCE = Math.PI * RADIUS * 2;
+    const CIRCUMFERENCE = Math.PI * RADIUS * 2;
+
+    const [slider, setSlider] = useState(null);
+
+    const setting = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1
+    };
+
+    const next = useCallback(() => {
+        slider.slickNext();
+    }, [slider]);
+
+    const previous = useCallback(() => {
+        slider.slickPrev();
+    }, [slider]);
+
+
   return (
 <div >
   {/*<NavBar02/>*/}
@@ -303,7 +323,7 @@ const CustomDot = styled.li`
                       <div class="container-fluid mt-3">
 
 
-                          <div class="row g-3">
+                          <div class="row container-align g-3">
                               <div class="col-md-3 my-auto">
                                   <nav id="myTab" class="nav nav-pills flex-column">
                                       <p className='m-0'><b className='tab-head'>Our Engagement model</b></p>
@@ -318,7 +338,6 @@ const CustomDot = styled.li`
                               </div>
                               <div class="col-md-9 tab-content">
                                   <article class="tab-pane fade show active" id="category_tab1">
-                                      {/*<KioskHandling></KioskHandling>*/}
 
                                       <div>
                                           <div ref={elementRef} onLoad={handleElementLoad} className="widthlisy"></div>
@@ -375,109 +394,89 @@ const CustomDot = styled.li`
                                               <span>XAML</span>
                                           </span>
 
+                                                  <div>
+                                                      <Slider ref={setSlider} {...setting}>
+                                                          <div key={1}>
+                                                      <div class="card-space">
+                                                                  <div>
+                                                                          <img src={flc} class="card-img-top img-fluid" alt="..." />
+                                                                          <div class="card-body text-center">
+                                                                              <h5 class="card-title mt-0">Floor Client</h5>
+                                                                              <div className='mybtn text-center mt-2'>
+                                                                                  <a href="https://www.addant.com/#/solutions/casinomanagementsystem/floorclient" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+
+                                                                  </div>
+
+                                                          </div>
+                                                          <div key={2}>
+                                                              <div class="card-space">
+                                                                          <img src={alivis} class="card-img-top img-fluid" alt="..." />
+                                                                          <div class="card-body">
+                                                                              
+                                                              <div className='mybtn text-center mt-2'>
+                                                                  <h5 class="card-title mt-0">Virtual Receptionist</h5>
+                                                                                  <a href="https://www.addant.com/#/solutions/hospitalitymanagement/alicereceptionist" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
+                                                                              </div>
+                                                                          </div>
+
+                                                              </div>
+                                                          </div>
+                                                          <div key={3}>
+                                                      <div class="card-space">
+                                                                          <img src={kis} class="card-img-top img-fluid" alt="..." />
+                                                                          <div class="card-body">
+                                                                              <h5 class="card-title mt-0">Multi Service Kiosk</h5>
+                                                                              <div className='mybtn text-center mt-2'>
+                                                                                  <a href="https://www.addant.com/#/solutions/smartcityplatform/multiservicekisokapplication" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
+                                                                              </div>
+
+                                                                  </div>
+                                                              </div>
+                                                             
+                                                          </div>
+                                                          <div key={4}>
+                                                              <div class="card-space">
+                                                                      <img src={aliad} class="card-img-top img-fluid" alt="..." />
+                                                                      <div class="card-body">
+                                                                          <h5 class="card-title mt-0">Directory Admin</h5>
+                                                                          <div className='mybtn text-center mt-2'>
+                                                                              <a href="https://www.addant.com/#/solutions/hospitalitymanagement/aliceadmin" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
+                                                                          </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div key={5}>
+                                                              <div class="card-space">
+                                                                      <img src={alic} class="card-img-top img-fluid" alt="..." />
+                                                                      <div class="card-body">
+                                                                          <h5 class="card-title mt-0">Alice</h5>
+                                                                          <div className='mybtn text-center mt-2'>
+                                                                              <a href="https://www.addant.com/#/solutions/hospitalitymanagement/alicevisitormanagement" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
+                                                                          </div>
+                                                                      </div>
+                                                              </div>
+                                                          </div>
+                                                          {/*<div key={6}>*/}
+                                                          {/*    <h3>6</h3>*/}
+                                                          {/*</div>*/}
+                                                      </Slider>
+                                                      <div style={{ textAlign: "center" }}>
+
+
+                                                  <a class="indicator"  role="button">
+                                                      <img src={left} className="img-fluid btn-arrow" onClick={previous} />
+                                                  </a> &nbsp;&nbsp;
+                                                  <a class="w-aut indicator" role="button" >
+                                                      <img src={right} className="img-fluid btn-arrow" onClick={next} />
+                                                  </a>
+                                                      </div>
+                                                  </div>
 
 
 
-                                          <div className='gallery container-fluid mt-3'>
-                                          <div class="row ">
-    <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
-
-      
-
-      <div class=" text-center my-3">
-    <div class="row mx-auto my-auto justify-content-center">
-        <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <div class="col-md-4">
-                        
-
-
-                        <div class="card">
-                            <img src={flc} class="card-img-top img-fluid" alt="..."/>
-                            <div class="card-body text-center">
-                                <h5 class="card-title mt-0">Floor Client</h5>
-                                <div className='mybtn text-center mt-2'>
-                                <a href="https://www.addant.com/#/solutions/casinomanagementsystem/floorclient" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                            <img src={alivis} class="card-img-top img-fluid" alt="..."/>
-                            <div class="card-body">
-                                <h5 class="card-title mt-0">Virtual Receptionist</h5>
-                                <div className='mybtn text-center mt-2'>
-                                <a href="https://www.addant.com/#/solutions/hospitalitymanagement/alicereceptionist" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                            <img src={kis} class="card-img-top img-fluid" alt="..."/>
-                            <div class="card-body">
-                                <h5 class="card-title mt-0">Multi Service Kiosk</h5>
-                                <div className='mybtn text-center mt-2'>
-                                <a href="https://www.addant.com/#/solutions/smartcityplatform/multiservicekisokapplication" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                            <img src={aliad} class="card-img-top img-fluid" alt="..."/>
-                            <div class="card-body">
-                                <h5 class="card-title mt-0">Directory Admin</h5>
-                                <div className='mybtn text-center mt-2'>
-                                <a href="https://www.addant.com/#/solutions/hospitalitymanagement/aliceadmin" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                            <img src={alic} class="card-img-top img-fluid" alt="..."/>
-                            <div class="card-body">
-                                <h5 class="card-title mt-0">Alice</h5>
-                                <div className='mybtn text-center mt-2'>
-                                <a href="https://www.addant.com/#/solutions/hospitalitymanagement/alicevisitormanagement" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-           
-        </div>
-    </div>
-
-</div>
-
-
-<div class="text-center pe-md-4">
-        <a class="indicator" href="#recipeCarousel" role="button" data-bs-slide="prev">
-         <img src={left} className="img-fluid btn-arrow" />
-        </a> &nbsp;&nbsp;
-        <a class="w-aut indicator" href="#recipeCarousel" role="button" data-bs-slide="next">
-        <img src={right} className="img-fluid btn-arrow" />
-        </a>
-      </div>
-    </div>
-  </div> 
-                                          </div>
                                       </div>
 
                                   </article>
@@ -1158,38 +1157,13 @@ const CustomDot = styled.li`
 
                       </div>
 
-    
-  {/*  <div>*/}
-  {/*    <div ref={elementRef} onLoad={handleElementLoad} className="widthlisy">This is my element</div>*/}
-     
-  {/*  <div onMouseEnter={disableScroll} onMouseLeave={enableScroll}>*/}
-   
-  {/*  <ScrollMenu onWheel={onWheel}  >*/}
-  {/*  */}{/* <Slider {...settings}>  */}
-  {/*     {pages.map((page) => (*/}
-          
-  {/*        <div key={page.id}  style={{ width: page.width }} >*/}
-            
-  {/*           <Slider {...settings}>*/}
-  {/*           {page.Element}</Slider>*/}
-  {/*         </div>*/}
-         
-        
-  {/*    ))}*/}
-  {/* </Slider> */}
-  {/*  </ScrollMenu>*/}
-    
-  {/*</div>*/}
  
-
-  {/*</div>*/}
 
   </div>
   
 
   )}
    
-   {/* <SlidingDots/> */}
    
     </div>
     

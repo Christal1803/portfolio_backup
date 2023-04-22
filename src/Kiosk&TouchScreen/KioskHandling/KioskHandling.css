@@ -103,6 +103,7 @@ svg {
         font-size: 14px;
         line-height: 22px;
         letter-spacing: 0.163896px;
+        margin-left: 10px;
     }
 
 span.technology.badge.rounded-pill.mt-2 {
@@ -253,7 +254,12 @@ span.carousel-control-next-icon {
   padding-right: 0px;
   position: relative;
 }
-  
+.mybtn.text-center {
+  box-shadow: 0px 3.75px 11.25px rgba(0, 0, 0, 0.05);
+
+   border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
 
   
   

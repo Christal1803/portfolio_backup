@@ -2,3 +2,7 @@
     padding: 0px 73px !important;
     margin: 16px 0px;
 }
+img.img-fluid.float-end {
+    height: 46px;
+    width: 46px;
+}

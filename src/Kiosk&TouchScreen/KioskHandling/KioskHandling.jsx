@@ -400,12 +400,16 @@ const CustomDot = styled.li`
                                                       <div class="card-space">
                                                                   <div>
                                                                           <img src={flc} class="card-img-top img-fluid" alt="..." />
-                                                                          <div class="card-body text-center">
-                                                                              <h5 class="card-title mt-0">Floor Client</h5>
-                                                                              <div className='mybtn text-center mt-2'>
-                                                                                  <a href="https://www.addant.com/#/solutions/casinomanagementsystem/floorclient" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-                                                                              </div>
-                                                                          </div>
+                                                                          
+
+
+                                                                        <div class="card-body">
+                                                                
+                                                                            <div className='mybtn text-center'>
+                                                                                <h5 class="card-title mt-3 mb-3">Floor Client</h5>
+                                                                                    <a href="https://www.addant.com/#/solutions/casinomanagementsystem/floorclientt" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                                            </div>
+                                                                        </div>
                                                                       </div>
 
                                                                   </div>
@@ -413,50 +417,69 @@ const CustomDot = styled.li`
                                                           </div>
                                                           <div key={2}>
                                                               <div class="card-space">
-                                                                          <img src={alivis} class="card-img-top img-fluid" alt="..." />
-                                                                          <div class="card-body">
-                                                                              
-                                                              <div className='mybtn text-center mt-2'>
-                                                                  <h5 class="card-title mt-0">Virtual Receptionist</h5>
-                                                                                  <a href="https://www.addant.com/#/solutions/hospitalitymanagement/alicereceptionist" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-                                                                              </div>
-                                                                          </div>
+                                                                <img src={alivis} class="card-img-top img-fluid" alt="..." />
+
+
+
+                                                                <div class="card-body">
+                                                                
+                                                                    <div className='mybtn text-center'>
+                                                                        <h5 class="card-title mt-3 mb-3">Virtual Receptionist</h5>
+                                                                            <a href="https://www.addant.com/#/solutions/hospitalitymanagement/alicereceptionist" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                                    </div>
+                                                                </div>
+
+
+
+                                                                
 
                                                               </div>
                                                           </div>
                                                           <div key={3}>
                                                       <div class="card-space">
                                                                           <img src={kis} class="card-img-top img-fluid" alt="..." />
-                                                                          <div class="card-body">
-                                                                              <h5 class="card-title mt-0">Multi Service Kiosk</h5>
-                                                                              <div className='mybtn text-center mt-2'>
-                                                                                  <a href="https://www.addant.com/#/solutions/smartcityplatform/multiservicekisokapplication" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-                                                                              </div>
 
-                                                                  </div>
+
+
+                                                                          <div class="card-body">
+                                                                
+                                                                    <div className='mybtn text-center'>
+                                                                        <h5 class="card-title mt-3 mb-3">Multi Service Kiosk</h5>
+                                                                            <a href="https://www.addant.com/#/solutions/smartcityplatform/multiservicekisokapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                                    </div>
+                                                                </div>      
                                                               </div>
                                                              
                                                           </div>
                                                           <div key={4}>
                                                               <div class="card-space">
                                                                       <img src={aliad} class="card-img-top img-fluid" alt="..." />
-                                                                      <div class="card-body">
-                                                                          <h5 class="card-title mt-0">Directory Admin</h5>
-                                                                          <div className='mybtn text-center mt-2'>
-                                                                              <a href="https://www.addant.com/#/solutions/hospitalitymanagement/aliceadmin" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-                                                                          </div>
-                                                                  </div>
+                                                                  <div class="card-body">
+                                                                
+                                                                    <div className='mybtn text-center'>
+                                                                        <h5 class="card-title mt-3 mb-3">Directory Admin</h5>
+                                                                            <a href="https://www.addant.com/#/solutions/hospitalitymanagement/aliceadmin" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                                    </div>
+                                                                </div> 
+
+
+                                                                
                                                               </div>
                                                           </div>
                                                           <div key={5}>
                                                               <div class="card-space">
                                                                       <img src={alic} class="card-img-top img-fluid" alt="..." />
-                                                                      <div class="card-body">
-                                                                          <h5 class="card-title mt-0">Alice</h5>
-                                                                          <div className='mybtn text-center mt-2'>
-                                                                              <a href="https://www.addant.com/#/solutions/hospitalitymanagement/alicevisitormanagement" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-                                                                          </div>
-                                                                      </div>
+                                                                
+                                                                     <div class="card-body">
+                                                                
+                                                                    <div className='mybtn text-center'>
+                                                                        <h5 class="card-title mt-3 mb-3">Alice</h5>
+                                                                            <a href="https://www.addant.com/#/solutions/hospitalitymanagement/alicevisitormanagement" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                                    </div>
+                                                                </div> 
+
+
+
                                                               </div>
                                                           </div>
                                                           {/*<div key={6}>*/}
@@ -526,238 +549,150 @@ const CustomDot = styled.li`
                                           </span>
 
 
-                                          <div className='gallery container-fluid mt-3'>
-                                          <div class="row ">
-    <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
-
-      
-
-      <div class=" text-center my-3">
-    <div class="row mx-auto my-auto justify-content-center">
-        <div id="recipeCarousel1" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <div class="col-md-4">
-                        
 
 
-                        <div class="card">
-                            <img src={flc} class="card-img-top img-fluid" alt="..."/>
-                            <div class="card-body text-center">
-                                <h5 class="card-title mt-0">QR Code validation & payment app</h5>
-                                <div className='mybtn text-center mt-2'>
-                                <a href="https://www.addant.com/#/solutions/smartcityplatform/qrcodevalidationpaymentapplication" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                          <div>
+        <Slider ref={setSlider} {...setting}>
+            <div key={1}>
+        <div class="card-space">
+                    <div>
+                        <img src={flc} class="card-img-top img-fluid" alt="..."/>
+                        <div class="card-body">
+                                                            
+                            <div className='mybtn text-center'>
+                                <h5 class="card-title mt-3 mb-3">QR Code validation & payment app</h5>
+                                    <a href="https://www.addant.com/#/solutions/smartcityplatform/qrcodevalidationpaymentapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                             </div>
                         </div>
-                    </div>
-
                 </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                            <img src={cuspos} class="card-img-top" alt="..."/>
-                            <div class="card-body">
-                                <h5 class="card-title mt-0">Custom POS Application</h5>
 
-                                
-                                <div className='mybtn text-center mt-2'>
-                                <a href="https://www.addant.com/#/solutions/smartcityplatform/customposapplication" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                    <img src={papp} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Player App</h5>
-
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playerapp" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
 
             </div>
-          </div>
+            <div key={2}>
+                <div class="card-space">
+                    <img src={cuspos} class="card-img-top" alt="..."/>
+    
+                    <div class="card-body">
+                                                        
+                        <div className='mybtn text-center'>
+                            <h5 class="card-title mt-3 mb-3">Custom POS Application</h5>
+                                <a href="https://www.addant.com/#/solutions/smartcityplatform/customposapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                         </div>
                     </div>
+
+
+
+                
+
                 </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                    <img src={fs} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Floor Assistant</h5>
-
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/floorassistant" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-
             </div>
-          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                            <img src={ca} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Cage Application</h5>
-
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/cageapplication" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-
-            </div>
-          </div>
-                        </div>
-                    </div>
-                </div>
+            <div key={3}>
+        <div class="card-space">
+            <img src={papp} class="card-img-top" alt="..."/>
+          
 
 
-
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                    <img src={ptm} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Player Tracking Module</h5>
-
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playertrackingmodule" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-
-            </div>
-          </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                    <img src={cusposc} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Custom POS Application - Casino</h5>
-
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/customposapplication" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-
-            </div>
-          </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                    <img src={pct} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Parking Cashier Terminal</h5>
-
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/smartcityplatform/parkingcashierterminal" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-
-            </div>
-          </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                    <img src={ct} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Connected Taxi</h5>
-
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/smartcityplatform/connectedtaxi" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-
-            </div>
-          </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                    <img src={tivo} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Custom Hospital Parking Management Application</h5>
-
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/smartcityplatform/customhospitalparkingmanagementapplication" target="_blank"  class="btn mo-knowmore mb-2">Know more</a>
-
-            </div>
-          </div>
-                        </div>
-                    </div>
+            <div class="card-body">
+                                                                  
+              <div className='mybtn text-center'>
+                  <h5 class="card-title mt-3 mb-3">Player App</h5>
+                      <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playerapp" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+              </div>
+          </div>     
                 </div>
                 
             </div>
-           
+            <div key={4}>
+                <div class="card-space">
+                    <img src={ca} class="card-img-top" alt="..."/>
+          
+          <div class="card-body">
+                                                                
+            <div className='mybtn text-center'>
+                <h5 class="card-title mt-3 mb-3">Cage Application</h5>
+                    <a href="https://www.addant.com/#/solutions/casinomanagementsystem/cageapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+            </div>
         </div>
-    </div>
 
+
+                
+                </div>
+            </div>
+            <div key={5}>
+                <div class="card-space">
+                    <img src={ptm} class="card-img-top" alt="..."/>
+
+                    <div class="card-body">
+                                                                          
+                      <div className='mybtn text-center'>
+                          <h5 class="card-title mt-3 mb-3">Player Tracking Module</h5>
+                              <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playertrackingmodule" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                      </div>
+                  </div>
+                </div> 
+
+
+
+                </div>
+
+
+                <div key={6}>
+                    <div class="card-space">
+                        <img src={cusposc} class="card-img-top" alt="..."/>
+    
+                        <div class="card-body">
+                                                                              
+                          <div className='mybtn text-center'>
+                              <h5 class="card-title mt-3 mb-3">Custom POS Application - Casino</h5>
+                                  <a href="https://www.addant.com/#/solutions/casinomanagementsystem/customposapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                          </div>
+                      </div>
+                    </div> 
+    
+    
+    
+                    </div>
+
+
+
+
+          
+            {/*<div key={6}>*/}
+            {/*    <h3>6</h3>*/}
+            {/*</div>*/}
+        </Slider>
+        <div style={{ textAlign: "center" }}>
+
+
+    <a class="indicator"  role="button">
+        <img src={left} className="img-fluid btn-arrow" onClick={previous} />
+    </a> &nbsp;&nbsp;
+    <a class="w-aut indicator" role="button" >
+        <img src={right} className="img-fluid btn-arrow" onClick={next} />
+    </a>
+        </div>
 </div>
 
-
-<div class="text-center pe-md-4">
-        <a class="indicator" href="#recipeCarousel1" role="button" data-bs-slide="prev">
-         <img src={left} className="img-fluid btn-arrow" />
-        </a> &nbsp;&nbsp;
-        <a class="w-aut indicator" href="#recipeCarousel1" role="button" data-bs-slide="next">
-        <img src={right} className="img-fluid btn-arrow" />
-        </a>
-      </div>
-    </div>
-  </div>
-                                          </div>
-
-                                          {/*<div>*/}
-
-                                          {/*    <Carousel>*/}
-                                          {/*        <Carousel.Item>*/}
-                                          {/*            <KioskHandling></KioskHandling> */}
-                                          {/*        </Carousel.Item>*/}
-                                          {/*        <Carousel.Item>*/}
-                                          {/*            <img*/}
-                                          {/*                className="d-block w-100"*/}
-                                          {/*                src="https://pixelprowess.com/i/carousel_flight.png"*/}
-                                          {/*                alt="Second slide"*/}
-                                          {/*            />*/}
-
-                                          {/*            <Carousel.Caption>*/}
-                                          {/*                <h3>Second slide label</h3>*/}
-                                          {/*                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>*/}
-                                          {/*            </Carousel.Caption>*/}
-                                          {/*        </Carousel.Item>*/}
-                                          {/*    </Carousel>*/}
-
-                                          {/*</div>*/}
+  
                                       </div>
 
                                   </article>
@@ -815,70 +750,45 @@ const CustomDot = styled.li`
 
                                       <div className='gallery container-fluid mt-3'>
                                       <div class="row ">
-    <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
 
-      
-
-      <div class=" text-center my-3">
-    <div class="row mx-auto my-auto justify-content-center">
-        <div id="recipeCarousel2" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <div class="col-md-4">
-                        
-
-
-                        <div class="card">
+                                        <div className='col-4 p-0'>
+                                        <div class="card-space">
+                    <div>
                         <img src={webad} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Web Admin</h5>
-
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/webadmin" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-
-            </div>
-          </div>
-                        </div>
-                    </div>
-
+    
+                        <div class="card-body">
+                                                                              
+                          <div className='mybtn text-center'>
+                              <h5 class="card-title mt-3 mb-3">Web Admin</h5>
+                                  <a href="https://www.addant.com/#/solutions/casinomanagementsystem/webadmin" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                          </div>
+                      </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                    <img src={swp} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Smart Web Platform</h5>
 
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/smartcityplatform/smartwebplatform" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-
-            </div>
-          </div>
-                        </div>
                     </div>
-                </div>
-             
-            </div>
-           
-        </div>
-    </div>
-
-</div>
-
-
-<div class="text-center pe-md-4">
-        <a class="indicator" href="#recipeCarousel2" role="button" data-bs-slide="prev">
-         <img src={left} className="img-fluid btn-arrow" />
-        </a> &nbsp;&nbsp;
-        <a class="w-aut indicator" href="#recipeCarousel2" role="button" data-bs-slide="next">
-        <img src={right} className="img-fluid btn-arrow" />
-        </a>
-      </div>
-    </div>
-  </div>  
                                         </div>
+
+
+                                        <div className='col-4 p-0'>
+                                        <div class="card-space">
+                    <img src={swp} class="card-img-top" alt="..."/>
+    
+                    <div class="card-body">
+                                                                          
+                      <div className='mybtn text-center'>
+                          <h5 class="card-title mt-3 mb-3">Smart Web Platform</h5>
+                              <a href="https://www.addant.com/#/solutions/smartcityplatform/smartwebplatform" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                      </div>
+                  </div>
+
+
+
+                
+
+                </div>
+                                        </div>
+  </div>
+                                      </div>
 
                                   </article>
 
@@ -921,130 +831,134 @@ const CustomDot = styled.li`
                                       </div>
 
 
-                                      <div className='gallery container-fluid mt-3'>
-                                      <div class="row ">
-    <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
-
-      
-
-      <div class=" text-center my-3">
-    <div class="row mx-auto my-auto justify-content-center">
-        <div id="recipeCarousel3" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <div class="col-md-4">
-                        
-
-
-                        <div class="card">
+                                      <div>
+        <Slider ref={setSlider} {...setting}>
+            <div key={1}>
+        <div class="card-space">
+                    <div>
                         <img src={ptm} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Player Tracking Module</h5>
+    
+                        <div class="card-body">
+                                                                              
+                          <div className='mybtn text-center'>
+                              <h5 class="card-title mt-3 mb-3">Player Tracking Module</h5>
+                                  <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playertrackingmodule" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                          </div>
+                      </div>
+                </div>
 
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playertrackingmodule" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-
-            </div>
-          </div>
-                        </div>
                     </div>
 
-                </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
+            </div>
+            <div key={2}>
+                <div class="card-space">
                     <img src={papp} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Player App</h5>
-
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playerapp" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-
-            </div>
-          </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                   <img src={webad} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Web Admin</h5>
-
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/webadmin" target="_blank"  class="btn mo-knowmore mb-2">Know more</a>
-
-            </div>
-          </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                    <img src={kis} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Multi Service Kiosk</h5>
-
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/smartcityplatform/multiservicekisokapplication" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-
-            </div>
-          </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
-                    <img src={fs} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Floor Assistant</h5>
-
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/floorassistant" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-
-            </div>
-          </div>
-                        </div>
-                    </div>
-                </div>
-             
-            </div>
-           
-        </div>
-    </div>
-
-</div>
-
-
-<div class="text-center pe-md-4">
-        <a class="indicator" href="#recipeCarousel3" role="button" data-bs-slide="prev">
-         <img src={left} className="img-fluid btn-arrow" />
-        </a> &nbsp;&nbsp;
-        <a class="w-aut indicator" href="#recipeCarousel3" role="button" data-bs-slide="next">
-        <img src={right} className="img-fluid btn-arrow" />
-        </a>
+    
+    <div class="card-body">
+                                                          
+      <div className='mybtn text-center'>
+          <h5 class="card-title mt-3 mb-3">Player App</h5>
+              <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playerapp" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
       </div>
-    </div>
-  </div> 
-                                      </div>
+  </div>
+
+
+
+                
+
+                </div>
+            </div>
+
+
+            <div key={3}>
+                <div class="card-space">
+                    <img src={webad} class="card-img-top" alt="..."/>
+    
+                    <div class="card-body">
+                                                                          
+                      <div className='mybtn text-center'>
+                          <h5 class="card-title mt-3 mb-3">Web Admin</h5>
+                              <a href="https://www.addant.com/#/solutions/casinomanagementsystem/webadmin" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                      </div>
+                  </div>
+
+
+
+                
+
+                </div>
+            </div>
+
+
+
+            <div key={4}>
+                <div class="card-space">
+                    <img src={kis} class="card-img-top" alt="..."/>
+    
+                    <div class="card-body">
+                                                                          
+                      <div className='mybtn text-center'>
+                          <h5 class="card-title mt-3 mb-3">Multi Service Kiosk</h5>
+                              <a href="https://www.addant.com/#/solutions/smartcityplatform/multiservicekisokapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                      </div>
+                  </div>
+
+
+
+                
+
+                </div>
+            </div>
+
+
+
+
+            <div key={5}>
+                <div class="card-space">
+                    <img src={fs} class="card-img-top" alt="..."/>
+    
+    <div class="card-body">
+                                                          
+      <div className='mybtn text-center'>
+          <h5 class="card-title mt-3 mb-3">Floor Assistant</h5>
+              <a href="https://www.addant.com/#/solutions/casinomanagementsystem/floorassistant" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+      </div>
+  </div>
+
+
+
+                
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+          
+
+
+
+
+            
+            {/*<div key={6}>*/}
+            {/*    <h3>6</h3>*/}
+            {/*</div>*/}
+        </Slider>
+        <div style={{ textAlign: "center" }}>
+
+
+    <a class="indicator"  role="button">
+        <img src={left} className="img-fluid btn-arrow" onClick={previous} />
+    </a> &nbsp;&nbsp;
+    <a class="w-aut indicator" role="button" >
+        <img src={right} className="img-fluid btn-arrow" onClick={next} />
+    </a>
+        </div>
+</div>
 
                                   </article>
 
@@ -1083,69 +997,43 @@ const CustomDot = styled.li`
 
                                       <div className='gallery container-fluid mt-3'>
                                       <div class="row ">
-    <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
 
-      
-
-      <div class=" text-center my-3">
-    
-    <div class="row mx-auto my-auto justify-content-center">
-        <div id="recipeCarousel4" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <div class="col-md-4">
-                        
-
-
-                        <div class="card">
+                                        <div className='col-4 p-0'>
+                                        <div class="card-space">
+                    <div>
                         <img src={webad} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Web Admin</h5>
-
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/webadmin" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
-
-            </div>
-          </div>
-                        </div>
-                    </div>
-
+    
+                        <div class="card-body">
+                                                                              
+                          <div className='mybtn text-center'>
+                              <h5 class="card-title mt-3 mb-3">Web Admin</h5>
+                                  <a href="https://www.addant.com/#/solutions/casinomanagementsystem/webadmin" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                          </div>
+                      </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="col-md-4">
-                    <div class="card">
+
+                    </div>
+                                        </div>
+
+
+                                        <div className='col-4 p-0'>
+                                        <div class="card-space">
                     <img src={swp} class="card-img-top" alt="..."/>
-          <div class="card-body">
-            <h5 class="card-title mt-0">Smart Web Platform</h5>
+    
+                    <div class="card-body">
+                                                                          
+                      <div className='mybtn text-center'>
+                          <h5 class="card-title mt-3 mb-3">Smart Web Platform</h5>
+                              <a href="https://www.addant.com/#/solutions/smartcityplatform/smartwebplatform" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                      </div>
+                  </div>
 
-            
-            <div className='mybtn text-center mt-2'>
-            <a href="https://www.addant.com/#/solutions/smartcityplatform/smartwebplatform" target="_blank" class="btn mo-knowmore mb-2">Know more</a>
 
-            </div>
-          </div>
-                        </div>
-                    </div>
+
+                
+
                 </div>
-             
-            </div>
-           
-        </div>
-    </div>
-
-</div>
-
-
-<div class="text-center pe-md-4">
-        <a class="indicator" href="#recipeCarousel4" role="button" data-bs-slide="prev">
-         <img src={left} className="img-fluid btn-arrow" />
-        </a> &nbsp;&nbsp;
-        <a class="w-aut indicator" href="#recipeCarousel4" role="button" data-bs-slide="next">
-        <img src={right} className="img-fluid btn-arrow" />
-        </a>
-      </div>
-    </div>
+                                        </div>
   </div>
                                       </div>
 

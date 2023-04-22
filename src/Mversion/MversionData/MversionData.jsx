@@ -14,7 +14,6 @@ import nosql from "../../../src/assets/nosql.svg";
 import mongo from "../../../src/assets/mongo.svg";
 
 
-
 function MversionData() {
     let navigate = useNavigate();
     const Cloud = () => navigate(-1);

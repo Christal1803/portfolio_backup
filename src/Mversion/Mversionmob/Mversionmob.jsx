@@ -19,8 +19,6 @@ import react from "../../../src/assets/react.svg";
 import ios from "../../../src/assets/ios.svg";
 import andriod from "../../../src/assets/andriod.svg";
 
-
-
 function Mversionmob() {
     let navigate = useNavigate();
     const Cloud = () => navigate(-1);

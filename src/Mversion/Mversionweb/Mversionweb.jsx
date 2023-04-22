@@ -13,8 +13,6 @@ import html from "../../../src/assets/html.svg";
 import bootstrap from "../../../src/assets/bootstrap.svg";
 
 
-
-
 function Mversionweb() {
     let navigate = useNavigate();
     const Cloud = () => navigate(-1);

@@ -11,8 +11,8 @@ html {
     max-width: 1236px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 0px;
+    padding-right: 0px;
     position: relative;
   }
   
@@ -296,9 +296,3 @@ html {
     height: 35px !important;
     width: 35px;
   }
-  span.carousel-control-prev-icon {
-    display: none;
-}
-span.carousel-control-next-icon {
-    display: none;
-}

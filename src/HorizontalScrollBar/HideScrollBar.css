@@ -6,4 +6,13 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+  .react-horizontal-scrolling-menu--scroll-container {
+    background: pink !important;
+    height: 500px !important;
+  }
+  .react-horizontal-scrolling-menu--item {
+    background-color: aquamarine;
+    height: 500px !important;
+  }
+  
   

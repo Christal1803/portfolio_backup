@@ -29,8 +29,9 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-      <Route path="demo" element={<Demo />} />
+     
       <Route path="Newnav" element={<Newnav />} />
+      <Route path="demo" element={<Demo />} />
       <Route path="/" element={<App />} />
       <Route path="home" element={<KioskHandling />} />
       <Route path="partnership_Discovery" element={<Partnership_Discovery />} />

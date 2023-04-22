@@ -265,11 +265,11 @@ function ExecutionPhase02() {
           <div class="b-color">
           <div class="partnership-content">
             <p class="partnership-content-head mb-1">How</p>
-            <p class="partnership-content-para">Leveraging BRD and software spec, a dive deep exercise to design a system that will satisfy both functional and non-functional (system performance related) requirements. Accessibility (a11y) and Localization (l10n) are part of this architecture. Careful decisions on its dependency libraries and how the system can scale and extend for future demands.</p>
+            <p class="partnership-content-para">Leveraging BRD and software spec, a dive deep exercise to design a system that will satisfy both functional and non-functional (system performance related) requirements.</p>
             <p class="partnership-content-head mt-3 mb-2">Who</p>
             <p class="partnership-content-para">Software Architect, QA Head (Horizontal Function)</p>
             <p class="partnership-content-head mt-3 mb-2">Outcome</p>
-            <p class="partnership-content-para">Design Document,Test Strategy</p>
+            <p class="partnership-content-para">Design Document,Test Strategy</p>  
           </div>
           </div>
           

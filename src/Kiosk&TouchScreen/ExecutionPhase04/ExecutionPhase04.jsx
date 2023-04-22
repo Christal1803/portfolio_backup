@@ -549,7 +549,7 @@ function ExecutionPhase04() {
           <div class="b-color">
           <div class="partnership-content">
             <p class="partnership-content-head mb-1">How</p>
-            <p class="partnership-content-para">Most likely the logging framework will tell us what went wrong. If not, dev/qa lab will be able to recreate the issue and resolve it. Change management process to apply and track major system changes after production.</p>
+            <p class="partnership-content-para">Most likely the logging framework will tell us what went wrong. If not, dev/qa lab will be able to recreate the issue and resolve it. Change management process to apply and track major system.</p>
             <p class="partnership-content-head mt-3 mb-2">Who</p>
             <p class="partnership-content-para">Delivery team (Business Unit)</p>
             <p class="partnership-content-head mt-3 mb-2">Outcome</p>

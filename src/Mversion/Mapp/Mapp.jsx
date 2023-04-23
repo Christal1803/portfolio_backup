@@ -4,7 +4,7 @@ import Slider from "react-slick";
 
 
 import cardimg from "../../../src/assets/tivo.svg";
-import './Demo.css';
+import '../Demo/Demo.css';
 import { HeadProvider, Title, Link, Meta } from 'react-head';
 
 import alivis from "../../../src/assets/alivis.svg";
@@ -14,9 +14,15 @@ import kis from "../../../src/assets/kis.svg";
 import alic from "../../../src/assets/alic.svg";
 import left from "../../../src/assets/leftarrow.svg";
 import right from "../../../src/assets/rightarrow.svg";
+import cuspos from "../../../src/assets/cupos.svg";
+import papp from "../../../src/assets/papp.svg";
+import fs from "../../../src/assets/fs.svg";
+import ca from "../../../src/assets/ca.svg";
+import ptm from "../../../src/assets/ptm.svg";
+import cusposc from "../../../src/assets/cusposc.svg";
 
 
-function Demo() {
+function Mapp() {
 
     const [slider, setSlider] = useState(null);
 
@@ -37,21 +43,17 @@ function Demo() {
     }, [slider]);
 
     return (
-
         <div>
             <Slider ref={setSlider} {...setting}>
                 <div key={1}>
                     <div class="card-space">
                         <div>
                             <img src={flc} class="card-img-top img-fluid" alt="..." />
-
-
-
                             <div class="card-body">
 
                                 <div className='mybtn text-center'>
-                                    <h5 class="card-title mt-3 mb-3">Floor Client</h5>
-                                    <a href="https://www.addant.com/#/solutions/casinomanagementsystem/floorclientt" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                    <h5 class="card-title mt-3 mb-3">QR Code validation & payment app</h5>
+                                    <a href="https://www.addant.com/#/solutions/smartcityplatform/qrcodevalidationpaymentapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                 </div>
                             </div>
                         </div>
@@ -61,15 +63,13 @@ function Demo() {
                 </div>
                 <div key={2}>
                     <div class="card-space">
-                        <img src={alivis} class="card-img-top img-fluid" alt="..." />
-
-
+                        <img src={cuspos} class="card-img-top" alt="..." />
 
                         <div class="card-body">
 
                             <div className='mybtn text-center'>
-                                <h5 class="card-title mt-3 mb-3">Virtual Receptionist</h5>
-                                <a href="https://www.addant.com/#/solutions/hospitalitymanagement/alicereceptionist" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                <h5 class="card-title mt-3 mb-3">Custom POS Application</h5>
+                                <a href="https://www.addant.com/#/solutions/smartcityplatform/customposapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                             </div>
                         </div>
 
@@ -81,15 +81,15 @@ function Demo() {
                 </div>
                 <div key={3}>
                     <div class="card-space">
-                        <img src={kis} class="card-img-top img-fluid" alt="..." />
+                        <img src={papp} class="card-img-top" alt="..." />
 
 
 
                         <div class="card-body">
 
                             <div className='mybtn text-center'>
-                                <h5 class="card-title mt-3 mb-3">Multi Service Kiosk</h5>
-                                <a href="https://www.addant.com/#/solutions/smartcityplatform/multiservicekisokapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                <h5 class="card-title mt-3 mb-3">Player App</h5>
+                                <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playerapp" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                             </div>
                         </div>
                     </div>
@@ -97,12 +97,13 @@ function Demo() {
                 </div>
                 <div key={4}>
                     <div class="card-space">
-                        <img src={aliad} class="card-img-top img-fluid" alt="..." />
+                        <img src={ca} class="card-img-top" alt="..." />
+
                         <div class="card-body">
 
                             <div className='mybtn text-center'>
-                                <h5 class="card-title mt-3 mb-3">Directory Admin</h5>
-                                <a href="https://www.addant.com/#/solutions/hospitalitymanagement/aliceadmin" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                <h5 class="card-title mt-3 mb-3">Cage Application</h5>
+                                <a href="https://www.addant.com/#/solutions/casinomanagementsystem/cageapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                             </div>
                         </div>
 
@@ -112,20 +113,43 @@ function Demo() {
                 </div>
                 <div key={5}>
                     <div class="card-space">
-                        <img src={alic} class="card-img-top img-fluid" alt="..." />
+                        <img src={ptm} class="card-img-top" alt="..." />
 
                         <div class="card-body">
 
                             <div className='mybtn text-center'>
-                                <h5 class="card-title mt-3 mb-3">Alice</h5>
-                                <a href="https://www.addant.com/#/solutions/hospitalitymanagement/alicevisitormanagement" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                <h5 class="card-title mt-3 mb-3">Player Tracking Module</h5>
+                                <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playertrackingmodule" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                             </div>
                         </div>
-
-
-
                     </div>
+
+
+
                 </div>
+
+
+                <div key={6}>
+                    <div class="card-space">
+                        <img src={cusposc} class="card-img-top" alt="..." />
+
+                        <div class="card-body">
+
+                            <div className='mybtn text-center'>
+                                <h5 class="card-title mt-3 mb-3">Custom POS Application - Casino</h5>
+                                <a href="https://www.addant.com/#/solutions/casinomanagementsystem/customposapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
                 {/*<div key={6}>*/}
                 {/*    <h3>6</h3>*/}
                 {/*</div>*/}
@@ -141,8 +165,9 @@ function Demo() {
                 </a>
             </div>
         </div>
+
     );
 }
-    
 
-export default Demo
+
+export default Mapp

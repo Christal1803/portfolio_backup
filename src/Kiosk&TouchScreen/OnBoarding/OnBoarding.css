@@ -258,3 +258,16 @@ height: 122px;
 @media only screen and (min-device-width: 1920px) {
    
 }
+@media (min-width: 320px) and (max-width: 480px) {
+	.container-align {
+		margin: 0px 10px !important;
+	}
+
+	img.img-fluid.humburger {
+		height: 25px;
+	}
+
+	.con-sec {
+		padding: 0px !important;
+	}
+}

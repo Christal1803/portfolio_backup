@@ -24,7 +24,7 @@ function Home() {
       
       <Newnav/>
       <div class="row container-align">
-        <div class="col-lg-7 col-sm-12 col-md-12 my-auto ">
+        <div class="col-lg-7 col-sm-12 col-md-12 my-auto con-sec">
           <p class="para1">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia <span class="highlights">consequat duis enim velit mollit.</span></p>
 
           <p class="para2">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>

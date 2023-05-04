@@ -29,10 +29,7 @@ class Newnav extends Component{
       <div>
         <nav class="navbar container-align">
             <a class="navbar-brand"><img src={logo} class="img-fluid" /></a>
-
-
-
-                <img src={hum} class="img-fluid humburger" />
+            <img src={hum} class="img-fluid humburger" />
         </nav>
 
 

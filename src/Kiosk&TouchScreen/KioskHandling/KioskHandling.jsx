@@ -199,7 +199,7 @@ function KioskHandling() {
   
   const [items] = React.useState(getItems);
   const { disableScroll, enableScroll } = usePreventBodyScroll();
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 850);
   const [progress, setProgress] = useState(0);
   const articleRef = useRef();
   console.log("articleRef:",articleRef)
@@ -326,7 +326,7 @@ const CustomDot = styled.li`
 
 
                           <div class="row container-align g-3">
-                              <div class="col-md-3 my-auto">
+                              <div class="col-md-3">
                                   <nav id="myTab" class="nav nav-pills flex-column">
                                       <p className='m-0'><b className='tab-head'>Our Engagement model</b></p>
                                       <a href="#category_tab1" data-bs-toggle="pill" class="active nav-link mb-3 mt-3" >Engagement model</a>

@@ -2,9 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\src",
+    "\\src\\Home",
     "\\src\\Kiosk&TouchScreen",
-    "\\src\\Kiosk&TouchScreen\\Newnav"
+    "\\src\\Kiosk&TouchScreen\\ExecutionPhase02",
+    "\\src\\Kiosk&TouchScreen\\ExecutionPhase03",
+    "\\src\\Kiosk&TouchScreen\\KioskHandling",
+    "\\src\\Kiosk&TouchScreen\\OnBoarding"
   ],
-  "SelectedNode": "\\src\\Kiosk&TouchScreen\\Newnav\\Newnav.jsx",
+  "SelectedNode": "\\src\\Home\\Home.jsx",
   "PreviewInSolutionExplorer": false
 }

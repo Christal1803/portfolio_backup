@@ -6,6 +6,7 @@ import Boarding from "../../../src/assets/boarding.svg";
 import Ex2 from "../../../src/assets/ex2.svg";
 import Phase2 from "../../../src/assets/02.svg";
 
+
 // import LandImg from "../src/assets/landpageimg.svg";
 // import './ExecutionPhase01.css';
 

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
 import Modal from 'react-modal';
 import './Newnav.css';
-import addant from "../../../src/assets/addant.svg";
+import logo from "../../../src/assets/logo.svg";
 import hum from "../../../src/assets/hum.svg";
 import cancel from "../../../src/assets/cancel.svg";
 
@@ -27,14 +27,10 @@ class Newnav extends Component{
     };
     return (
       <div>
-        <div className='container-fluid nav-container'>
-          <div className='row'>
-            <div className='col-12'>
-              <img src={addant} className='img-fluid'/>
-              <img src={hum} className='img-fluid float-end' onClick={this.toggleModal}/>
-            </div>
-          </div>
-        </div>
+        <nav class="navbar container-align">
+            <a class="navbar-brand"><img src={logo} class="img-fluid" /></a>
+            <img src={hum} class="img-fluid humburger" />
+        </nav>
 
 
        

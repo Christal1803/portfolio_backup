@@ -55,14 +55,8 @@ body {
   }
 
   @media only screen and (max-device-width: 640px) {
-    body {
-      font-size: 2px;
-    }
     .container-align {
       margin: 0px 24px !important;
-  }
-  .para1 {
-    font-size: 35px;
   }
   .row.container-align {
     height: auto;
@@ -112,6 +106,36 @@ body {
   100% { transform: rotate(360deg); }
 }
 
+@media (min-width: 320px) and (max-width: 820px) {
+    .para1 {
+        font-size: 25px;
+        line-height: 38px;
+    }
 
+    .para2 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .para3 {
+        font-size: 20px;
+        line-height: 38px;
+    }
+
+    .move-left {
+        height: 40px !important;
+    }
+
+    .col-lg-7.col-sm-12.col-md-12.my-auto.con-sec {
+        order: 2;
+    }
+
+    .navbar-brand img {
+        margin-top: 0 !important;
+    }
+    .humburger {
+        margin-top: 0 !important;
+    }
+}
 
 

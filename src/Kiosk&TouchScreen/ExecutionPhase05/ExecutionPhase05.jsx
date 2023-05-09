@@ -309,11 +309,11 @@ function ExecutionPhase05() {
        
         <div class="col-lg-6 col-sm-12 col-md-12 my-auto">
           <p class="main-heading">Execution phase<img src={Phase5} class="img-fluid number-align d-inline"/></p>
-          <p class="sub-heading">What are you doing for a final review and signoff?</p>
+          <p class="sub-heading">How to proceed with the final review and signoff procedure?</p>
           <div class="b-color">
             <div class="partnership-content">
               <p class="partnership-content-head mb-1">How</p>
-              <p class="partnership-content-para">Leverage User Acceptance Testing (UAT) to go thru the BRD from step #1 and validate them individually. Any gaps will be fixed as priority unless they are non-blockers for the launch.</p>
+              <p class="partnership-content-para">The approach involves conducting User Acceptance Testing (UAT) to validate each requirement in the Business Requirements Document (BRD) and  prioritise gap resolution, except for non-critical issues, to a successful launch.</p>
               <p class="partnership-content-head mt-3 mb-2">Who</p>
               <p class="partnership-content-para">Business/Subject Matter Experts (SME), Project Manager, Team Lead</p>
               <p class="partnership-content-head mt-3 mb-2">Outcome</p>

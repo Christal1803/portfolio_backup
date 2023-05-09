@@ -364,11 +364,11 @@ function OnBoarding() {
         </div>
         <div class="col-lg-6 col-sm-12 col-md-12 my-auto">
           <p class="main-heading m-0">Onboarding & Kickoff phase</p>
-          <p class="sub-heading">What space your touchscreen is going into?</p>
+          <p class="sub-heading">Have you considered the technical and physical requirements?</p>
           <div class="b-color">
           <div class="partnership-content">
             <p class="partnership-content-head">How</p>
-            <p class="partnership-content-para">Research on its physical fitness in the targeted space, types of hardware devices it needs to interact with, internet availability in the location, light exposure of that location, use of object recognition etc.</p>
+            <p class="partnership-content-para">Extensive research optimises solution performance. We identify performance-affecting factors and make necessary modifications to ensure your solution performs at its best.</p>
             <p class="partnership-content-head mt-3 mb-2">Who</p>
             <p class="partnership-content-para">SME, Project Manager,<br/> Software Architect, UX Designer</p>
             <p class="partnership-content-head mt-3 mb-2">Outcome</p>

@@ -225,7 +225,7 @@ function Partnership_Discovery() {
           <div class="b-color">
           <div class="partnership-content">
             <p class="partnership-content-head">How</p>
-            <p class="partnership-content-para">Carefully pinpoint what you are looking to achieve with your touchscreen solution and how these goals are going to line up with those of your audience.</p>
+            <p class="partnership-content-para">Precisely define your intended outcomes for all solutions and verify that they align with the goals and requirements of your intended audience.</p>
             <p class="partnership-content-head mt-3 mb-2">Who</p>
             <p class="partnership-content-para">Business/Subject <br/>Matter Experts (SME)</p>
             <p class="partnership-content-head mt-3 mb-2">Outcome</p>

@@ -355,57 +355,51 @@ function KioskHandling() {
 
 
 
-                                <article class="tab-pane fade show active" id="category_tab1">
+                                    <article class="tab-pane fade show active" id="category_tab1">
 
-                                    <div>
-                                        <div ref={elementRef} onLoad={handleElementLoad} className="widthlisy"></div>
+                                        <div>
+                                            <div ref={elementRef} onLoad={handleElementLoad} className="widthlisy"></div>
 
-                                        <div onMouseEnter={disableScroll} onMouseLeave={enableScroll}>
+                                            <div onMouseEnter={disableScroll} onMouseLeave={enableScroll}>
 
-                                            <ScrollMenu onWheel={onWheel}  >
-                                                {/* <Slider {...settings}>  */}
-                                                {pages.map((page) => (
+                                                <ScrollMenu onWheel={onWheel}  >
+                                                    {/* <Slider {...settings}>  */}
+                                                    {pages.map((page) => (
 
-                                                    <div key={page.id} style={{ width: page.width }} >
+                                                        <div key={page.id} style={{ width: page.width }} >
 
-                                                        <Slider {...settings}>
-                                                            {page.Element}</Slider>
+                                                            <Slider {...settings}>
+                                                                {page.Element}</Slider>
+                                                        </div>
+
+
+                                                    ))}
+                                                    {/* </Slider> */}
+                                                </ScrollMenu>
+                                                {/* Scroll Icon */}
+                                                <div className='scroll-box'>
+                                                    <div className='scroll-rl'>
+                                                        <div className='scroll-left'>
+                                                            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                                <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
+                                                            </svg>
+                                                            Scroll
+                                                        </div>
+                                                        <div className='scroll-right'>Scroll
+                                                            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                                <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
+                                                            </svg>
+                                                        </div>
                                                     </div>
-
-
-                                                ))}
-                                                {/* </Slider> */}
-                                            </ScrollMenu>
-                                          {/* Scroll Icon */}
-                                <div className='scroll-box'>
-                                    <div className='scroll-rl'>
-                                        <div className='scroll-left'>
-                                            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
-                                            </svg>
-                                            Scroll
+                                                    <div>
+                                                        <div className='progressbar'>
+                                                            <div className='progressindicator' style={{ width: `${scrollTop}%` }}></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className='scroll-right'>Scroll
-                                            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div className='progressbar'>
-                                            <div className='progressindicator' style={{ width: `${scrollTop}%` }}></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                        </div>
-
-
-                                    </div>
-
-
-
-                                </article>
+                                    </article>
                               
 
 

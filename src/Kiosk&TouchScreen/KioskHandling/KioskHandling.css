@@ -280,8 +280,19 @@ span.carousel-control-next-icon {
   z-index: 2;
 }
 .progressindicator{
-  background-color: rgb(104, 199, 253);
+  background-color: #0EC79B;
   height: 5px;
+}
+.scroll-box{
+  display: flex;
+  flex-direction: column;
+}
+.scroll-rl{
+  display: flex;
+  justify-content: space-between;
+}
+.scroll-right,.scroll-left,.arrow-color{
+  color: #0EC79B;
 }
   
   

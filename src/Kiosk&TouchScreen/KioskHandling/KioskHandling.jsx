@@ -376,17 +376,7 @@ function KioskHandling() {
                                                 ))}
                                                 {/* </Slider> */}
                                             </ScrollMenu>
-
-
-                                        </div>
-
-
-                                    </div>
-
-
-
-                                </article>
-                                {/* Scroll Icon */}
+                                          {/* Scroll Icon */}
                                 <div className='scroll-box'>
                                     <div className='scroll-rl'>
                                         <div className='scroll-left'>
@@ -407,6 +397,16 @@ function KioskHandling() {
                                         </div>
                                     </div>
                                 </div>
+
+                                        </div>
+
+
+                                    </div>
+
+
+
+                                </article>
+                              
 
 
 

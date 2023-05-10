@@ -104,6 +104,19 @@ function KioskHandling() {
   const [currentPage, setCurrentPage] = useState(0);
   const containerRef = useRef(null);
   const [width, setWidth] = useState(0);
+  //Program For Getting Scroll Value:
+  const [scrollTop, setScrollTop] = useState(0);
+  const onScroll = () =>{
+    const winScroll = document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height)  * 100;
+    setScrollTop(scrolled)
+  }
+  useEffect(()=>{
+    window.addEventListener("scroll",onScroll)
+    return () => window.removeEventListener("scroll",onScroll)
+  },[])
+
   const renderDots = dots => (
    
         <ul style={{ display: 'flex', justifyContent: 'center', margin: 0, padding: 0 , backgroundColor: "black"}}>
@@ -339,6 +352,9 @@ const CustomDot = styled.li`
                                   </nav>
                               </div>
                               <div class="col-md-9 tab-content">
+
+
+                                
                                   <article class="tab-pane fade show active" id="category_tab1">
 
                                       <div>
@@ -370,6 +386,14 @@ const CustomDot = styled.li`
 
 
                                   </article>
+                                  {/* Scroll Icon */}
+                                  <div className='progressbar'>
+                                    <div className='progressindicator' style={{width:`${scrollTop}%`}}></div>
+                                    </div>
+                                  <div className='portfolio-scroller'>
+                                    Scroller
+                                  </div>
+
 
                                   <article class="tab-pane fade" id="category_tab2">
                                       <h6 className='solution_name'>Kiosk & Touchscreen</h6>

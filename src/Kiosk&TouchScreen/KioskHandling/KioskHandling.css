@@ -6,11 +6,11 @@
 
 .react-horizontal-scrolling-menu--scroll-container {
   background: transparent !important;
-  height: 500px !important;
+  height: 600px !important;
 }
 .react-horizontal-scrolling-menu--item {
   background-color: transparent !important;
-  height: 500px !important;
+  height: 600px !important;
 }
 
 .widthlisy {
@@ -266,6 +266,22 @@ span.carousel-control-next-icon {
    border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
-
+.portfolio-scroller{
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+.progressbar{
+  background-color: #d8d8d8;
+  height: 5px;
+  position: sticky;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.progressindicator{
+  background-color: rgb(104, 199, 253);
+  height: 5px;
+}
   
   

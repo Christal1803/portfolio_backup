@@ -216,12 +216,13 @@ function Home() {
           </defs>
           </svg>
         </div>
-          </div>
+      </div>
+  
 
 
-
-
+     
     </div>
+    
   )
 }
 

@@ -261,7 +261,8 @@ function ExecutionPhase02() {
        
         <div class="col-lg-6 col-sm-12 col-md-12 my-auto">
           <p class="main-heading">Execution phase<img src={Phase2} class="img-fluid number-align d-inline"/></p>
-          <p class="sub-heading">What does the system capable of, both from functional and non-functional aspects?</p>
+          <p class="sub-heading">What does the system capable of, both from functional and non-functional aspects?
+</p>
           <div class="b-color">
           <div class="partnership-content">
             <p class="partnership-content-head mb-1">How</p>

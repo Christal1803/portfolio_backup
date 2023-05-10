@@ -357,10 +357,10 @@ function KioskHandling() {
 
                                     <article class="tab-pane fade show active" id="category_tab1">
 
-                                        <div>
+                                        <div >
                                             <div ref={elementRef} onLoad={handleElementLoad} className="widthlisy"></div>
 
-                                            <div onMouseEnter={disableScroll} onMouseLeave={enableScroll}>
+                                            <div >
 
                                                 <ScrollMenu onWheel={onWheel}  >
                                                     {/* <Slider {...settings}>  */}

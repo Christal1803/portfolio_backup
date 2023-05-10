@@ -228,12 +228,13 @@ function ExecutionPhase03() {
        
         <div class="col-lg-6 col-sm-12 col-md-12 my-auto">
           <p class="main-heading">Execution phase<img src={Phase3} class=" img-fluid number-align d-inline"/></p>
-          <p class="sub-heading">What are you doing to increase my confidence in validating step #1?</p>
+          <p class="sub-heading">What are you doing to increase my confidence in validating step #1?
+</p>
           <div class="b-color">
           <div class="partnership-content">
             <p class="partnership-content-head mb-1">How</p>
             <p class="partnership-content-para">
-Agile dev practices to build and test features. Build basic infrastructure for emitting business and performance metrics, which will be instrumented with each feature development. Adapt industry standard logging and auditing framework to report issues and findings. Leverage iterative releases to incorporate feedbacks and improve the system. QA function will also perform test case executions (functional and non-functional) and put together a framework for automations.</p>
+            Adopt Agile practices for feature development and testing, integrating business and performance metrics. Implement logging and auditing frameworks, leveraging iterative releases for continuous improvement. QA function executes test cases and develops automation framework</p>
             <p class="partnership-content-head mt-3 mb-2">Who</p>
             <p class="partnership-content-para">Business/Subject <br/>Matter Experts (SME)</p>
             <p class="partnership-content-head mt-3 mb-2">Outcome</p>

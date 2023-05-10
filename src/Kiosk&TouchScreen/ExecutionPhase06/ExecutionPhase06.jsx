@@ -315,11 +315,12 @@ function ExecutionPhase06() {
        
         <div class="col-lg-6 col-sm-12 col-md-12 my-auto">
           <p class="main-heading">Execution phase<img src={Phase6} class="img-fluid number-align d-inline"/></p>
-          <p class="sub-heading">What are you doing to make sure post launch success?</p>
+          <p class="sub-heading">What steps are taken to ensure success post launch?</p>
           <div class="b-color">
             <div class="partnership-content">
               <p class="partnership-content-head mb-1">How</p>
-              <p class="partnership-content-para">Implementation of operational alarms and monitors, which will report any high severity issues to the delivery team/support engineer to triage and provide timely resolutions.</p>
+              <p class="partnership-content-para">
+               Gathering and analysing user feedback, monitoring performance metrics, addressing any issues promptly, and continuously updating and improving the solution to meet changing needs and expectations.</p>
               <p class="partnership-content-head mt-3 mb-2">Who</p>
               <p class="partnership-content-para">Team Lead, Support Engineer</p>
               <p class="partnership-content-head mt-3 mb-2">Outcome</p>

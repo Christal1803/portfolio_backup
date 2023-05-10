@@ -405,11 +405,11 @@ function ExecutionPhase01() {
        
         <div class="col-lg-6 col-sm-12 col-md-12 my-auto">
           <p class="main-heading m-0">Execution phase <img src={Phase1} class="img-fluid number-align d-inline"/></p>
-          <p class="sub-heading">What is the navigation experience to the user?</p>
+          <p class="sub-heading">Navigation's impact on  user experience?</p>
           <div class="b-color">
           <div class="partnership-content">
             <p class="partnership-content-head mb-1">How</p>
-            <p class="partnership-content-para">Leveraging sitemap approach, come up with various screens and their navigation options, considering accessibility in mind. Storyboard exercise using design sprints will showcase an early prototype of the concept.</p>
+            <p class="partnership-content-para">Utilising a sitemap approach, we create multiple screens and navigation options that prioritise accessibility considerations for solutions. We present an initial prototype of the concept through design sprints and storyboarding exercises.</p>
             <p class="partnership-content-head mt-3 mb-2">Who</p>
             <p class="partnership-content-para">UX Designer<br/>(Horizontal Function)</p>
             <p class="partnership-content-head mt-3 mb-2">Outcome</p>

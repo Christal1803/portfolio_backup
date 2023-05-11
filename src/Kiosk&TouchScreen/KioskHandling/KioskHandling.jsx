@@ -101,6 +101,16 @@ import Mapp from '../../Mversion/Mapp/Mapp'
 
 function KioskHandling() {
 
+    const sliderRef = useRef(null);
+
+    const handleScroll = (e) => {
+      const slider = sliderRef.current;
+      if (slider) {
+        // increase or decrease the current slide index based on the scroll direction
+        slider.slickGoTo(slider.innerSlider.state.currentSlide + (e.deltaY > 0 ? 1 : -1));
+      }
+    };
+
     const [currentPage, setCurrentPage] = useState(0);
     const containerRef = useRef(null);
     const [width, setWidth] = useState(0);
@@ -717,6 +727,7 @@ function KioskHandling() {
 
                                 </article>
 
+  {/********************************************************************************************************************************************************/}
                                 <article class="tab-pane fade" id="category_tab5">
                                     <h6 className='solution_name'>Data Science & Engineering</h6>
                                     <p className='solution_desc'>With our quest to learn and adapt to the evolving algorithms and models, we bring in unique and advanced data engineering methodologies enabling businesses to optimise data towards usability there by ensuring scalability, tailored user driven solutions, and optimised predictive analysis.</p>
@@ -755,9 +766,9 @@ function KioskHandling() {
                                         </span>
                                     </div>
 
-
-                                    <div>
-                                        <Slider ref={setSlider} {...setting}>
+                                    {/* DATA SCIENCE AND ENGINEERING */}
+                                    <div onWheel={handleScroll}>
+                                        <Slider ref={sliderRef} {...setting}>
                                             <div key={1}>
                                                 <div class="card-space">
                                                     <div>
@@ -778,7 +789,6 @@ function KioskHandling() {
                                             <div key={2}>
                                                 <div class="card-space">
                                                     <img src={papp} class="card-img-top" alt="..." />
-
                                                     <div class="card-body">
 
                                                         <div className='mybtn text-center'>
@@ -786,96 +796,46 @@ function KioskHandling() {
                                                             <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playerapp" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                                         </div>
                                                     </div>
-
-
-
-
-
                                                 </div>
                                             </div>
-
-
                                             <div key={3}>
                                                 <div class="card-space">
                                                     <img src={webad} class="card-img-top" alt="..." />
-
                                                     <div class="card-body">
-
                                                         <div className='mybtn text-center'>
                                                             <h5 class="card-title mt-3 mb-3">Web Admin</h5>
                                                             <a href="https://www.addant.com/#/solutions/casinomanagementsystem/webadmin" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                                         </div>
                                                     </div>
-
-
-
-
-
                                                 </div>
                                             </div>
-
-
-
                                             <div key={4}>
                                                 <div class="card-space">
                                                     <img src={kis} class="card-img-top" alt="..." />
-
                                                     <div class="card-body">
-
                                                         <div className='mybtn text-center'>
                                                             <h5 class="card-title mt-3 mb-3">Multi Service Kiosk</h5>
                                                             <a href="https://www.addant.com/#/solutions/smartcityplatform/multiservicekisokapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                                         </div>
                                                     </div>
-
-
-
-
-
                                                 </div>
                                             </div>
-
-
-
-
                                             <div key={5}>
                                                 <div class="card-space">
                                                     <img src={fs} class="card-img-top" alt="..." />
-
                                                     <div class="card-body">
-
                                                         <div className='mybtn text-center'>
                                                             <h5 class="card-title mt-3 mb-3">Floor Assistant</h5>
                                                             <a href="https://www.addant.com/#/solutions/casinomanagementsystem/floorassistant" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                                         </div>
                                                     </div>
-
-
-
-
-
                                                 </div>
                                             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
                                             {/*<div key={6}>*/}
                                             {/*    <h3>6</h3>*/}
                                             {/*</div>*/}
                                         </Slider>
                                         <div style={{ textAlign: "center" }}>
-
-
                                             <a class="indicator" role="button">
                                                 <img src={left} className="img-fluid btn-arrow" onClick={previous} />
                                             </a> &nbsp;&nbsp;
@@ -884,8 +844,9 @@ function KioskHandling() {
                                             </a>
                                         </div>
                                     </div>
-
                                 </article>
+                 {/********************************************************************************************************************************************************/}
+
 
 
                                 <article class="tab-pane fade" id="category_tab6">

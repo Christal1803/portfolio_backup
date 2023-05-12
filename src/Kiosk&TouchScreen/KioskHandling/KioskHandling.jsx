@@ -17,7 +17,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import 'react-magic-slider-dots/dist/magic-dots.css';
 import styled from 'styled-components'
-import Mversiontab from '../../Mversion/Mversiontab/Mversiontab'
+import Mversiontab from '../../Mversion/Mversiontab/Mversiontab';
+import addantProgress from "../../../src/assets/addantProgress.svg";
 
 
 import wpf from "../../../src/assets/wpf.svg";
@@ -101,15 +102,36 @@ import Mapp from '../../Mversion/Mapp/Mapp'
 
 function KioskHandling() {
 
-    const sliderRef = useRef(null);
+    const sliderRef1 = useRef(null);
+    const sliderRef2 = useRef(null);
+    const sliderRef3 = useRef(null);
+    const [scrollProgress,setScrollProgress] = useState(0);
+    const [scrollProgress2,setScrollProgress2] = useState(0);
+    const [scrollProgress3,setScrollProgress3] = useState(0);
+    const [slideToShow,setSlideToShow] = useState(3);
 
-    const handleScroll = (e) => {
-      const slider = sliderRef.current;
+    const handleScroll1 = (e) => {
+      const slider = sliderRef1.current;
       if (slider) {
         // increase or decrease the current slide index based on the scroll direction
         slider.slickGoTo(slider.innerSlider.state.currentSlide + (e.deltaY > 0 ? 1 : -1));
       }
     };
+    const handleScroll2 = (e) => {
+        const slider = sliderRef2.current;
+        if (slider) {
+          // increase or decrease the current slide index based on the scroll direction
+          slider.slickGoTo(slider.innerSlider.state.currentSlide + (e.deltaY > 0 ? 1 : -1));
+        }
+      };
+      const handleScroll3 = (e) => {
+        const slider = sliderRef3.current;
+        if (slider) {
+          // increase or decrease the current slide index based on the scroll direction
+          slider.slickGoTo(slider.innerSlider.state.currentSlide + (e.deltaY > 0 ? 1 : -1));
+        }
+      };
+    
 
     const [currentPage, setCurrentPage] = useState(0);
     const containerRef = useRef(null);
@@ -303,10 +325,36 @@ function KioskHandling() {
 
     const setting = {
         dots: false,
-        infinite: true,
+        infinite: false,
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        afterChange: current =>{
+            setScrollProgress(100 / (5 - slideToShow+1)*(current + 1));
+            console.log(slideToShow)
+        }
+    };
+    const setting2 = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        afterChange: current =>{
+            setScrollProgress2(100 / (5 - slideToShow+1)*(current + 1));
+            console.log(slideToShow)
+        }
+    };
+    const setting3 = {
+        dots: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        afterChange: current =>{
+            setScrollProgress3(100 / (5 - slideToShow+1)*(current + 1));
+            console.log(slideToShow)
+        }
     };
 
     const next = useCallback(() => {
@@ -378,7 +426,7 @@ function KioskHandling() {
 
                                                         <div key={page.id} style={{ width: page.width }} >
 
-                                                            <Slider {...settings}>
+                                                            <Slider  {...settings}>
                                                                 {page.Element}</Slider>
                                                         </div>
 
@@ -388,32 +436,53 @@ function KioskHandling() {
                                                 </ScrollMenu>
                                                 {/* Scroll Icon */}
                                                 <div className='scroll-box'>
-                                                    <div className='scroll-rl'>
-                                                        <div className='scroll-left'>
-                                                            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                                <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
-                                                            </svg>
-                                                            Scroll
-                                                        </div>
-                                                        <div className='scroll-right'>Scroll
-                                                            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                                <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
-                                                            </svg>
-                                                        </div>
+
+                                                <div className='scroll-box-1'>
+                                                <div className='scroll-rl'>
+                                                    <div className='scroll-left'>
+                                                        <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
+                                                        </svg>
+                                                        Scroll
                                                     </div>
-                                                    <div>
-                                                        <div className='progressbar'>
-                                                            <div className='progressindicator' style={{ width: `${scrollTop}%` }}></div>
-                                                        </div>
+                                                    <div className='scroll-right'>Scroll
+                                                        <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
+                                                        </svg>
                                                     </div>
                                                 </div>
+                                                <div>
+                                                    <div className='progressbar'>
+                                                        <div className='progressindicator' style={{ width: `${scrollProgress}%` }}></div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                             
+                                             
+                                                <div className='circle-progress'>
+                                                    <svg viewBox="0 0 100 100" width="100" height="100">
+                                                        <circle className='circle-stroke'
+                                                            cx="50"
+                                                            cy="50"
+                                                            r="40"
+                                                            stroke="#0EC79B"
+                                                            strokeWidth="3"
+                                                            fill="transparent"
+                                                            strokeDasharray={`${scrollProgress * 2.6},810`}
+                                                        />
+                                                    </svg>
+                                                    <img className='addant-image' src={addantProgress} />
+                                                </div>
+                                            
+                                            </div>
+                                                
                                             </div>
                                         </div>
                                     </article>
                               
 
 
-
+{/* ****************************************************************************************************************************************************** */}
                                 <article class="tab-pane fade" id="category_tab2">
                                     <h6 className='solution_name'>Kiosk & Touchscreen</h6>
                                     <p className='solution_desc'>We provide custom kiosk software development for our customers current and future needs. Our kiosk & touchscreen development team builds efficient UIs, multi-tenant services, hardware interfaces, branding management, resource management, and remote administration.</p>
@@ -438,11 +507,123 @@ function KioskHandling() {
                                             <img src={xaml} className='img-fluid rounded-circle' />
                                             <span>XAML</span>
                                         </span>
-                                        <Demo></Demo>
+                                       
                                     </div>
+                                         {/* DATA SCIENCE AND ENGINEERING */}
+                                         <div onMouseEnter={disableScroll} onMouseLeave={enableScroll} onWheel={handleScroll1}>
+                                        <Slider ref={sliderRef1} {...setting}>
+                                            <div key={1}>
+                                            
+                                                <div class="card-space">
+                                                    <div>
+                                                        <img src={ptm} class="card-img-top" alt="..." />
+
+                                                        <div class="card-body">
+
+                                                            <div className='mybtn text-center'>
+                                                                <h5 class="card-title mt-3 mb-3">Player Tracking Module</h5>
+                                                                <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playertrackingmodule" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div key={2}>
+                                                <div class="card-space">
+                                                    <img src={papp} class="card-img-top" alt="..." />
+                                                    <div class="card-body">
+
+                                                        <div className='mybtn text-center'>
+                                                            <h5 class="card-title mt-3 mb-3">Player App</h5>
+                                                            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playerapp" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div key={3}>
+                                                <div class="card-space">
+                                                    <img src={webad} class="card-img-top" alt="..." />
+                                                    <div class="card-body">
+                                                        <div className='mybtn text-center'>
+                                                            <h5 class="card-title mt-3 mb-3">Web Admin</h5>
+                                                            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/webadmin" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div key={4}>
+                                                <div class="card-space">
+                                                    <img src={kis} class="card-img-top" alt="..." />
+                                                    <div class="card-body">
+                                                        <div className='mybtn text-center'>
+                                                            <h5 class="card-title mt-3 mb-3">Multi Service Kiosk</h5>
+                                                            <a href="https://www.addant.com/#/solutions/smartcityplatform/multiservicekisokapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div key={5}>
+                                                <div class="card-space">
+                                                    <img src={fs} class="card-img-top" alt="..." />
+                                                    <div class="card-body">
+                                                        <div className='mybtn text-center'>
+                                                            <h5 class="card-title mt-3 mb-3">Floor Assistant</h5>
+                                                            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/floorassistant" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*<div key={6}>*/}
+                                            {/*    <h3>6</h3>*/}
+                                            {/*</div>*/}
+                                        </Slider>
+                                            <div className='scroll-box'>
+
+                                                <div className='scroll-box-1'>
+                                                <div className='scroll-rl'>
+                                                    <div className='scroll-left'>
+                                                        <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
+                                                        </svg>
+                                                        Scroll
+                                                    </div>
+                                                    <div className='scroll-right'>Scroll
+                                                        <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div className='progressbar'>
+                                                        <div className='progressindicator' style={{ width: `${scrollProgress}%` }}></div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                             
+                                             
+                                                <div className='circle-progress'>
+                                                    <svg viewBox="0 0 100 100" width="100" height="100">
+                                                        <circle
+                                                            cx="50"
+                                                            cy="50"
+                                                            r="40"
+                                                            stroke="#0EC79B"
+                                                            strokeWidth="3"
+                                                            fill="transparent"
+                                                            strokeDasharray={`${scrollProgress * 2.6},810`}
+                                                        />
+                                                    </svg>
+                                                    <img className='addant-image' src={addantProgress} />
+                                                </div>
+                                            
+                                            </div>
+                                    </div>
+                               
 
                                 </article>
-
+{/* ****************************************************************************************************************************************************** */}
 
 
                                 <article class="tab-pane fade" id="category_tab3">
@@ -487,8 +668,116 @@ function KioskHandling() {
                                             <span>Android Native</span>
                                         </span>
 
-                                        <Mapp></Mapp>
+                                        
+                                        <div onWheel={handleScroll2}>
+                                        <Slider ref={sliderRef2} {...setting2}>
+                                            <div key={1}>
+                                                <div class="card-space">
+                                                    <div>
+                                                        <img src={ptm} class="card-img-top" alt="..." />
 
+                                                        <div class="card-body">
+
+                                                            <div className='mybtn text-center'>
+                                                                <h5 class="card-title mt-3 mb-3">Player Tracking Module</h5>
+                                                                <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playertrackingmodule" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div key={2}>
+                                                <div class="card-space">
+                                                    <img src={papp} class="card-img-top" alt="..." />
+                                                    <div class="card-body">
+
+                                                        <div className='mybtn text-center'>
+                                                            <h5 class="card-title mt-3 mb-3">Player App</h5>
+                                                            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playerapp" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div key={3}>
+                                                <div class="card-space">
+                                                    <img src={webad} class="card-img-top" alt="..." />
+                                                    <div class="card-body">
+                                                        <div className='mybtn text-center'>
+                                                            <h5 class="card-title mt-3 mb-3">Web Admin</h5>
+                                                            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/webadmin" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div key={4}>
+                                                <div class="card-space">
+                                                    <img src={kis} class="card-img-top" alt="..." />
+                                                    <div class="card-body">
+                                                        <div className='mybtn text-center'>
+                                                            <h5 class="card-title mt-3 mb-3">Multi Service Kiosk</h5>
+                                                            <a href="https://www.addant.com/#/solutions/smartcityplatform/multiservicekisokapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div key={5}>
+                                                <div class="card-space">
+                                                    <img src={fs} class="card-img-top" alt="..." />
+                                                    <div class="card-body">
+                                                        <div className='mybtn text-center'>
+                                                            <h5 class="card-title mt-3 mb-3">Floor Assistant</h5>
+                                                            <a href="https://www.addant.com/#/solutions/casinomanagementsystem/floorassistant" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/*<div key={6}>*/}
+                                            {/*    <h3>6</h3>*/}
+                                            {/*</div>*/}
+                                        </Slider>
+                                        <div className='scroll-box'>
+
+                                                    <div className='scroll-box-1'>
+                                                        <div className='scroll-rl'>
+                                                            <div className='scroll-left'>
+                                                                <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
+                                                                </svg>
+                                                                Scroll
+                                                            </div>
+                                                            <div className='scroll-right'>Scroll
+                                                                <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div className='progressbar'>
+                                                                <div className='progressindicator' style={{ width: `${scrollProgress2}%` }}></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div className='circle-progress'>
+                                                        <svg viewBox="0 0 100 100" width="100" height="100">
+                                                            <circle
+                                                                cx="50"
+                                                                cy="50"
+                                                                r="40"
+                                                                stroke="#0EC79B"
+                                                                strokeWidth="3"
+                                                                fill="transparent"
+                                                                strokeDasharray={`${scrollProgress2 * 2.6},810`}
+                                                            />
+                                                        </svg>
+                                                        <img className='addant-image' src={addantProgress} />
+                                                    </div>
+
+                                                </div>
+                                            </div>
 
 
 
@@ -715,15 +1004,50 @@ function KioskHandling() {
                                                             <a href="https://www.addant.com/#/solutions/smartcityplatform/smartwebplatform" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                                         </div>
                                                     </div>
-
-
-
-
-
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div className='scroll-box'>
+
+                                                <div className='scroll-box-1'>
+                                                <div className='scroll-rl'>
+                                                    <div className='scroll-left'>
+                                                        <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
+                                                        </svg>
+                                                        Scroll
+                                                    </div>
+                                                    <div className='scroll-right'>Scroll
+                                                        <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div className='progressbar'>
+                                                        <div className='progressindicator' style={{ width: `${scrollProgress}%` }}></div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                             
+                                             
+                                                <div className='circle-progress'>
+                                                    <svg viewBox="0 0 100 100" width="100" height="100">
+                                                        <circle
+                                                            cx="50"
+                                                            cy="50"
+                                                            r="40"
+                                                            stroke="#0EC79B"
+                                                            strokeWidth="3"
+                                                            fill="transparent"
+                                                            strokeDasharray={`${scrollProgress * 2.6},810`}
+                                                        />
+                                                    </svg>
+                                                    <img className='addant-image' src={addantProgress} />
+                                                </div>
+                                            
+                                            </div>
 
                                 </article>
 
@@ -767,8 +1091,8 @@ function KioskHandling() {
                                     </div>
 
                                     {/* DATA SCIENCE AND ENGINEERING */}
-                                    <div onWheel={handleScroll}>
-                                        <Slider ref={sliderRef} {...setting}>
+                                    <div onWheel={handleScroll3}>
+                                        <Slider ref={sliderRef3} {...setting3}>
                                             <div key={1}>
                                                 <div class="card-space">
                                                     <div>
@@ -835,15 +1159,48 @@ function KioskHandling() {
                                             {/*    <h3>6</h3>*/}
                                             {/*</div>*/}
                                         </Slider>
-                                        <div style={{ textAlign: "center" }}>
-                                            <a class="indicator" role="button">
-                                                <img src={left} className="img-fluid btn-arrow" onClick={previous} />
-                                            </a> &nbsp;&nbsp;
-                                            <a class="w-aut indicator" role="button" >
-                                                <img src={right} className="img-fluid btn-arrow" onClick={next} />
-                                            </a>
-                                        </div>
+                                      
                                     </div>
+                                    <div className='scroll-box'>
+
+<div className='scroll-box-1'>
+<div className='scroll-rl'>
+    <div className='scroll-left'>
+        <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+            <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
+        </svg>
+        Scroll
+    </div>
+    <div className='scroll-right'>Scroll
+        <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+            <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
+        </svg>
+    </div>
+</div>
+<div>
+    <div className='progressbar'>
+        <div className='progressindicator' style={{ width: `${scrollProgress3}%` }}></div>
+    </div>
+</div>
+</div>
+
+
+<div className='circle-progress'>
+    <svg viewBox="0 0 100 100" width="100" height="100">
+        <circle
+            cx="50"
+            cy="50"
+            r="40"
+            stroke="#0EC79B"
+            strokeWidth="3"
+            fill="transparent"
+            strokeDasharray={`${scrollProgress3 * 2.6},810`}
+        />
+    </svg>
+    <img className='addant-image' src={addantProgress} />
+</div>
+
+</div>
                                 </article>
                  {/********************************************************************************************************************************************************/}
 
@@ -922,6 +1279,46 @@ function KioskHandling() {
                                             </div>
                                         </div>
                                     </div>
+                                    <div className='scroll-box'>
+
+                                                <div className='scroll-box-1'>
+                                                <div className='scroll-rl'>
+                                                    <div className='scroll-left'>
+                                                        <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
+                                                        </svg>
+                                                        Scroll
+                                                    </div>
+                                                    <div className='scroll-right'>Scroll
+                                                        <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                            <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div className='progressbar'>
+                                                        <div className='progressindicator' style={{ width: `${scrollProgress}%` }}></div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                             
+                                             
+                                                <div className='circle-progress'>
+                                                    <svg viewBox="0 0 100 100" width="100" height="100">
+                                                        <circle
+                                                            cx="50"
+                                                            cy="50"
+                                                            r="40"
+                                                            stroke="#0EC79B"
+                                                            strokeWidth="3"
+                                                            fill="transparent"
+                                                            strokeDasharray={`${scrollProgress * 2.6},810`}
+                                                        />
+                                                    </svg>
+                                                    <img className='addant-image' src={addantProgress} />
+                                                </div>
+                                            
+                                            </div>
 
                                 </article>
 

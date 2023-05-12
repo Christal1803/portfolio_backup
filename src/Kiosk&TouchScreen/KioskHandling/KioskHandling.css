@@ -21,7 +21,7 @@
 nav#myTab {
     background: #f7f7f7;
     border-radius: 26px;
-    padding: 1rem;
+    padding: 80px 20px;
   
 }
 
@@ -126,9 +126,9 @@ span.technology.badge.rounded-pill.ms-3 {
 
 .col-md-9.tab-content {
     padding: 1.5rem;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #f8f8f8;
     border-radius: 15px;
-    height: 615px;
+    /* height: 580px; */
 }
 
 .tab-head {
@@ -262,9 +262,9 @@ span.carousel-control-next-icon {
 }
 .mybtn.text-center {
   box-shadow: 0px 3.75px 11.25px rgba(0, 0, 0, 0.05);
-
    border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  background: white;
 }
 .portfolio-scroller{
   position: absolute;
@@ -276,7 +276,7 @@ span.carousel-control-next-icon {
   height: 5px;
   position: sticky;
   left: 0;
-  width: 100%;
+  width: 95%;
   z-index: 2;
 }
 .progressindicator{
@@ -285,14 +285,72 @@ span.carousel-control-next-icon {
 }
 .scroll-box{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 100px;
+  /* background-color: #888888; */
 }
 .scroll-rl{
   display: flex;
   justify-content: space-between;
+  width: 95%;
 }
 .scroll-right,.scroll-left,.arrow-color{
   color: #0EC79B;
 }
-  
-  
+.addant-progress-icon{
+  position: absolute;
+  right: 0;
+  margin-top: px;
+  margin-right: 5%;
+ 
+}
+.addantLoader{
+  position: relative;
+  z-index: 5;
+  margin-left: -66px;
+}
+.addantProgress{
+  position: absolute;
+  margin-right: 50px;
+}
+.circle-progress{
+  height: 70px;
+  width: 70px;
+  position: relative;
+margin-top: -20px;
+  right: 0;
+  margin-right: 13%;
+margin-bottom: -100px;
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+
+}
+.circle-progress-value{
+ display: block;
+ height: calc(100% - 15px);
+ width: calc(100% - 15px);
+ /* background-color: rgb(24, 23, 23); */
+ border-radius: 50%;
+ display: grid;
+ place-items: center;
+ font-weight: 500;
+}
+.progress-ring__circle {
+  transition: stroke-dasharray 0.3s ease;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-linecap: round;
+}
+.addant-image{
+  position: absolute;
+  transform: translate(28%,28%);
+}
+.scroll-box-1{
+  width: 100%;
+  /* background-color: #d1cece; */
+}
+.circle-stroke{
+  stroke: #0ec79b;
+}

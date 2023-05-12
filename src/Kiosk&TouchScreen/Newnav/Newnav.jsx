@@ -28,7 +28,7 @@ class Newnav extends Component{
     return (
       <div>
         <nav class="navbar container-align">
-            <a class="navbar-brand"><img src={logo} class="img-fluid" /></a>
+            <a class="navbar-brand"><img src={logo} class="img-fluid nav-logo" /></a>
             <img src={hum} class="img-fluid humburger" />
         </nav>
 

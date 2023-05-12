@@ -99,4 +99,7 @@ a.dropdown-item:hover li {
     height: 100vh;
     padding: 2rem;
 }
+.nav-logo{
+    margin-left: 20px;
+}
 

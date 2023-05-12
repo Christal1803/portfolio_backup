@@ -113,7 +113,7 @@ function KioskHandling() {
     const [scrollProgress3, setScrollProgress3] = useState(32.2);
     const [scrollProgress4, setScrollProgress4] = useState(100);
     const [scrollProgress5, setScrollProgress5] = useState(100);
-    const [scrollProgress6, setScrollProgress6] = useState(32.2);
+    const [scrollProgress6, setScrollProgress6] = useState(5);
     const [slideToShow, setSlideToShow] = useState(3);
 
     const handleScroll1 = (e) => {
@@ -412,7 +412,7 @@ function KioskHandling() {
         slidesToShow: 1,
         slidesToScroll: 1,
         afterChange: current => {
-            setScrollProgress6(100 / (5 - slideToShow + 1) * (current + 1));
+            setScrollProgress6(100 / (10 - slideToShow + 1) * (current + 1));
             console.log(slideToShow)
         }
     };
@@ -476,12 +476,12 @@ function KioskHandling() {
                                 <article class="tab-pane fade show active" id="category_tab1">
 
                                     <div >
-                                        <div ref={elementRef} onLoad={handleElementLoad} className="widthlisy"></div>
+                                        {/* <div ref={elementRef} onLoad={handleElementLoad} className="widthlisy"></div> */}
 
                                         <div >
 
-                                            <ScrollMenu  >
-                                                {/* <Slider {...settings}>  */}
+                                            {/* <ScrollMenu onWheel={onWheel}  >
+                                              
                                                 {pages.map((page) => (
 
                                                     <div key={page.id} style={{ width: page.width }} >
@@ -492,53 +492,85 @@ function KioskHandling() {
 
 
                                                 ))}
-                                                {/* </Slider> */}
-                                            </ScrollMenu>
-                                            {/* Scroll Icon */}
-                                            <div className='scroll-box'>
 
-                                                <div className='scroll-box-1'>
-                                                    <div className='scroll-rl'>
-                                                        <div className='scroll-left'>
-                                                            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                                <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
-                                                            </svg>
-                                                            Scroll
+                                            </ScrollMenu> */}
+                                                <div onMouseEnter={disableScroll} onMouseLeave={enableScroll} onWheel={handleScroll6}>
+                                                    <Slider ref={sliderRef6} {...setting6}>
+                                                        <div key={1}>
+                                                            <Partnership_Discovery />
                                                         </div>
-                                                        <div className='scroll-right'>Scroll
-                                                            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                                <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
-                                                            </svg>
+                                                        <div key={2}>
+                                                            <OnBoarding />
                                                         </div>
-                                                    </div>
-                                                    <div>
-                                                        <div className='progressbar'>
-                                                            <div className='progressindicator' style={{ width: `${scrollProgress6}%` }}></div>
+                                                        <div key={3}>
+                                                            <ExecutionPhase01 />
                                                         </div>
-                                                    </div>
+                                                        <div key={4}>
+                                                            <ExecutionPhase02 />
+                                                        </div>
+                                                        <div key={5}>
+                                                            <ExecutionPhase03 />
+                                                        </div>
+                                                        <div key={6}>
+                                                            <ExecutionPhase04 />
+                                                        </div>
+                                                        <div key={7}>
+                                                            <ExecutionPhase05 />
+                                                        </div>
+                                                        <div key={8}>
+                                                            <ExecutionPhase06 />
+                                                        </div>
+                                                    </Slider>
                                                 </div>
 
 
-                                                <div className='circle-progress'>
-                                                    <svg viewBox="0 0 100 100" width="100" height="100">
-                                                        <circle className='circle-stroke'
-                                                            cx="50"
-                                                            cy="50"
-                                                            r="40"
-                                                            stroke="#0EC79B"
-                                                            strokeWidth="3"
-                                                            fill="transparent"
-                                                            strokeDasharray={`${scrollProgress6 * 2.6},810`}
-                                                        />
-                                                    </svg>
-                                                    <img className='addant-image' src={addantProgress} />
+
+
+                                                {/* Scroll Icon */}
+                                                <div className='scroll-box'>
+
+                                                    <div className='scroll-box-1'>
+                                                        <div className='scroll-rl'>
+                                                            <div className='scroll-left'>
+                                                                <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
+                                                                </svg>
+                                                                Scroll
+                                                            </div>
+                                                            <div className='scroll-right'>Scroll
+                                                                <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div className='progressbar'>
+                                                                <div className='progressindicator' style={{ width: `${scrollProgress6}%` }}></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div className='circle-progress'>
+                                                        <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
+                                                            <circle className='circle-stroke'
+                                                                cx="50"
+                                                                cy="50"
+                                                                r="40"
+                                                                stroke="#0EC79B"
+                                                                strokeWidth="3"
+                                                                fill="transparent"
+                                                                strokeDasharray={`${scrollProgress6 * 2.6},810`}
+                                                            />
+                                                        </svg>
+                                                        <img className='addant-image' src={addantProgress} />
+                                                    </div>
+
                                                 </div>
 
                                             </div>
-
                                         </div>
-                                    </div>
-                                </article>
+                                    </article>
 
 
 
@@ -664,7 +696,7 @@ function KioskHandling() {
 
 
                                             <div className='circle-progress'>
-                                                <svg viewBox="0 0 100 100" width="100" height="100">
+                                                <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
                                                     <circle
                                                         cx="50"
                                                         cy="50"
@@ -822,7 +854,7 @@ function KioskHandling() {
 
 
                                                 <div className='circle-progress'>
-                                                    <svg viewBox="0 0 100 100" width="100" height="100">
+                                                    <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
                                                         <circle
                                                             cx="50"
                                                             cy="50"
@@ -1062,6 +1094,11 @@ function KioskHandling() {
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div key={3}>
+                                                <div class="card-space">
+                                                    
+                                                </div>
+                                            </div>
                                             {/*<div key={6}>*/}
                                             {/*    <h3>6</h3>*/}
                                             {/*</div>*/}
@@ -1129,7 +1166,7 @@ function KioskHandling() {
 
 
                                         <div className='circle-progress'>
-                                            <svg viewBox="0 0 100 100" width="100" height="100">
+                                            <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
                                                 <circle
                                                     cx="50"
                                                     cy="50"
@@ -1282,7 +1319,7 @@ function KioskHandling() {
 
 
                                         <div className='circle-progress'>
-                                            <svg viewBox="0 0 100 100" width="100" height="100">
+                                            <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
                                                 <circle
                                                     cx="50"
                                                     cy="50"
@@ -1364,6 +1401,12 @@ function KioskHandling() {
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div key={3}>
+                                                <div class="card-space">
+                                                
+                                                
+                                                </div>
+                                            </div>
                                             {/*<div key={6}>*/}
                                             {/*    <h3>6</h3>*/}
                                             {/*</div>*/}
@@ -1428,14 +1471,14 @@ function KioskHandling() {
                                             </div>
                                             <div>
                                                 <div className='progressbar'>
-                                                    <div className='progressindicator' style={{ width: `${scrollProgress5}%` }}></div>
+                                                    <div className='progressindicator' style={{ width: `100%` }}></div>
                                                 </div>
                                             </div>
                                         </div>
 
 
                                         <div className='circle-progress'>
-                                            <svg viewBox="0 0 100 100" width="100" height="100">
+                                            <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
                                                 <circle
                                                     cx="50"
                                                     cy="50"
@@ -1443,7 +1486,7 @@ function KioskHandling() {
                                                     stroke="#0EC79B"
                                                     strokeWidth="3"
                                                     fill="transparent"
-                                                    strokeDasharray={`${scrollProgress5 * 2.6},810`}
+                                                    strokeDasharray={`260%`}
                                                 />
                                             </svg>
                                             <img className='addant-image' src={addantProgress} />

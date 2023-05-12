@@ -21,12 +21,12 @@
 nav#myTab {
     background: #f7f7f7;
     border-radius: 26px;
-    padding: 80px 20px;
+    padding: 30px 20px;
   
 }
 
 .card-space{
-    padding:20px
+    padding:10px
 }
 
 a.nav-link.active {
@@ -56,8 +56,8 @@ a.nav-link {
     font-size: 14px;
     line-height: 24px;
     color: #515151;
-    border: 0.5px solid #0ec79b !important;
-    margin-top: 20px;
+    border: 0.5px solid #28ddb2 !important;
+    margin-top: 25px;
 }
 
 .solution_name {
@@ -126,7 +126,7 @@ span.technology.badge.rounded-pill.ms-3 {
 
 .col-md-9.tab-content {
     padding: 1.5rem;
-    border: 1px solid #f8f8f8;
+    /* border: 1px solid #f8f8f8; */
     border-radius: 15px;
     /* height: 580px; */
 }
@@ -287,7 +287,7 @@ span.carousel-control-next-icon {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 20px;
   /* background-color: #888888; */
 }
 .scroll-rl{
@@ -353,4 +353,7 @@ margin-bottom: -100px;
 }
 .circle-stroke{
   stroke: #0ec79b;
+}
+.circle-svg{
+  background: transparent;
 }

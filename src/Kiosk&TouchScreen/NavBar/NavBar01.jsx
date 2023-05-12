@@ -7,7 +7,7 @@ function NavBar01() {
   return (
     <div>
       <nav class="navbar container-align">
-          <a class="navbar-brand"><img src={logo} class="img-fluid"/></a>
+          <a class="navbar-brand"><img src={logo} class="img-fluid "/></a>
           <div class="select-btn">
           
           </div>

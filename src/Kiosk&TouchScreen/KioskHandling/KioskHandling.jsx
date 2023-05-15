@@ -697,7 +697,7 @@ function KioskHandling() {
 
                                             <div className='circle-progress'>
                                                 <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
-                                                    <circle
+                                                    <circle className='circle-stroke'
                                                         cx="50"
                                                         cy="50"
                                                         r="40"
@@ -718,27 +718,27 @@ function KioskHandling() {
                                 {/* ****************************************************************************************************************************************************** */}
 
 
-                                <article class="tab-pane fade" id="category_tab3">
+                                <article onMouseEnter={disableScroll} onMouseLeave={enableScroll} class="tab-pane fade" id="category_tab3">
                                     <h6 className='solution_name'>Mobile Development</h6>
                                     <p className='solution_desc'>Addant offers design, development, deployment, and maintenance of value-added mobile applications across iOS & Android platforms. Our team has significant experience when it comes to native or cross-platform development, and they focus on creating intuitive interfaces ensuring seamless user engagement.</p>
                                     <h4 className='tech-stack'>Tech Stack</h4>
 
                                     <div className='techs'>
-                                        <span className='technology badge rounded-pill ms-0  mt-2 '>
+                                        <span className='technology badge rounded-pill me-3  mt-2 '>
                                             <img src={flutter} className='img-fluid rounded-circle bg-white' />
                                             <span>Flutter</span>
                                         </span>
 
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill mt-2  me-3'>
                                             <img src={xamarin} className='img-fluid rounded-circle bg-white' />
                                             <span>Xamarin</span>
                                         </span>
 
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill mt-2  me-3'>
                                             <img src={react} className='img-fluid rounded-circle bg-white' />
 
                                             <span>React Native</span>
@@ -747,14 +747,14 @@ function KioskHandling() {
 
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill mt-2  me-3'>
                                             <img src={ios} className='img-fluid rounded-circle bg-white' />
 
                                             <span>Native iOS</span>
                                         </span>
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill mt-2  me-3'>
                                             <img src={andriod} className='img-fluid rounded-circle bg-white' />
 
                                             <span>Android Native</span>
@@ -855,7 +855,7 @@ function KioskHandling() {
 
                                                 <div className='circle-progress'>
                                                     <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
-                                                        <circle
+                                                        <circle className='circle-stroke'
                                                             cx="50"
                                                             cy="50"
                                                             r="40"
@@ -1020,45 +1020,45 @@ function KioskHandling() {
                                     <h4 className='tech-stack'>Tech Stack</h4>
 
                                     <div className='techs'>
-                                        <span className='technology badge rounded-pill mt-2 '>
+                                        <span className='technology badge rounded-pill  mt-2  me-3 '>
                                             <img src={react} className='img-fluid rounded-circle bg-white' />
                                             <span>React </span>
                                         </span>
 
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill  mt-2  me-3'>
                                             <img src={angular} className='img-fluid rounded-circle bg-white' />
                                             <span>Angular</span>
                                         </span>
 
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill  mt-2  me-3'>
                                             <img src={net} className='img-fluid rounded-circle bg-white' />
                                             <span>.NET Core</span>
                                         </span>
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill  mt-2  me-3'>
                                             <img src={node} className='img-fluid rounded-circle bg-white' />
                                             <span>Node</span>
                                         </span>
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill  mt-2  me-3'>
                                             <img src={js} className='img-fluid rounded-circle bg-white' />
                                             <span>JavaScript</span>
                                         </span>
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill  mt-2  me-3'>
                                             <img src={html} className='img-fluid rounded-circle bg-white' />
                                             <span>HTML 5</span>
                                         </span>
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill  mt-2  me-3'>
                                             <img src={bootstrap} className='img-fluid rounded-circle bg-white' />
                                             <span>Bootstrap</span>
                                         </span>
@@ -1167,7 +1167,7 @@ function KioskHandling() {
 
                                         <div className='circle-progress'>
                                             <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
-                                                <circle
+                                                <circle className='circle-stroke'
                                                     cx="50"
                                                     cy="50"
                                                     r="40"
@@ -1185,39 +1185,39 @@ function KioskHandling() {
                                 </article>
 
                                 {/********************************************************************************************************************************************************/}
-                                <article class="tab-pane fade" id="category_tab5">
+                                <article onMouseEnter={disableScroll} onMouseLeave={enableScroll} class="tab-pane fade" id="category_tab5">
                                     <h6 className='solution_name'>Data Science & Engineering</h6>
                                     <p className='solution_desc'>With our quest to learn and adapt to the evolving algorithms and models, we bring in unique and advanced data engineering methodologies enabling businesses to optimise data towards usability there by ensuring scalability, tailored user driven solutions, and optimised predictive analysis.</p>
                                     <h4 className='tech-stack'>Tech Stack</h4>
 
                                     <div className='techs'>
-                                        <span className='technology badge rounded-pill mt-2 '>
+                                        <span className='technology badge rounded-pill  mt-2  me-3 '>
                                             <img src={python} className='img-fluid rounded-circle bg-white' />
                                             <span>Python </span>
                                         </span>
 
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill  mt-2  me-3'>
                                             <img src={apache} className='img-fluid rounded-circle bg-white' />
                                             <span>Apache Spark</span>
                                         </span>
 
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill  mt-2  me-3'>
                                             <img src={auto} className='img-fluid rounded-circle bg-white' />
                                             <span>AutoGluon</span>
                                         </span>
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill  mt-2  me-3'>
                                             <img src={nosql} className='img-fluid rounded-circle bg-white' />
                                             <span>NOSQL - Dynamo DB</span>
                                         </span>
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill  mt-2  me-3'>
                                             <img src={mongo} className='img-fluid rounded-circle bg-white' />
                                             <span>Mongo DB</span>
                                         </span>
@@ -1320,7 +1320,7 @@ function KioskHandling() {
 
                                         <div className='circle-progress'>
                                             <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
-                                                <circle
+                                                <circle className='circle-stroke'
                                                     cx="50"
                                                     cy="50"
                                                     r="40"
@@ -1345,7 +1345,7 @@ function KioskHandling() {
                                     <h4 className='tech-stack'>Tech Stack</h4>
 
                                     <div className='techs'>
-                                        <span className='technology badge rounded-pill mt-2 '>
+                                        <span className='technology badge rounded-pill  mt-2  me-3 '>
                                             <img src={aws} className='img-fluid rounded-circle bg-white' />
 
                                             <span>AWS Serverless </span>
@@ -1353,7 +1353,7 @@ function KioskHandling() {
 
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill  mt-2  me-3'>
                                             <img src={amplify} className='img-fluid rounded-circle bg-white' />
 
                                             <span>Amplify</span>
@@ -1361,7 +1361,7 @@ function KioskHandling() {
 
 
 
-                                        <span className='technology badge rounded-pill ms-3'>
+                                        <span className='technology badge rounded-pill  mt-2  me-3'>
                                             <img src={app} className='img-fluid rounded-circle bg-white' />
 
                                             <span>App Sync</span>
@@ -1479,7 +1479,7 @@ function KioskHandling() {
 
                                         <div className='circle-progress'>
                                             <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
-                                                <circle
+                                                <circle className='circle-stroke'
                                                     cx="50"
                                                     cy="50"
                                                     r="40"

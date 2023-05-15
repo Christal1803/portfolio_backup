@@ -116,6 +116,7 @@ span.technology.badge.rounded-pill.mt-2 {
     padding: 8px 25px 8px 7px;
     width: auto;
     text-align: left;
+    padding: none;
 }
 
 
@@ -363,5 +364,16 @@ margin-bottom: -100px;
 }
 .circle-svg{
   background: transparent;
+  
 
+}
+.margin1 {
+  margin-top: 0.5rem!important;
+  margin-bottom: 0.5rem !important;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+.margin2{
+  /* margin-left: 1rem!important; */
+  margin-right: 0.5rem;
 }

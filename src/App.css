@@ -104,3 +104,8 @@ color: #21272C;
 /* .hide-root-font {
   font-family: unset !important;
 } */
+@media (min-width: 1025px) {
+  body {
+    overflow-y: hidden; /* Disable vertical scrolling on large screens */
+  }
+}

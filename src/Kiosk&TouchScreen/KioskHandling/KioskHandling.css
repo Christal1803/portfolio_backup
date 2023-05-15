@@ -277,7 +277,7 @@ span.carousel-control-next-icon {
 }
 .progressbar{
   background-color: #d8d8d8;
-  height: 5px;
+  height: 2px;
   position: sticky;
   left: 0;
   width: 95%;
@@ -285,14 +285,14 @@ span.carousel-control-next-icon {
 }
 .progressindicator{
   background-color: #0EC79B;
-  height: 5px;
+  height: 2px;
   transition: 0.5s ease;
 }
 .scroll-box{
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-top: 10%;
+  margin-top: 4%;
   /* background-color: #888888; */
 }
 .scroll-rl{
@@ -376,4 +376,11 @@ margin-bottom: -100px;
 .margin2{
   /* margin-left: 1rem!important; */
   margin-right: 0.5rem;
+}
+.program-progress{
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background-color: gray;
+
 }

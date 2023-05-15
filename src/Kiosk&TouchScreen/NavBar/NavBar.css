@@ -6,3 +6,6 @@ img.img-fluid.float-end {
     height: 46px;
     width: 46px;
 }
+.navbar-brand{
+    cursor: pointer;
+}

@@ -475,10 +475,10 @@ function KioskHandling() {
 
                                 <article class="tab-pane fade show active" id="category_tab1">
 
-                                    <div >
+                                 
                                         {/* <div ref={elementRef} onLoad={handleElementLoad} className="widthlisy"></div> */}
 
-                                        <div >
+                                      
 
                                             {/* <ScrollMenu onWheel={onWheel}  >
                                               
@@ -568,8 +568,8 @@ function KioskHandling() {
 
                                                 </div>
 
-                                            </div>
-                                        </div>
+
+                                         
                                     </article>
 
 
@@ -724,7 +724,7 @@ function KioskHandling() {
                                     <h4 className='tech-stack'>Tech Stack</h4>
 
                                     <div className='techs'>
-                                        <span className='technology badge rounded-pill mt-2 '>
+                                        <span className='technology badge rounded-pill ms-0  mt-2 '>
                                             <img src={flutter} className='img-fluid rounded-circle bg-white' />
                                             <span>Flutter</span>
                                         </span>
@@ -1014,7 +1014,7 @@ function KioskHandling() {
                                 </article>
 
 
-                                <article class="tab-pane fade" id="category_tab4">
+                                <article onMouseEnter={disableScroll} onMouseLeave={enableScroll} class="tab-pane fade" id="category_tab4">
                                     <h6 className='solution_name'>Web Applications</h6>
                                     <p className='solution_desc'>We build custom tailored web solutions to fit our customer�s business goals. Our team work backwards from customer requirements and focuses on user experience (UX), high performance, availability, and scalability. We always use the most apt technology while staying focused on the business requirements.</p>
                                     <h4 className='tech-stack'>Tech Stack</h4>
@@ -1339,7 +1339,7 @@ function KioskHandling() {
 
 
 
-                                <article class="tab-pane fade" id="category_tab6">
+                                <article  onMouseEnter={disableScroll} onMouseLeave={enableScroll} class="tab-pane fade" id="category_tab6">
                                     <h6 className='solution_name'>Cloud Solutions</h6>
                                     <p className='solution_desc'>We recognize the paradigm shift from the traditional software development to the modern applications development, leveraging cloud tools. Cloud applications bring higher scalability, easier management, and reduced cost through microservices, better automation and DevOps practices.</p>
                                     <h4 className='tech-stack'>Tech Stack</h4>

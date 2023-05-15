@@ -11,7 +11,7 @@ body {
   
 }
 .row.container-align {
-  /* height: 90vh; */
+  height: 90vh;
 }
 .para1 {
   font-family: 'Gilroy';
@@ -36,6 +36,9 @@ body {
     font-size: 26px;
     line-height: 38px;
     color: #21272C;
+  }
+  .home-submit-btn{
+    cursor: pointer;
   }
   .highlights {
     color: #0EC79B;

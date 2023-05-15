@@ -6,6 +6,7 @@ import './Newnav.css';
 import logo from "../../../src/assets/logo.svg";
 import hum from "../../../src/assets/hum.svg";
 import cancel from "../../../src/assets/cancel.svg";
+import { Link } from 'react-router-dom';
 
 
 class Newnav extends Component{
@@ -28,7 +29,11 @@ class Newnav extends Component{
     return (
       <div>
         <nav class="navbar container-align">
-            <a class="navbar-brand"><img src={logo} class="img-fluid nav-logo" /></a>
+            <a class="navbar-brand">
+              <Link to={"/"}>
+              <img src={logo} class="img-fluid nav-logo" />
+              </Link>
+              </a>
             <img src={hum} class="img-fluid humburger" />
         </nav>
 

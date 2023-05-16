@@ -21,7 +21,7 @@
 nav#myTab {
     background: #f7f7f7;
     border-radius: 26px;
-    padding: 30px 20px;
+    padding: 70px 20px;
   
 }
 
@@ -322,14 +322,15 @@ span.carousel-control-next-icon {
 .circle-progress{
   height: 70px;
   width: 70px;
-  position: relative;
-margin-top: -20px;
+  position: absolute;
+  margin-right: 5%;
   right: 0;
   /* margin-right: 13%; */
-margin-bottom: -100px;
+  margin-bottom: 10%;
   background-color: transparent;
   display: grid;
   place-items: center;
+  margin-top: -1.3%;
 
 }
 .circle-progress-value{

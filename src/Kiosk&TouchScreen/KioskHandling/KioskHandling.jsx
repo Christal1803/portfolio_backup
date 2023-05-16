@@ -115,6 +115,11 @@ function KioskHandling() {
     const [scrollProgress5, setScrollProgress5] = useState(100);
     const [scrollProgress6, setScrollProgress6] = useState(5);
     const [slideToShow, setSlideToShow] = useState(3);
+    const [activeDiv, setActiveDiv] = useState(1);
+
+    const handleProgressClick = (divNumber) =>{
+    setActiveDiv(divNumber)
+    }
 
     const handleScroll1 = (e) => {
         const slider = sliderRef1.current;
@@ -460,13 +465,13 @@ function KioskHandling() {
                             <div class="col-md-5 col-lg-3 col-xxl-2">
                                 <nav id="myTab" class="nav nav-pills flex-column">
                                     <p className='m-0'><b className='tab-head'>Our Engagement model</b></p>
-                                    <a href="#category_tab1" data-bs-toggle="pill" class="active nav-link mb-3 mt-3" >Engagement model</a>
+                                    <a onClick={()=>handleProgressClick(1)} href="#category_tab1" data-bs-toggle="pill" class="active nav-link mb-3 mt-3" >Engagement model</a>
                                     <p className='m-0'><b className='tab-head'>Our Solutions</b></p>
-                                    <a href="#category_tab2" data-bs-toggle="pill" class="nav-link">Kiosk & Touchscreen</a>
-                                    <a href="#category_tab3" data-bs-toggle="pill" class="nav-link">Mobile development</a>
-                                    <a href="#category_tab4" data-bs-toggle="pill" class="nav-link">Web applications</a>
-                                    <a href="#category_tab5" data-bs-toggle="pill" class="nav-link">Data Science & Engineering</a>
-                                    <a href="#category_tab6" data-bs-toggle="pill" class="nav-link">Cloud Solutions</a>
+                                    <a onClick={()=>handleProgressClick(2)} href="#category_tab2" data-bs-toggle="pill" class="nav-link">Kiosk & Touchscreen</a>
+                                    <a onClick={()=>handleProgressClick(3)} href="#category_tab3" data-bs-toggle="pill" class="nav-link">Mobile development</a>
+                                    <a onClick={()=>handleProgressClick(4)} href="#category_tab4" data-bs-toggle="pill" class="nav-link">Web applications</a>
+                                    <a onClick={()=>handleProgressClick(5)} href="#category_tab5" data-bs-toggle="pill" class="nav-link">Data Science & Engineering</a>
+                                    <a onClick={()=>handleProgressClick(6)} href="#category_tab6" data-bs-toggle="pill" class="nav-link">Cloud Solutions</a>
                                 </nav>
                             </div>
                             <div class="col-md-9 col-xxl-10 col-lg-9 tab-content">
@@ -527,46 +532,7 @@ function KioskHandling() {
 
 
                                                 {/* Scroll Icon */}
-                                                <div className='scroll-box'>
-
-                                                    <div className='scroll-box-1'>
-                                                        <div className='scroll-rl'>
-                                                            <div className='scroll-left'>
-                                                                <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
-                                                                </svg>
-                                                                Scroll
-                                                            </div>
-                                                            <div className='scroll-right'>Scroll
-                                                                <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                        <div>
-                                                            <div className='progressbar'>
-                                                                <div className='progressindicator' style={{ width: `${scrollProgress6}%` }}></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div className='circle-progress'>
-                                                        <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
-                                                            <circle className='circle-stroke'
-                                                                cx="50"
-                                                                cy="50"
-                                                                r="40"
-                                                                stroke="#0EC79B"
-                                                                strokeWidth="3"
-                                                                fill="transparent"
-                                                                strokeDasharray={`${scrollProgress6 * 2.6},810`}
-                                                            />
-                                                        </svg>
-                                                        <img className='addant-image' src={addantProgress} />
-                                                    </div>
-
-                                                </div>
+                       
 
 
                                          
@@ -671,46 +637,7 @@ function KioskHandling() {
                                             {/*    <h3>6</h3>*/}
                                             {/*</div>*/}
                                         </Slider>
-                                        <div className='scroll-box'>
-
-                                            <div className='scroll-box-1'>
-                                                <div className='scroll-rl'>
-                                                    <div className='scroll-left'>
-                                                        <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                            <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
-                                                        </svg>
-                                                        Scroll
-                                                    </div>
-                                                    <div className='scroll-right'>Scroll
-                                                        <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                            <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div className='progressbar'>
-                                                        <div className='progressindicator' style={{ width: `${scrollProgress}%` }}></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div className='circle-progress'>
-                                                <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
-                                                    <circle className='circle-stroke'
-                                                        cx="50"
-                                                        cy="50"
-                                                        r="40"
-                                                        stroke="#0EC79B"
-                                                        strokeWidth="3"
-                                                        fill="transparent"
-                                                        strokeDasharray={`${scrollProgress * 2.6},810`}
-                                                    />
-                                                </svg>
-                                                <img className='addant-image' src={addantProgress} />
-                                            </div>
-
-                                        </div>
+                          
                                     </div>
 
 
@@ -829,46 +756,6 @@ function KioskHandling() {
                                                 {/*    <h3>6</h3>*/}
                                                 {/*</div>*/}
                                             </Slider>
-                                            <div className='scroll-box'>
-
-                                                <div className='scroll-box-1'>
-                                                    <div className='scroll-rl'>
-                                                        <div className='scroll-left'>
-                                                            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                                <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
-                                                            </svg>
-                                                            Scroll
-                                                        </div>
-                                                        <div className='scroll-right'>Scroll
-                                                            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                                <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div className='progressbar'>
-                                                            <div className='progressindicator' style={{ width: `${scrollProgress2}%` }}></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                                <div className='circle-progress'>
-                                                    <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
-                                                        <circle className='circle-stroke'
-                                                            cx="50"
-                                                            cy="50"
-                                                            r="40"
-                                                            stroke="#0EC79B"
-                                                            strokeWidth="3"
-                                                            fill="transparent"
-                                                            strokeDasharray={`${scrollProgress2 * 2.6},810`}
-                                                        />
-                                                    </svg>
-                                                    <img className='addant-image' src={addantProgress} />
-                                                </div>
-
-                                            </div>
                                         </div>
 
 
@@ -1141,46 +1028,7 @@ function KioskHandling() {
                                             </div>
                                         </div>
                                     </div> */}
-                                    <div className='scroll-box'>
-
-                                        <div className='scroll-box-1'>
-                                            <div className='scroll-rl'>
-                                                <div className='scroll-left'>
-                                                    <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                        <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
-                                                    </svg>
-                                                    Scroll
-                                                </div>
-                                                <div className='scroll-right'>Scroll
-                                                    <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                        <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div className='progressbar'>
-                                                    <div className='progressindicator' style={{ width: `${scrollProgress4}%` }}></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div className='circle-progress'>
-                                            <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
-                                                <circle className='circle-stroke'
-                                                    cx="50"
-                                                    cy="50"
-                                                    r="40"
-                                                    stroke="#0EC79B"
-                                                    strokeWidth="3"
-                                                    fill="transparent"
-                                                    strokeDasharray={`${scrollProgress4 * 2.6},810`}
-                                                />
-                                            </svg>
-                                            <img className='addant-image' src={addantProgress} />
-                                        </div>
-
-                                    </div>
+                       
 
                                 </article>
 
@@ -1294,46 +1142,7 @@ function KioskHandling() {
                                         </Slider>
 
                                     </div>
-                                    <div className='scroll-box'>
-
-                                        <div className='scroll-box-1'>
-                                            <div className='scroll-rl'>
-                                                <div className='scroll-left'>
-                                                    <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                        <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
-                                                    </svg>
-                                                    Scroll
-                                                </div>
-                                                <div className='scroll-right'>Scroll
-                                                    <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                        <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
-                                                    </svg>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <div className='progressbar'>
-                                                    <div className='progressindicator' style={{ width: `${scrollProgress3}%` }}></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div className='circle-progress'>
-                                            <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
-                                                <circle className='circle-stroke'
-                                                    cx="50"
-                                                    cy="50"
-                                                    r="40"
-                                                    stroke="#0EC79B"
-                                                    strokeWidth="3"
-                                                    fill="transparent"
-                                                    strokeDasharray={`${scrollProgress3 * 2.6},810`}
-                                                />
-                                            </svg>
-                                            <img className='addant-image' src={addantProgress} />
-                                        </div>
-
-                                    </div>
+                          
                                 </article>
                                 {/********************************************************************************************************************************************************/}
 
@@ -1453,55 +1262,264 @@ function KioskHandling() {
                                             </div>
                                         </div>
                                     </div> */}
-                                    <div className='scroll-box'>
+                                
 
-                                        <div className='scroll-box-1'>
-                                            <div className='scroll-rl'>
-                                                <div className='scroll-left'>
-                                                    <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                        <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
-                                                    </svg>
-                                                    Scroll
-                                                </div>
-                                                <div className='scroll-right'>Scroll
-                                                    <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
-                                                        <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
-                                                    </svg>
-                                                </div>
+                                    </article>
+
+
+                                </div>
+                                {/* PROGRESS 1 */}
+                                <div style={{display:activeDiv === 1 ? 'flex':'none'}} className='scroll-box'>
+
+                                    <div className='scroll-box-1'>
+                                        <div className='scroll-rl'>
+                                            <div className='scroll-left'>
+                                                <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
+                                                </svg>
+                                                Scroll
                                             </div>
-                                            <div>
-                                                <div className='progressbar'>
-                                                    <div className='progressindicator' style={{ width: `100%` }}></div>
-                                                </div>
+                                            <div className='scroll-right'>Scroll
+                                                <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                                                    <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
+                                                </svg>
                                             </div>
                                         </div>
-
-
-                                        <div className='circle-progress'>
-                                            <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
-                                                <circle className='circle-stroke'
-                                                    cx="50"
-                                                    cy="50"
-                                                    r="40"
-                                                    stroke="#0EC79B"
-                                                    strokeWidth="3"
-                                                    fill="transparent"
-                                                    strokeDasharray={`260%`}
-                                                />
-                                            </svg>
-                                            <img className='addant-image' src={addantProgress} />
+                                        <div>
+                                            <div className='progressbar'>
+                                                <div className='progressindicator' style={{ width: `${scrollProgress6}%` }}></div>
+                                            </div>
                                         </div>
-
                                     </div>
 
-                                </article>
+
+                                    <div className='circle-progress'>
+                                        <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
+                                            <circle className='circle-stroke'
+                                                cx="50"
+                                                cy="50"
+                                                r="40"
+                                                stroke="#0EC79B"
+                                                strokeWidth="3"
+                                                fill="transparent"
+                                                strokeDasharray={`${scrollProgress6 * 2.6},810`}
+                                            />
+                                        </svg>
+                                        <img className='addant-image' src={addantProgress} />
+                                    </div>
+
+                                </div>
+                                {/* PROGRESS 2 */}
+                                <div style={{display:activeDiv === 2 ? 'flex':'none'}} className='scroll-box'>
+
+<div className='scroll-box-1'>
+    <div className='scroll-rl'>
+        <div className='scroll-left'>
+            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
+            </svg>
+            Scroll
+        </div>
+        <div className='scroll-right'>Scroll
+            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
+            </svg>
+        </div>
+    </div>
+    <div>
+        <div className='progressbar'>
+            <div className='progressindicator' style={{ width: `${scrollProgress}%` }}></div>
+        </div>
+    </div>
+</div>
+
+
+<div className='circle-progress'>
+    <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
+        <circle className='circle-stroke'
+            cx="50"
+            cy="50"
+            r="40"
+            stroke="#0EC79B"
+            strokeWidth="3"
+            fill="transparent"
+            strokeDasharray={`${scrollProgress * 2.6},810`}
+        />
+    </svg>
+    <img className='addant-image' src={addantProgress} />
+</div>
+
+</div>
+{/* PROGRESS 3 */}
+<div style={{display:activeDiv === 3 ? 'flex':'none'}} className='scroll-box'>
+
+<div className='scroll-box-1'>
+    <div className='scroll-rl'>
+        <div className='scroll-left'>
+            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
+            </svg>
+            Scroll
+        </div>
+        <div className='scroll-right'>Scroll
+            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
+            </svg>
+        </div>
+    </div>
+    <div>
+        <div className='progressbar'>
+            <div className='progressindicator' style={{ width: `${scrollProgress2}%` }}></div>
+        </div>
+    </div>
+</div>
+
+
+<div className='circle-progress'>
+    <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
+        <circle className='circle-stroke'
+            cx="50"
+            cy="50"
+            r="40"
+            stroke="#0EC79B"
+            strokeWidth="3"
+            fill="transparent"
+            strokeDasharray={`${scrollProgress2 * 2.6},810`}
+        />
+    </svg>
+    <img className='addant-image' src={addantProgress} />
+</div>
+
+</div>
+{/* PROGRESS 4 */}
+<div style={{display:activeDiv === 4 ? 'flex':'none'}} className='scroll-box'>
+
+<div className='scroll-box-1'>
+    <div className='scroll-rl'>
+        <div className='scroll-left'>
+            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
+            </svg>
+            Scroll
+        </div>
+        <div className='scroll-right'>Scroll
+            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
+            </svg>
+        </div>
+    </div>
+    <div>
+        <div className='progressbar'>
+            <div className='progressindicator' style={{ width: `${scrollProgress4}%` }}></div>
+        </div>
+    </div>
+</div>
+
+
+<div className='circle-progress'>
+    <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
+        <circle className='circle-stroke'
+            cx="50"
+            cy="50"
+            r="40"
+            stroke="#0EC79B"
+            strokeWidth="3"
+            fill="transparent"
+            strokeDasharray={`${scrollProgress4 * 2.6},810`}
+        />
+    </svg>
+    <img className='addant-image' src={addantProgress} />
+</div>
+
+</div>
+{/* PROGRESS 5 */}
+<div style={{display:activeDiv === 5 ? 'flex':'none'}} className='scroll-box'>
+
+<div className='scroll-box-1'>
+    <div className='scroll-rl'>
+        <div className='scroll-left'>
+            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
+            </svg>
+            Scroll
+        </div>
+        <div className='scroll-right'>Scroll
+            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
+            </svg>
+        </div>
+    </div>
+    <div>
+        <div className='progressbar'>
+            <div className='progressindicator' style={{ width: `${scrollProgress3}%` }}></div>
+        </div>
+    </div>
+</div>
+
+
+<div className='circle-progress'>
+    <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
+        <circle className='circle-stroke'
+            cx="50"
+            cy="50"
+            r="40"
+            stroke="#0EC79B"
+            strokeWidth="3"
+            fill="transparent"
+            strokeDasharray={`${scrollProgress3 * 2.6},810`}
+        />
+    </svg>
+    <img className='addant-image' src={addantProgress} />
+</div>
+
+</div>
+{/* PROGRESS 6 */}
+<div style={{display:activeDiv === 6 ? 'flex':'none'}} className='scroll-box'>
+
+<div className='scroll-box-1'>
+    <div className='scroll-rl'>
+        <div className='scroll-left'>
+            <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                    <path class="arrow" d="M22.5 30L22.0315 29.6252L21.7316 30L22.0315 30.3748L22.5 30ZM52.5 30.6C52.8314 30.6 53.1 30.3314 53.1 30C53.1 29.6686 52.8314 29.4 52.5 29.4V30.6ZM32.0315 17.1252L22.0315 29.6252L22.9685 30.3748L32.9685 17.8748L32.0315 17.1252ZM22.0315 30.3748L32.0315 42.8748L32.9685 42.1252L22.9685 29.6252L22.0315 30.3748ZM22.5 30.6H52.5V29.4H22.5V30.6Z" fill="#0EC79B"></path>
+                </svg>
+                Scroll
+            </div>
+            <div className='scroll-right'>Scroll
+                <svg width="30" height="30" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" xmlns="http://www.w3.org/2000/svg">
+                    <path class="arrow" d="M37.5 30L37.9685 29.6252L38.2684 30L37.9685 30.3748L37.5 30ZM7.5 30.6C7.16863 30.6 6.9 30.3314 6.9 30C6.9 29.6686 7.16863 29.4 7.5 29.4V30.6ZM27.9685 17.1252L37.9685 29.6252L37.0315 30.3748L27.0315 17.8748L27.9685 17.1252ZM37.9685 30.3748L27.9685 42.8748L27.0315 42.1252L37.0315 29.6252L37.9685 30.3748ZM37.5 30.6H7.5V29.4H37.5V30.6Z" fill="#0EC79B"></path>
+                </svg>
+            </div>
+        </div>
+        <div>
+            <div className='progressbar'>
+                <div className='progressindicator' style={{ width: `100%` }}></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div className='circle-progress'>
+        <svg className='circle-svg' viewBox="0 0 100 100" width="100" height="100">
+            <circle className='circle-stroke'
+                cx="50"
+                cy="50"
+                r="40"
+                stroke="#0EC79B"
+                strokeWidth="3"
+                fill="transparent"
+                strokeDasharray={`260%`}
+            />
+        </svg>
+        <img className='addant-image' src={addantProgress} />
+    </div>
+
+</div>
+
 
                             </div>
-                           
+
+
                         </div>
-
-
-                    </div>
 
 
 

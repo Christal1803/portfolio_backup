@@ -7,7 +7,7 @@ import Ex4 from "../../../src/assets/ex4.svg";
 import Phase4 from "../../../src/assets/04.svg";
 
 // import LandImg from "../src/assets/landpageimg.svg";
-// import './ExecutionPhase01.css';
+import './ExecutionPhase04.css';
 
 function ExecutionPhase04() {
   return (

@@ -462,7 +462,7 @@ function KioskHandling() {
 
 
                         <div class="row container-align g-3">
-                            <div class="col-md-5 col-lg-3 col-xxl-2">
+                            <div class="col-md-5 col-lg-3 col-xxl-2 my-auto">
                                 <nav id="myTab" class="nav nav-pills flex-column">
                                     <p className='m-0'><b className='tab-head'>Our Engagement model</b></p>
                                     <a onClick={()=>handleProgressClick(1)} href="#category_tab1" data-bs-toggle="pill" class="active nav-link mb-3 mt-3" >Engagement model</a>

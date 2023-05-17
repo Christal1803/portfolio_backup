@@ -133,3 +133,37 @@
   align-items: center;
   letter-spacing: 0.140728px;
   }
+  .accordion-item{
+   
+    border: 1px solid #0EC79B;
+    border-left: 8px solid transparent;
+    border-radius: 10px;
+  }
+  .accordion-button{
+    background: transparent;
+  }
+  .accordion-item:not(:first-of-type) {
+    border-top: 1px solid #0EC79B;
+   
+}
+.accordion-item:first-of-type {
+ 
+ 
+  border-bottom-right-radius: 10px;
+}
+.accordion-body {
+  background-color: #0EC79B;
+  border-bottom-right-radius: 10px;
+}
+.accordion-header {
+ border-top-right-radius: 20px;
+
+}
+.accordion-button.collapsed {
+  background: transparent;
+}
+.accordion {
+  --bs-accordion-btn-icon: url("/src/assets/plus-circle.svg");
+  --bs-accordion-btn-active-icon: url("/src/assets/dash-circle.svg");
+  --bs-accordion-icon-color: red;
+}

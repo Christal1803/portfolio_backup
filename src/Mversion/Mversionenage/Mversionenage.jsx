@@ -27,7 +27,7 @@ function Mversionenage() {
       <div class="accordion" id="accordionExample1">
         <div class="accordion-item">
           <h2 class="accordion-header border-left-0" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button bi bi-alexa" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             <i class="glyphicon glyphicon-minus"></i>How
             </button>
           </h2>

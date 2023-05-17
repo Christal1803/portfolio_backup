@@ -43,6 +43,9 @@ body {
   .highlights {
     color: #0EC79B;
   }
+  .img-fluid {
+    background-color: transparent;
+}
 
   .form-select {
     font-family: 'Gilroy';

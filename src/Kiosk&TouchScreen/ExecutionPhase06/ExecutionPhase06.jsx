@@ -316,7 +316,6 @@ function ExecutionPhase06() {
         <div class="col-lg-6 col-sm-12 col-md-12 my-auto">
           <p class="main-heading">Execution phase<img src={Phase6} class="img-fluid number-align d-inline"/></p>
           <p class="sub-heading">What steps are taken to ensure success post launch?</p>
-          <p class="sub-heading">What steps are taken to ensure success post launch?</p>
           <div class="b-color">
             <div class="partnership-content">
               <p class="partnership-content-head mb-1">How</p>

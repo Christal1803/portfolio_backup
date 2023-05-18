@@ -102,4 +102,15 @@ a.dropdown-item:hover li {
 .nav-logo{
     margin-left: 20px;
 }
-
+.humburger{
+    cursor: pointer;
+}
+.sideCancel{
+    cursor: pointer;
+}
+.dropdown-item{
+    cursor: pointer;
+}
+.nav-head{
+    cursor: pointer;
+}

@@ -19,6 +19,11 @@ function Home() {
         let path = `home`; 
         navigate(path);
         }
+
+
+        
+
+
   return (
     <div class="container-fluid nav-align ">
       
@@ -27,7 +32,7 @@ function Home() {
         <div class="col-lg-7 col-sm-12 col-md-12 my-auto con-sec">
           <p class="para1">Interactive Solution Development:<span className='highlights'> A Journey from Partnership to Post-Launch Success</span></p>
 
-          <p class="para2">Our comprehensive approach begins by understanding your goals and aligning them with audience needs. We create seamless navigation experiences, design scalable systems, and address deployment issues to ensure a successful launch. With ongoing monitoring, user feedback analysis, and continuous improvement, we guarantee long-term post-launch success.</p>
+          <p class="para2 mt-4 mb-4">Our comprehensive approach begins by understanding your goals and aligning them with audience needs. We create seamless navigation experiences, design scalable systems, and address deployment issues to ensure a successful launch. With ongoing monitoring, user feedback analysis, and continuous improvement, we guarantee long-term post-launch success.</p>
           <p class="para3 mt-4">Get Started <span className='home-submit-btn'><svg  width="50" height="50" viewBox="0 0 60 60" fill="none" class="img-fluid move-left" onClick={submitThis} xmlns="http://www.w3.org/2000/svg">
           <ellipse cx="20" cy="20" rx="20" ry="20" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 55 50)" fill="#0EC79B"/>
           <path d="M14.7 30C14.7 18.7886 23.7886 9.7 35 9.7C46.2114 9.7 55.3 18.7886 55.3 30C55.3 41.2114 46.2114 50.3 35 50.3C23.7886 50.3 14.7 41.2114 14.7 30Z" stroke="#2A4157" stroke-opacity="0.24" stroke-width="0.6"/>

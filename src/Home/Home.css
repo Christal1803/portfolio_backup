@@ -11,14 +11,14 @@ body {
   
 }
 .row.container-align {
-  height: 80vh;
+  height: 88vh;
 }
 .para1 {
   font-family: 'Gilroy';
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
-  line-height: 38px;
+  line-height: 48px;
   color: #21272C;
   }
   .para2 {

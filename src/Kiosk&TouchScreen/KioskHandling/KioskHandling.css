@@ -293,7 +293,8 @@ span.carousel-control-next-icon {
   flex-direction: row;
   width: 100%;
   margin-top: 4%;
-  /* background-color: #888888; */
+  /* background-color: #888888; */;
+  z-index: 0;
 }
 .scroll-rl{
   display: flex;

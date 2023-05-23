@@ -131,14 +131,6 @@ class Newnav extends Component{
                     <ul class="dropdown-menu">
 
                       <ul>
-                        <li><a href={ssp}
-                          download="smart service platforms"
-                          target="_blank"
-                          rel="noreferrer" class="dropdown-item" >Smart Service Platforms</a></li>
-                        <li><a href={cma}
-                          download="casino management addant"
-                          target="_blank"
-                          rel="noreferrer"  class="dropdown-item" >Casino Management Addant</a></li>
                         <li><a href={asp}
                           download="addant systems pitch"
                           target="_blank"
@@ -147,6 +139,14 @@ class Newnav extends Component{
                           download="addant engangement model"
                           target="_blank"
                           rel="noreferrer" class="dropdown-item" >Addant Engangement Model</a></li>
+                            <li><a href={ssp}
+                          download="smart service platforms"
+                          target="_blank"
+                          rel="noreferrer" class="dropdown-item" >Smart Service Platforms</a></li>
+                        <li><a href={cma}
+                          download="casino management addant"
+                          target="_blank"
+                          rel="noreferrer"  class="dropdown-item" >Casino Management Addant</a></li>
                       </ul>
 
                     </ul>

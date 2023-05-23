@@ -4,8 +4,12 @@
 .homeHt {
     height: 100vh;
 }
-
-
+.kiosk-container{
+  height: 100vh;
+}
+.kisok-container-box{
+  padding: 40px 0px;
+}
 .react-horizontal-scrolling-menu--scroll-container {
   background: transparent !important;
   height: 600px !important;
@@ -129,7 +133,7 @@ span.technology.badge.rounded-pill.ms-3 {
 }
 
 .col-md-9.tab-content {
-    padding: 1.5rem 1.5rem 0rem 1.5rem ;
+    /* padding: 1.5rem 1.5rem 0rem 1.5rem ; */
     /* border: 1px solid #f8f8f8; */
     border-radius: 15px;
     /* height: 580px; */
@@ -294,9 +298,29 @@ span.carousel-control-next-icon {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-top: 4%;
   /* background-color: #888888; */;
   z-index: 0;
+}
+.tab-pane{
+  
+}
+.one{
+  margin-bottom: 120px;
+}
+.two{
+  margin-bottom: 130px ;
+}
+.three{
+  margin-bottom: 145px ;
+}
+.four{
+  margin-bottom: 175px ;
+}
+.five{
+  margin-bottom: 140px ;
+}
+.six{
+  margin-bottom: 140px ;
 }
 .scroll-rl{
   display: flex;
@@ -481,4 +505,13 @@ article#category_tab6 {
     }
 
     }
-  
+    .mt-xxl-3{
+      margin-top: 0px !important;
+    }
+    @media (min-width: 1400px){
+      .mt-xxl-3{
+        margin-top: 0px;
+      }
+    }
+    
+    

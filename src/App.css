@@ -109,3 +109,21 @@ color: #21272C;
     overflow-y: hidden; /* Disable vertical scrolling on large screens */
   }
 }
+
+
+@media all and (display-mode: fullscreen) {
+  .slick-slide {
+    padding: 20px 0px;
+  }
+.kisok-container-box{
+  margin-top: 3%;
+}
+.navbar{
+  padding: 10px 0px;
+}
+}
+.navbar-brand{
+  margin-left: 25px;
+}
+
+

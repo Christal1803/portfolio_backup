@@ -442,11 +442,11 @@ function KioskHandling() {
             ) : (
                     <div class="homeHt" >
                     <Newnav />
-                    <div class="container-fluid mt-xxl-3 mt-lg-1">
+                    <div class="container-fluid   kisok-container-box">
 
 
-                        <div class="row container-align ht-md g-3 ">
-                            <div class="col-md-5 col-lg-3 col-xxl-2 my-xxl-auto">
+                        <div class="row container-align ht-md   kiosk-container">
+                            <div class="col-md-5 col-lg-3 col-xxl-2 ">
                                 <nav id="myTab" class="nav nav-pills flex-column">
                                     <p className='m-0'><b className='tab-head'>Our Engagement model</b></p>
                                         <a onClick={() => handleProgressClick(1)} href="#category_tab1" data-bs-toggle="pill" class="active nav-link mb-xxl-3 mt-lg-2  mb-lg-2 mt-xxl-3" >Engagement model</a>
@@ -461,7 +461,7 @@ function KioskHandling() {
                             <div class="col-md-9 col-xxl-10 col-lg-9 tab-content">
 
 
-
+                            
                                 <article class="tab-pane fade show active" id="category_tab1">
 
                                  
@@ -520,7 +520,7 @@ function KioskHandling() {
 
 
                                          
-                                    </article>
+                                </article>
 
 
 
@@ -1027,7 +1027,7 @@ function KioskHandling() {
 
                                 </div>
                                 {/* PROGRESS 1 */}
-                                <div style={{ display: activeDiv === 1 ? 'flex' : 'none' }} className='scroll-box scroll_mt '>
+                                <div style={{ display: activeDiv === 1 ? 'flex' : 'none' }} className='scroll-box one scroll_mt '>
 
                                     <div className='scroll-box-1'>
                                         <div className='scroll-rl'>
@@ -1068,7 +1068,7 @@ function KioskHandling() {
 
                                 </div>
                                 {/* PROGRESS 2 */}
-                                <div style={{ display: activeDiv === 2 ? 'flex' : 'none' }} className='scroll-box scroll_mt '>
+                                <div style={{ display: activeDiv === 2 ? 'flex' : 'none' }} className='scroll-box two scroll_mt '>
 
 <div className='scroll-box-1'>
     <div className='scroll-rl'>
@@ -1109,7 +1109,7 @@ function KioskHandling() {
 
 </div>
 {/* PROGRESS 3 */}
-                                <div style={{ display: activeDiv === 3 ? 'flex' : 'none' }} className='scroll-box scroll_mt '>
+                                <div style={{ display: activeDiv === 3 ? 'flex' : 'none' }} className='scroll-box three scroll_mt '>
 
 <div className='scroll-box-1'>
     <div className='scroll-rl'>
@@ -1150,7 +1150,7 @@ function KioskHandling() {
 
 </div>
 {/* PROGRESS 4 */}
-                                <div style={{ display: activeDiv === 4 ? 'flex' : 'none' }} className='scroll-box scroll_mt '>
+                                <div style={{ display: activeDiv === 4 ? 'flex' : 'none' }} className='scroll-box four scroll_mt '>
 
 <div className='scroll-box-1'>
     <div className='scroll-rl'>
@@ -1191,7 +1191,7 @@ function KioskHandling() {
 
 </div>
 {/* PROGRESS 5 */}
-                                <div style={{ display: activeDiv === 5 ? 'flex' : 'none' }} className='scroll-box scroll_mt '>
+                                <div style={{ display: activeDiv === 5 ? 'flex' : 'none' }} className='scroll-box five scroll_mt '>
 
 <div className='scroll-box-1'>
     <div className='scroll-rl'>
@@ -1232,7 +1232,7 @@ function KioskHandling() {
 
 </div>
 {/* PROGRESS 6 */}
-                                <div style={{ display: activeDiv === 6 ? 'flex' : 'none' }} className='scroll-box scroll_mt '>
+                                <div style={{ display: activeDiv === 6 ? 'flex' : 'none' }} className='scroll-box six scroll_mt '>
 
 <div className='scroll-box-1'>
     <div className='scroll-rl'>

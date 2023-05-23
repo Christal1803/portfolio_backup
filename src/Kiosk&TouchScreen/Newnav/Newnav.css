@@ -17,8 +17,17 @@
     inset: 0px !important;
     background: transparent !important;
 }
-.nav-head {
 
+img height-mt {
+    max-width: 100%;
+    height: auto;
+}
+
+img height-hb {
+    max-width: 100%;
+    height: auto;
+}
+.nav-head {
 font-family: 'Gilroy';
 font-style: normal;
 font-weight: 600;
@@ -99,4 +108,27 @@ a.dropdown-item:hover li {
     height: 100vh;
     padding: 2rem;
 }
+.nav-logo{
+    margin-left: 20px;
+}
+.humburger{
+    cursor: pointer;
+}
+.sideCancel{
+    cursor: pointer;
+}
+.dropdown-item{
+    cursor: pointer;
+}
+.nav-head{
+    cursor: pointer;
+}
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1919px) {
+    img.height-mt {
+        height: 50px;
+    }
+    img.humburger.height-hb {
+        height: 30px;
+    }
 
+}

@@ -1,16 +1,18 @@
 /* Christal */
 /* dummy test 09/05/2023 */
 
-
+.homeHt {
+    height: 100vh;
+}
 
 
 .react-horizontal-scrolling-menu--scroll-container {
   background: transparent !important;
-  height: 500px !important;
+  height: 600px !important;
 }
 .react-horizontal-scrolling-menu--item {
   background-color: transparent !important;
-  height: 500px !important;
+  height: 600px !important;
 }
 
 .widthlisy {
@@ -21,12 +23,12 @@
 nav#myTab {
     background: #f7f7f7;
     border-radius: 26px;
-    padding: 1rem;
+    padding: 30px 20px;
   
 }
 
 .card-space{
-    padding:20px
+    padding:10px
 }
 
 a.nav-link.active {
@@ -56,8 +58,8 @@ a.nav-link {
     font-size: 14px;
     line-height: 24px;
     color: #515151;
-    border: 0.5px solid #0ec79b !important;
-    margin-top: 20px;
+    border: 0.2px solid #28ddb2 !important;
+    margin-top: 25px;
 }
 
 .solution_name {
@@ -116,7 +118,9 @@ span.technology.badge.rounded-pill.mt-2 {
     padding: 8px 25px 8px 7px;
     width: auto;
     text-align: left;
+    padding: none;
 }
+
 
 span.technology.badge.rounded-pill.ms-3 {
     padding: 8px 25px 8px 7px;
@@ -125,10 +129,10 @@ span.technology.badge.rounded-pill.ms-3 {
 }
 
 .col-md-9.tab-content {
-    padding: 1.5rem;
-    border: 1px solid #F2F2F2;
+    padding: 1.5rem 1.5rem 0rem 1.5rem ;
+    /* border: 1px solid #f8f8f8; */
     border-radius: 15px;
-    height: 615px;
+    /* height: 580px; */
 }
 
 .tab-head {
@@ -138,6 +142,8 @@ span.technology.badge.rounded-pill.ms-3 {
     font-size: 16px;
     line-height: 26px;
     color: #515151;
+}.tab-pane{
+  background-color: white;
 }
 
   body {
@@ -262,10 +268,217 @@ span.carousel-control-next-icon {
 }
 .mybtn.text-center {
   box-shadow: 0px 3.75px 11.25px rgba(0, 0, 0, 0.05);
-
    border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  background: white;
+}
+.portfolio-scroller{
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+.progressbar{
+  background-color: #d8d8d8;
+  height: 2px;
+  position: sticky;
+  left: 0;
+  width: 95%;
+  z-index: 2;
+}
+.progressindicator{
+  background-color: #0EC79B;
+  height: 2px;
+  transition: 0.5s ease;
+}
+.scroll-box{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 4%;
+  /* background-color: #888888; */;
+  z-index: 0;
+}
+.scroll-rl{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.scroll-right,.scroll-left,.arrow-color{
+  color: #0EC79B;
+}
+.addant-progress-icon{
+  position: absolute;
+  right: 0;
+  /* margin-top: px; */
+  margin-right: 5%;
+ 
+}
+.addantLoader{
+  position: relative;
+  z-index: 5;
+  margin-left: -66px;
+}
+.addantProgress{
+  position: absolute;
+  margin-right: 50px;
+}
+.circle-progress{
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  margin-right: 5%;
+  right: 0;
+  /* margin-right: 13%; */
+  margin-bottom: 15%;
+  background-color: transparent;
+  display: grid;
+  place-items: center;
+  margin-top: -1.3%;
+
+}
+.circle-progress-value{
+ display: block;
+ height: calc(100% - 15px);
+ width: calc(100% - 15px);
+ /* background-color: rgb(24, 23, 23); */
+ border-radius: 50%;
+ display: grid;
+ place-items: center;
+ font-weight: 500;
+}
+.progress-ring__circle {
+  transition: stroke-dasharray 0.3s ease;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-linecap: round;
+}
+.addant-image{
+  position: absolute;
+  transform: translate(28%,28%);
+}
+.scroll-box-1{
+  width: 100%;
+  /* background-color: #d1cece; */
+}
+.circle-stroke{
+  stroke: #0ec79b;
+ transition: 0.5s ease;
+
+ 
+}
+.circle-svg{
+  background: transparent;
+  
+
+}
+.margin1 {
+  margin-top: 0.5rem!important;
+  margin-bottom: 0.5rem !important;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+.margin2{
+  /* margin-left: 1rem!important; */
+  margin-right: 0.5rem;
+}
+.program-progress{
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background-color: gray;
+
+}
+/*.scroll_mt {
+    margin-top: 70px !important;
+}*/
+article#category_tab2 {
+    margin-bottom: 100px;
 }
 
-  
+article#category_tab3 {
+    margin-bottom: 100px;
+}
+article#category_tab4 {
+    margin-bottom: 100px;
+}
+article#category_tab5 {
+    margin-bottom: 100px;
+}
+article#category_tab6 {
+    margin-bottom: 100px;
+}
+
+
+
+
+/* Laptop/ MAC */
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1919px) {
+    .tab-head {
+      
+        font-size: 14px;
+    }
+    a.nav-link {
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .sub-heading {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .col-md-9.tab-content {
+        padding: 0rem 1.5rem 0rem 1.5rem;
+    }
+    .solution_desc {
+        font-size: 12px;;
+    }
+    h5.card-title {
+        font-size: 14px;
+    }
+    .technology span {
+        font-size: 12px;
+    }
+    h5.card-title {
+        font-size: 12px;
+    }
+    .scroll_mt {
+        margin-top: -70px;
+    }
+    span.technology.badge.rounded-pill.mt-2 {
+        padding: 6px 25px 6px 7px;
+    }
+    .tech-stack {
+        font-size: 14px;
+        margin: 0px !important;
+    }
+    h5.card-title.mt-xxl-3.mb-xxl-3.mt-lg-2.mb-lg-2 {
+        font-size: 14px !important;
+    }
+    h5.card-title.mt-xxl-3\.mb-xxl-3\.mt-lg-2\.mb-lg-2 {
+        font-size: 14px !important;
+    }
+    article#category_tab2 {
+        margin-bottom: -10px;
+    }
+
+    article#category_tab3 {
+        margin-bottom: -10px;
+    }
+
+    article#category_tab4 {
+        margin-bottom: -10px;
+    }
+
+    article#category_tab5 {
+        margin-bottom: -10px;
+    }
+
+    article#category_tab6 {
+        margin-bottom: -10px;
+    }
+    .col-md-9.col-xxl-10.col-lg-9.tab-content {
+        margin: 0px !important;
+    }
+
+    }
   

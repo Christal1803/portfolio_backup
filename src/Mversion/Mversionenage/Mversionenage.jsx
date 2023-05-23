@@ -26,17 +26,14 @@ function Mversionenage() {
 
       <div class="accordion" id="accordionExample1">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h2 class="accordion-header border-left-0" id="headingOne">
+            <button class="accordion-button bi bi-alexa" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             <i class="glyphicon glyphicon-minus"></i>How
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
             <div class="accordion-body">
-              <p>Carefully pinpoint what you are looking to
-                  achieve with your touchscreen solution and
-                  how these goals are going to line up with those
-                  of your audience.</p>
+              <p>Precisely define your intended outcomes for all solutions and verify that they align with the goals and requirements of your intended audience.</p>
             </div>
           </div>
         </div>
@@ -49,10 +46,7 @@ function Mversionenage() {
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample1">
             <div class="accordion-body">
-            <p>Carefully pinpoint what you are looking to
-            achieve with your touchscreen solution and
-            how these goals are going to line up with those
-            of your audience.</p>      
+            <p>Business/Subject <br/>Matter Experts (SME)</p>      
           </div>
           </div>
         </div>
@@ -65,10 +59,7 @@ function Mversionenage() {
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample1">
             <div class="accordion-body">
-            <p>Carefully pinpoint what you are looking to
-            achieve with your touchscreen solution and
-            how these goals are going to line up with those
-            of your audience.</p>      
+            <p>Business Requirement Document (BRD).</p>      
             </div>
           </div>
         </div>
@@ -77,7 +68,7 @@ function Mversionenage() {
 
     <div className='mop&d mt-5'>
       <p className='mo-head'>Onboarding & Kickoff phase</p>
-      <p className='mo-para'>What space your touchscreen is going into?</p>
+      <p className='mo-para'>Have you considered the technical and physical requirements?</p>
 
       <img src={onk} className='img-fluid' />
 
@@ -91,10 +82,7 @@ function Mversionenage() {
             </h2>
             <div id="collapse4" class="accordion-collapse collapse show" aria-labelledby="heading4" data-bs-parent="#accordionExample2">
               <div class="accordion-body">
-                <p>Carefully pinpoint what you are looking to
-        achieve with your touchscreen solution and
-        how these goals are going to line up with those
-        of your audience.</p>
+                <p>Extensive research optimises solution performance. We identify performance-affecting factors and make necessary modifications to ensure your solution performs at its best.</p>
               </div>
             </div>
           </div>
@@ -107,10 +95,7 @@ function Mversionenage() {
             </h2>
             <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample2">
               <div class="accordion-body">
-              <p>Carefully pinpoint what you are looking to
-              achieve with your touchscreen solution and
-              how these goals are going to line up with those
-              of your audience.</p>      
+              <p>SME, Project Manager,<br/> Software Architect, UX Designer</p>      
             </div>
             </div>
           </div>
@@ -123,10 +108,7 @@ function Mversionenage() {
             </h2>
             <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6" data-bs-parent="#accordionExample2">
               <div class="accordion-body">
-              <p>Carefully pinpoint what you are looking to
-              achieve with your touchscreen solution and
-              how these goals are going to line up with those
-              of your audience.</p>      
+              <p>Software & Hardware spec</p>      
               </div>
             </div>
           </div>
@@ -135,10 +117,7 @@ function Mversionenage() {
 
     <div className='mop&d  mt-5'>
       <p className='mo-head'>Execution phase 01</p>
-      <p className='mo-para'>What does the system
-        capable of, both from
-        functional and non-
-        functional aspects?</p>
+      <p className='mo-para'>Navigation's impact on  user experience?</p>
 
       <img src={exp1} className='img-fluid' />
 
@@ -152,10 +131,7 @@ function Mversionenage() {
     </h2>
     <div id="collapse7" class="accordion-collapse collapse show" aria-labelledby="heading7" data-bs-parent="#accordionExample3">
       <div class="accordion-body">
-        <p>Carefully pinpoint what you are looking to
-        achieve with your touchscreen solution and
-        how these goals are going to line up with those
-        of your audience.</p>
+        <p>Utilising a sitemap approach, we create multiple screens and navigation options that prioritise accessibility considerations for solutions. We present an initial prototype of the concept through design sprints and storyboarding exercises.</p>
       </div>
     </div>
   </div>
@@ -167,10 +143,7 @@ function Mversionenage() {
     </h2>
     <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8" data-bs-parent="#accordionExample3">
       <div class="accordion-body">
-      <p>Carefully pinpoint what you are looking to
-      achieve with your touchscreen solution and
-      how these goals are going to line up with those
-      of your audience.</p>      
+      <p>UX Designer<br/>(Horizontal Function)</p>      
      </div>
     </div>
   </div>
@@ -182,10 +155,7 @@ function Mversionenage() {
     </h2>
     <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample3">
       <div class="accordion-body">
-      <p>Carefully pinpoint what you are looking to
-      achieve with your touchscreen solution and
-      how these goals are going to line up with those
-      of your audience.</p>      
+      <p>Sitemap doc, Storyboard, Design mockups</p>      
       </div>
     </div>
   </div>
@@ -194,8 +164,7 @@ function Mversionenage() {
 
     <div className='mop&d  mt-5'>
       <p className='mo-head'>Execution phase 02</p>
-      <p className='mo-para'>What is the navigation
-      experience to the user?</p>
+      <p className='mo-para'>What does the system capable of, both from functional and non-functional aspects?</p>
 
       <img src={exp2} className='img-fluid' />
 
@@ -209,10 +178,7 @@ function Mversionenage() {
     </h2>
     <div id="collapse10" class="accordion-collapse collapse show" aria-labelledby="heading10" data-bs-parent="#accordionExample4">
       <div class="accordion-body">
-        <p>Carefully pinpoint what you are looking to
-achieve with your touchscreen solution and
-how these goals are going to line up with those
-of your audience.</p>
+        <p>The system is meticulously designed to meet both functional and non-functional requirements while taking future demands into account. Scalability, extensibility, and dependency libraries are considered, and planning is done through the use of Business Requirements Documents (BRD) and software specifications.</p>
       </div>
     </div>
   </div>
@@ -224,10 +190,7 @@ of your audience.</p>
     </h2>
     <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionExample4">
       <div class="accordion-body">
-      <p>Carefully pinpoint what you are looking to
-      achieve with your touchscreen solution and
-      how these goals are going to line up with those
-      of your audience.</p>      
+      <p>Software Architect, QA Head (Horizontal Function).</p>      
      </div>
     </div>
   </div>
@@ -239,10 +202,7 @@ of your audience.</p>
     </h2>
     <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionExample4">
       <div class="accordion-body">
-      <p>Carefully pinpoint what you are looking to
-      achieve with your touchscreen solution and
-      how these goals are going to line up with those
-      of your audience.</p>      
+      <p>Design Document,Test Strategy</p>      
       </div>
     </div>
   </div>
@@ -251,9 +211,7 @@ of your audience.</p>
 
     <div className='mop&d  mt-5'>
       <p className='mo-head'>Execution phase 03</p>
-      <p className='mo-para'>What are you doing to
-      increase my confidence in
-      validating step #1?</p>
+      <p className='mo-para'>What are you doing to increase my confidence in validating step #1?</p>
 
       <img src={exp3} className='img-fluid' />
 
@@ -267,10 +225,7 @@ of your audience.</p>
     </h2>
     <div id="collapse13" class="accordion-collapse collapse show" aria-labelledby="heading13" data-bs-parent="#accordionExample5">
       <div class="accordion-body">
-        <p>Carefully pinpoint what you are looking to
-achieve with your touchscreen solution and
-how these goals are going to line up with those
-of your audience.</p>
+        <p>  Adopt Agile practices for feature development and testing, integrating business and performance metrics. Implement logging and auditing frameworks, leveraging iterative releases for continuous improvement. QA function executes test cases and develops automation framework</p>
       </div>
     </div>
   </div>
@@ -282,10 +237,7 @@ of your audience.</p>
     </h2>
     <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample5">
       <div class="accordion-body">
-      <p>Carefully pinpoint what you are looking to
-      achieve with your touchscreen solution and
-      how these goals are going to line up with those
-      of your audience.</p>      
+      <p>Business/Subject <br/>Matter Experts (SME).</p>      
      </div>
     </div>
   </div>
@@ -297,10 +249,7 @@ of your audience.</p>
     </h2>
     <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#accordionExample5">
       <div class="accordion-body">
-      <p>Carefully pinpoint what you are looking to
-      achieve with your touchscreen solution and
-      how these goals are going to line up with those
-      of your audience.</p>      
+      <p>Business Requirement Document (BRD)</p>      
       </div>
     </div>
   </div>
@@ -309,7 +258,7 @@ of your audience.</p>
 
     <div className='mop&d  mt-5'>
       <p className='mo-head'>Execution phase 04</p>
-      <p className='mo-para'>What are you doing to troubleshoot any remote deployment issues after a version release?</p>
+      <p className='mo-para'>How do you tackle remote deployment issues post version release?</p>
 
       <img src={exp4} className='img-fluid' />
 
@@ -323,10 +272,7 @@ of your audience.</p>
     </h2>
     <div id="collapse16" class="accordion-collapse collapse show" aria-labelledby="heading16" data-bs-parent="#accordionExample6">
       <div class="accordion-body">
-        <p>Carefully pinpoint what you are looking to
-achieve with your touchscreen solution and
-how these goals are going to line up with those
-of your audience.</p>
+        <p>A logging framework is available to facilitate investigation and replication of issues by the development and quality assurance teams. In addition, a change management process is in place to monitor and implement significant system modifications after deployment.</p>
       </div>
     </div>
   </div>
@@ -338,10 +284,7 @@ of your audience.</p>
     </h2>
     <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17" data-bs-parent="#accordionExample6">
       <div class="accordion-body">
-      <p>Carefully pinpoint what you are looking to
-      achieve with your touchscreen solution and
-      how these goals are going to line up with those
-      of your audience.</p>      
+      <p>Delivery team (Business Unit)</p>      
      </div>
     </div>
   </div>
@@ -353,10 +296,7 @@ of your audience.</p>
     </h2>
     <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18" data-bs-parent="#accordionExample6">
       <div class="accordion-body">
-      <p>Carefully pinpoint what you are looking to
-      achieve with your touchscreen solution and
-      how these goals are going to line up with those
-      of your audience.</p>      
+      <p>Iterative releases</p>      
       </div>
     </div>
   </div>
@@ -365,7 +305,7 @@ of your audience.</p>
 
     <div className='mop&d  mt-5'>
       <p className='mo-head'>Execution phase 05</p>
-      <p className='mo-para'>What are you doing for a final review and signoff?</p>
+      <p className='mo-para'>How to proceed with the final review and signoff procedure?</p>
 
       <img src={exp5} className='img-fluid' />
 
@@ -379,10 +319,7 @@ of your audience.</p>
     </h2>
     <div id="collapse19" class="accordion-collapse collapse show" aria-labelledby="heading19" data-bs-parent="#accordionExample7">
       <div class="accordion-body">
-        <p>Carefully pinpoint what you are looking to
-        achieve with your touchscreen solution and
-        how these goals are going to line up with those
-        of your audience.</p>
+        <p>The approach involves conducting User Acceptance Testing (UAT) to validate each requirement in the Business Requirements Document (BRD) and  prioritise gap resolution, except for non-critical issues, to a successful launch.</p>
       </div>
     </div>
   </div>
@@ -394,10 +331,7 @@ of your audience.</p>
     </h2>
     <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20" data-bs-parent="#accordionExample7">
       <div class="accordion-body">
-      <p>Carefully pinpoint what you are looking to
-      achieve with your touchscreen solution and
-      how these goals are going to line up with those
-      of your audience.</p>      
+      <p>Business/Subject Matter Experts (SME), Project Manager, Team Lead</p>      
      </div>
     </div>
   </div>
@@ -409,10 +343,7 @@ of your audience.</p>
     </h2>
     <div id="collapse21" class="accordion-collapse collapse" aria-labelledby="heading21" data-bs-parent="#accordionExample7">
       <div class="accordion-body">
-      <p>Carefully pinpoint what you are looking to
-      achieve with your touchscreen solution and
-      how these goals are going to line up with those
-      of your audience.</p>      
+      <p>Product launch</p>      
       </div>
     </div>
   </div>
@@ -421,7 +352,7 @@ of your audience.</p>
 
     <div className='mop&d  mt-5'>
       <p className='mo-head'>Execution phase 06</p>
-      <p className='mo-para'>What are you doing to make sure post launch success?</p>
+      <p className='mo-para'>What steps are taken to ensure success post launch?</p>
 
       <img src={exp6} className='img-fluid' />
 
@@ -435,10 +366,7 @@ of your audience.</p>
     </h2>
     <div id="collapse22" class="accordion-collapse collapse show" aria-labelledby="heading22" data-bs-parent="#accordionExample8">
       <div class="accordion-body">
-        <p>Carefully pinpoint what you are looking to
-        achieve with your touchscreen solution and
-        how these goals are going to line up with those
-        of your audience.</p>
+        <p>Gathering and analysing user feedback, monitoring performance metrics, addressing any issues promptly, and continuously updating and improving the solution to meet changing needs and expectations.</p>
       </div>
     </div>
   </div>
@@ -450,10 +378,7 @@ of your audience.</p>
     </h2>
     <div id="collapse23" class="accordion-collapse collapse" aria-labelledby="heading23" data-bs-parent="#accordionExample8">
       <div class="accordion-body">
-      <p>Carefully pinpoint what you are looking to
-      achieve with your touchscreen solution and
-      how these goals are going to line up with those
-      of your audience.</p>      
+      <p>Team Lead, Support Engineer </p>      
      </div>
     </div>
   </div>
@@ -465,10 +390,7 @@ of your audience.</p>
     </h2>
     <div id="collapse24" class="accordion-collapse collapse" aria-labelledby="heading24" data-bs-parent="#accordionExample8">
       <div class="accordion-body">
-      <p>Carefully pinpoint what you are looking to
-      achieve with your touchscreen solution and
-      how these goals are going to line up with those
-      of your audience.</p>      
+      <p>Operational support artifacts</p>      
       </div>
     </div>
   </div>

@@ -14,7 +14,7 @@ function Partnership_Discovery() {
       
 
       <div class="row">
-        <div class="col-lg-6 col-sm-12 col-md-12 text-center">
+        <div class="col-lg-6 col-sm-12 mx-auto my-auto col-md-12 text-center">
         <svg class="img-fluid svgpd" width="746" height="746" viewBox="0 0 746 746" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M177.5 692H578" stroke="#999999" stroke-width="0.5" stroke-linecap="round"/>
                             <path class="plant-movement" d="M72.6305 452.598C72.6305 452.598 86.0585 448.122 92.5039 479.186C98.9494 510.249 99.9639 527.333 99.9639 527.333C99.9639 527.333 102.083 534.032 107.006 531.376C111.93 528.72 120.195 519.604 126.402 523.334C132.609 527.064 132.937 535.524 128.521 546.49C124.104 557.456 115.212 581.88 114.436 584.029C113.66 586.177 114.034 589.803 117.689 588.505C121.344 587.207 144.411 572.361 150.811 583.73C157.212 595.099 139.92 623.641 138.085 626.789C136.249 629.937 136.593 631.579 137.906 632.862C139.218 634.145 146.574 628.386 153.318 624.462C160.062 620.538 168.551 617.076 171.699 623.954C174.847 630.833 169.998 654.451 137.592 686.126L121.613 699.838L101.575 693.139C59.5307 676.204 46.0431 656.212 46.3713 648.662C46.6995 641.113 55.8306 641.023 63.5591 642.127C71.2877 643.231 80.2248 645.738 81.0155 644.022C81.8063 642.306 81.4333 640.695 78.5239 638.472C75.6145 636.249 48.6839 616.48 50.34 603.529C51.9961 590.578 78.9267 595.517 82.7761 595.308C86.6255 595.099 85.6109 591.608 84.0741 589.907C82.5374 588.206 65.0959 569.019 56.8302 560.515C48.5645 552.01 45.5656 544.297 49.967 538.299C54.3684 532.301 65.3346 537.791 70.855 538.373C76.3754 538.955 75.8234 531.943 75.8234 531.943C75.8234 531.943 70.1985 515.725 64.3201 484.617C58.4416 453.508 72.914 452.494 72.914 452.494" fill="#F5F5F5"/>
@@ -226,9 +226,9 @@ function Partnership_Discovery() {
           <div class="partnership-content">
             <p class="partnership-content-head">How</p>
             <p class="partnership-content-para">Precisely define your intended outcomes for all solutions and verify that they align with the goals and requirements of your intended audience.</p>
-            <p class="partnership-content-head mt-3 mb-2">Who</p>
+                          <p class="partnership-content-head mt-xxl-3  mb-xxl-2">Who</p>
             <p class="partnership-content-para">Business/Subject <br/>Matter Experts (SME)</p>
-            <p class="partnership-content-head mt-3 mb-2">Outcome</p>
+                          <p class="partnership-content-head mt-xxl-3  mb-xxl-2">Outcome</p>
             <p class="partnership-content-para">Business Requirement Document (BRD)</p>
           </div>
           </div>

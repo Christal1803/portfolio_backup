@@ -11,8 +11,8 @@ function OnBoarding() {
   return (
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-6 col-sm-12 col-md-12 text-center my-auto">
-        <svg class="img-fluid svgpd" width="855" height="570" viewBox="0 0 855 570" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="col-lg-6 mx-auto my-auto col-sm-12 col-md-12 text-center my-auto">
+        <svg class="img-fluid svgpd" width="746" height="746" viewBox="0 0 855 570" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path class="plant-movement" d="M88.4071 443.665C88.5334 437.212 91.0241 431.03 95.4067 426.292C97.5157 435.013 88.4071 443.665 88.4071 443.665Z" fill="#EBEBEB"/>
           <path class="plant-movement" d="M98.5645 438.752C104.528 436.282 111.193 436.1 117.283 438.239C110.135 443.654 98.5645 438.752 98.5645 438.752Z" fill="#EBEBEB"/>
           <path class="plant-movement" d="M99.7159 433.109C98.7512 428.107 99.6601 422.925 102.269 418.551C105.336 424.935 99.7159 433.109 99.7159 433.109Z" fill="#EBEBEB"/>

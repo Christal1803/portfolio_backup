@@ -15,9 +15,9 @@ function ExecutionPhase06() {
 
       <div class="row">
         {/* <div class="col-lg-8 col-sm-12 col-md-12 text-center"> */}
-        <div class="col-lg-6 col-sm-12 col-md-12 text-center my-auto">
+        <div class="col-lg-6 col-sm-12 col-md-12 text-center mx-auto my-auto">
         {/* <svg width="842" height="623" className='img-fluid' viewBox="0 0 842 623" fill="none" xmlns="http://www.w3.org/2000/svg"> */}
-        <svg class="img-fluid svgpd" width="919" height="613" viewBox="0 0 919 613" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="img-fluid svgpd" width="746" height="746" viewBox="0 0 919 613" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path class="plant-movement" d="M796.984 459.114C805.57 454.697 815.663 454.112 825.189 455.691C830.298 456.542 835.637 458.068 839.114 461.917C842.59 465.766 843.265 472.56 839.256 475.824C836.674 477.559 833.57 478.343 830.475 478.042C823.025 477.953 814.758 476.64 808.798 481.128C805.41 483.683 803.139 487.94 799.077 489.199C797.033 489.69 794.885 489.495 792.962 488.646C791.039 487.797 789.448 486.34 788.434 484.499C786.509 480.759 786.084 476.426 787.246 472.383C787.735 469.57 788.869 466.908 790.558 464.606C792.248 462.304 794.447 460.425 796.984 459.114Z" fill="#EBEBEB"/>
           <path class="plant-movement" d="M777.348 421.19C782.669 428.676 792.78 426.192 797.499 421.633C802.217 417.074 804.222 410.422 806.049 404.107C810.2 389.668 814.386 374.519 811.371 359.761C810.625 355.303 808.667 351.136 805.712 347.716C804.217 346.033 802.306 344.772 800.17 344.059C798.035 343.346 795.75 343.207 793.543 343.654C788.399 345.02 785.206 350.057 782.9 354.847C776.097 368.979 772.534 384.45 772.469 400.134C772.469 407.442 773.303 415.088 777.419 421.119" fill="#EBEBEB"/>
           <path class="plant-movement" d="M762.944 431.938C768.638 425.18 769.72 415.317 767.184 406.856C764.647 398.394 758.917 391.192 752.319 385.303C744.556 378.387 735.518 373.054 725.71 369.604C721.912 368.074 717.827 367.384 713.737 367.582C711.697 367.704 709.717 368.32 707.968 369.377C706.22 370.434 704.754 371.9 703.697 373.649C700.912 378.97 703.59 385.463 706.499 390.749C711.613 400.065 717.456 408.962 723.972 417.357C729.294 424.115 735.201 430.767 743.183 433.818C751.166 436.869 759.45 436.515 763.689 430.98" fill="#EBEBEB"/>
@@ -320,7 +320,7 @@ function ExecutionPhase06() {
             <div class="partnership-content">
               <p class="partnership-content-head mb-1">How</p>
               <p class="partnership-content-para">
-Gathering and analysing user feedback, monitoring performance metrics, addressing any issues promptly, and continuously updating and improving the solution to meet changing needs and expectations.</p>
+               Gathering and analysing user feedback, monitoring performance metrics, addressing any issues promptly, and continuously updating and improving the solution to meet changing needs and expectations.</p>
               <p class="partnership-content-head mt-3 mb-2">Who</p>
               <p class="partnership-content-para">Team Lead, Support Engineer</p>
               <p class="partnership-content-head mt-3 mb-2">Outcome</p>

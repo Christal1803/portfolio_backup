@@ -21,6 +21,7 @@
   .accordion-body {
     background-color: #0EC79B;
     color: #fff;
+    border-bottom-right-radius: 30px;
   }
   /* .accordion-button::after {
   
@@ -124,7 +125,7 @@
     background: #0EC79B;
     border-radius: 49.801px;
     color: #fff;
-    font-family: 'Roboto';
+    font-family: 'Gilroy';
   font-style: normal;
   font-weight: 400;
   font-size: 13.1346px;
@@ -134,4 +135,8 @@
   }
   .card {
     border-radius: 30px;
+}
+
+.accordion-item:first-of-type .accordion-button{
+  border-top-right-radius: 30px;
 }

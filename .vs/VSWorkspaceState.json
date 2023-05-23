@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\src",
+    "\\src\\Home",
+    "\\src\\Kiosk&TouchScreen",
+    "\\src\\Kiosk&TouchScreen\\KioskHandling",
+    "\\src\\Kiosk&TouchScreen\\Newnav",
+    "\\src\\Kiosk&TouchScreen\\OnBoarding",
+    "\\src\\Kiosk&TouchScreen\\Partnership&Discovery"
+  ],
+  "SelectedNode": "\\src\\Kiosk&TouchScreen\\KioskHandling\\KioskHandling.jsx",
+  "PreviewInSolutionExplorer": false
+}

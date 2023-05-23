@@ -28,7 +28,7 @@ function Home() {
     <div class="container-fluid nav-align ">
       
       <Newnav/>
-      <div class="row container-align">
+          <div class="row container-align ht-mdh homeHt">
         <div class="col-lg-7 col-sm-12 col-md-12 my-auto con-sec">
           <p class="para1">Interactive Solution Development:<span className='highlights'> A Journey from Partnership to Post-Launch Success</span></p>
 

@@ -433,39 +433,23 @@ function KioskHandling() {
 
     return (
         <div >
-            {/*<NavBar02/>*/}
-
-
             {isMobile ? (
                 console.log(isMobile),
                 <div >
                     <Mversiontab></Mversiontab>
-                    {/*<Partnership_Discovery/>*/}
-
-                    {/*<OnBoarding/>*/}
-
-                    {/*<ExecutionPhase01/>*/}
-
-                    {/*<ExecutionPhase02/>*/}
-
-                    {/*<ExecutionPhase03/>*/}
-                    {/*<ExecutionPhase04/>*/}
-                    {/*<ExecutionPhase05/>*/}
-                    {/*<ExecutionPhase06/>*/}
-
                 </div>
 
             ) : (
-                <div >
+                    <div class="homeHt" >
                     <Newnav />
-                    <div class="container-fluid mt-3">
+                    <div class="container-fluid mt-xxl-3 mt-lg-1">
 
 
-                        <div class="row container-align g-3">
-                            <div class="col-md-5 col-lg-3 col-xxl-2 my-auto">
+                        <div class="row container-align ht-md g-3 ">
+                            <div class="col-md-5 col-lg-3 col-xxl-2 my-xxl-auto">
                                 <nav id="myTab" class="nav nav-pills flex-column">
                                     <p className='m-0'><b className='tab-head'>Our Engagement model</b></p>
-                                    <a onClick={()=>handleProgressClick(1)} href="#category_tab1" data-bs-toggle="pill" class="active nav-link mb-3 mt-3" >Engagement model</a>
+                                        <a onClick={() => handleProgressClick(1)} href="#category_tab1" data-bs-toggle="pill" class="active nav-link mb-xxl-3 mt-lg-2  mb-lg-2 mt-xxl-3" >Engagement model</a>
                                     <p className='m-0'><b className='tab-head'>Our Solutions</b></p>
                                     <a onClick={()=>handleProgressClick(2)} href="#category_tab2" data-bs-toggle="pill" class="nav-link">Kiosk & Touchscreen</a>
                                     <a onClick={()=>handleProgressClick(3)} href="#category_tab3" data-bs-toggle="pill" class="nav-link">Mobile development</a>
@@ -579,8 +563,8 @@ function KioskHandling() {
                                                         <div class="card-body">
 
                                                             <div className='mybtn text-center'>
-                                                                <h5 class="card-title mt-3 mb-3">Floor Client</h5>
-                                                                <a href="https://www.addant.com/#/solutions/casinomanagementsystem/floorclient" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                                    <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Floor Client</h5>
+                                                                <a href="https://www.addant.com/#/solutions/casinomanagementsystem/floorclient" target="_blank" class="btn mo-knowmore mb-xxl-4 mb-lg-3">Know more</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -594,8 +578,8 @@ function KioskHandling() {
                                                     <div class="card-body">
 
                                                         <div className='mybtn text-center'>
-                                                            <h5 class="card-title mt-3 mb-3">Virtual Receptionist</h5>
-                                                            <a href="https://www.addant.com/#/solutions/hospitalitymanagement/alicereceptionist" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                                <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Virtual Receptionist</h5>
+                                                                <a href="https://www.addant.com/#/solutions/hospitalitymanagement/alicereceptionist" target="_blank" class="btn mo-knowmore mb-xxl-4 mb-lg-3">Know more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -605,8 +589,8 @@ function KioskHandling() {
                                                     <img src={kis} class="card-img-top" alt="..." />
                                                     <div class="card-body">
                                                         <div className='mybtn text-center'>
-                                                            <h5 class="card-title mt-3 mb-3">Multi Service Kiosk</h5>
-                                                            <a href="https://www.addant.com/#/solutions/smartcityplatform/multiservicekisokapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                                <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Multi Service Kiosk</h5>
+                                                                <a href="https://www.addant.com/#/solutions/smartcityplatform/multiservicekisokapplication" target="_blank" class="btn mo-knowmore mb-xxl-4 mb-lg-3">Know more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -616,8 +600,8 @@ function KioskHandling() {
                                                     <img src={aliad} class="card-img-top" alt="..." />
                                                     <div class="card-body">
                                                         <div className='mybtn text-center'>
-                                                            <h5 class="card-title mt-3 mb-3">Directory Admin</h5>
-                                                            <a href="https://www.addant.com/#/solutions/hospitalitymanagement/aliceadmin" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                                <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Directory Admin</h5>
+                                                                <a href="https://www.addant.com/#/solutions/hospitalitymanagement/aliceadmin" target="_blank" class="btn mo-knowmore mb-xxl-4 mb-lg-3">Know more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -627,15 +611,12 @@ function KioskHandling() {
                                                     <img src={alic} class="card-img-top" alt="..." />
                                                     <div class="card-body">
                                                         <div className='mybtn text-center'>
-                                                            <h5 class="card-title mt-3 mb-3">Alice</h5>
-                                                            <a href="https://www.addant.com/#/solutions/hospitalitymanagement/alicevisitormanagement" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                                <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Alice</h5>
+                                                                <a href="https://www.addant.com/#/solutions/hospitalitymanagement/alicevisitormanagement" target="_blank" class="btn mo-knowmore mb-xxl-4 mb-lg-3">Know more</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            {/*<div key={6}>*/}
-                                            {/*    <h3>6</h3>*/}
-                                            {/*</div>*/}
                                         </Slider>
                           
                                     </div>
@@ -696,11 +677,10 @@ function KioskHandling() {
                                                             <img src={flc} class="card-img-top" alt="..." />
 
                                                             <div class="card-body">
-
-                                                                <div className='mybtn text-center'>
-                                                                    <h5 class="card-title mt-3 mb-3">QR Code validation & payment app</h5>
-                                                                    <a href="https://www.addant.com/#/solutions/smartcityplatform/qrcodevalidationpaymentapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
-                                                                </div>
+                                                                    <div className='mybtn text-center'>
+                                                                        <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">QR Code validation & payment app</h5>
+                                                                        <a href="https://www.addant.com/#/solutions/smartcityplatform/qrcodevalidationpaymentapplication" target="_blank" class="btn mo-knowmore mb-xxl-4 mb-lg-3">Know more</a>
+                                                                    </div>
                                                             </div>
                                                         </div>
 
@@ -710,33 +690,32 @@ function KioskHandling() {
                                                 <div key={2}>
                                                     <div class="card-space">
                                                         <img src={cuspos} class="card-img-top" alt="..." />
-                                                        <div class="card-body">
-
-                                                            <div className='mybtn text-center'>
-                                                                <h5 class="card-title mt-3 mb-3">Custom POS Application</h5>
-                                                                <a href="https://www.addant.com/#/solutions/smartcityplatform/customposapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
-                                                            </div>
+                                                            <div class="card-body">
+                                                                <div className='mybtn text-center'>
+                                                                    <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Custom POS Application</h5>
+                                                                    <a href="https://www.addant.com/#/solutions/smartcityplatform/customposapplication" target="_blank" class="btn mo-knowmore mb-xxl-4 mb-lg-3">Know more</a>
+                                                                </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div key={3}>
                                                     <div class="card-space">
                                                         <img src={papp} class="card-img-top" alt="..." />
-                                                        <div class="card-body">
-                                                            <div className='mybtn text-center'>
-                                                                <h5 class="card-title mt-3 mb-3">Player App</h5>
-                                                                <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playerapp" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
-                                                            </div>
+                                                            <div class="card-body">
+                                                                <div className='mybtn text-center'>
+                                                                    <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Player App</h5>
+                                                                    <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playerapp" target="_blank" class="btn mo-knowmore mb-xxl-4 mb-lg-3">Know more</a>
+                                                                </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div key={4}>
                                                     <div class="card-space">
                                                         <img src={ca} class="card-img-top" alt="..." />
-                                                        <div class="card-body">
+                                                        <div class="card-body"> 
                                                             <div className='mybtn text-center'>
-                                                                <h5 class="card-title mt-3 mb-3">Cage Application</h5>
-                                                                <a href="https://www.addant.com/#/solutions/casinomanagementsystem/cageapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                                    <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Cage Application</h5>
+                                                                    <a href="https://www.addant.com/#/solutions/casinomanagementsystem/cageapplication" target="_blank" class="btn mo-knowmore mb-xxl-4 mb-lg-3">Know more</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -746,8 +725,8 @@ function KioskHandling() {
                                                         <img src={ptm} class="card-img-top" alt="..." />
                                                         <div class="card-body">
                                                             <div className='mybtn text-center'>
-                                                                <h5 class="card-title mt-3 mb-3">Player Tracking Module</h5>
-                                                                <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playertrackingmodule" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
+                                                                    <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Player Tracking Module</h5>
+                                                                    <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playertrackingmodule" target="_blank" class="btn mo-knowmore mb-xxl-4 mb-lg-3">Know more</a>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -757,144 +736,6 @@ function KioskHandling() {
                                                 {/*</div>*/}
                                             </Slider>
                                         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                        {/*                                          <div>*/}
-                                        {/*        <Slider ref={setSlider} {...setting}>*/}
-                                        {/*            <div key={1}>*/}
-                                        {/*        <div class="card-space">*/}
-                                        {/*                    <div>*/}
-                                        {/*                        <img src={flc} class="card-img-top img-fluid" alt="..."/>*/}
-                                        {/*                        <div class="card-body">*/}
-
-                                        {/*                            <div className='mybtn text-center'>*/}
-                                        {/*                                <h5 class="card-title mt-3 mb-3">QR Code validation & payment app</h5>*/}
-                                        {/*                                    <a href="https://www.addant.com/#/solutions/smartcityplatform/qrcodevalidationpaymentapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>*/}
-                                        {/*                            </div>*/}
-                                        {/*                        </div>*/}
-                                        {/*                </div>*/}
-
-                                        {/*                    </div>*/}
-
-                                        {/*            </div>*/}
-                                        {/*            <div key={2}>*/}
-                                        {/*                <div class="card-space">*/}
-                                        {/*                    <img src={cuspos} class="card-img-top" alt="..."/>*/}
-
-                                        {/*                    <div class="card-body">*/}
-
-                                        {/*                        <div className='mybtn text-center'>*/}
-                                        {/*                            <h5 class="card-title mt-3 mb-3">Custom POS Application</h5>*/}
-                                        {/*                                <a href="https://www.addant.com/#/solutions/smartcityplatform/customposapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>*/}
-                                        {/*                        </div>*/}
-                                        {/*                    </div>*/}
-
-
-
-
-
-                                        {/*                </div>*/}
-                                        {/*            </div>*/}
-                                        {/*            <div key={3}>*/}
-                                        {/*        <div class="card-space">*/}
-                                        {/*            <img src={papp} class="card-img-top" alt="..."/>*/}
-
-
-
-                                        {/*            <div class="card-body">*/}
-
-                                        {/*              <div className='mybtn text-center'>*/}
-                                        {/*                  <h5 class="card-title mt-3 mb-3">Player App</h5>*/}
-                                        {/*                      <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playerapp" target="_blank" class="btn mo-knowmore mb-4">Know more</a>*/}
-                                        {/*              </div>*/}
-                                        {/*          </div>     */}
-                                        {/*                </div>*/}
-
-                                        {/*            </div>*/}
-                                        {/*            <div key={4}>*/}
-                                        {/*                <div class="card-space">*/}
-                                        {/*                    <img src={ca} class="card-img-top" alt="..."/>*/}
-
-                                        {/*          <div class="card-body">*/}
-
-                                        {/*            <div className='mybtn text-center'>*/}
-                                        {/*                <h5 class="card-title mt-3 mb-3">Cage Application</h5>*/}
-                                        {/*                    <a href="https://www.addant.com/#/solutions/casinomanagementsystem/cageapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>*/}
-                                        {/*            </div>*/}
-                                        {/*        </div>*/}
-
-
-
-                                        {/*                </div>*/}
-                                        {/*            </div>*/}
-                                        {/*            <div key={5}>*/}
-                                        {/*                <div class="card-space">*/}
-                                        {/*                    <img src={ptm} class="card-img-top" alt="..."/>*/}
-
-                                        {/*                    <div class="card-body">*/}
-
-                                        {/*                      <div className='mybtn text-center'>*/}
-                                        {/*                          <h5 class="card-title mt-3 mb-3">Player Tracking Module</h5>*/}
-                                        {/*                              <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playertrackingmodule" target="_blank" class="btn mo-knowmore mb-4">Know more</a>*/}
-                                        {/*                      </div>*/}
-                                        {/*                  </div>*/}
-                                        {/*                </div> */}
-
-
-
-                                        {/*                </div>*/}
-
-
-                                        {/*                <div key={6}>*/}
-                                        {/*                    <div class="card-space">*/}
-                                        {/*                        <img src={cusposc} class="card-img-top" alt="..."/>*/}
-
-                                        {/*                        <div class="card-body">*/}
-
-                                        {/*                          <div className='mybtn text-center'>*/}
-                                        {/*                              <h5 class="card-title mt-3 mb-3">Custom POS Application - Casino</h5>*/}
-                                        {/*                                  <a href="https://www.addant.com/#/solutions/casinomanagementsystem/customposapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>*/}
-                                        {/*                          </div>*/}
-                                        {/*                      </div>*/}
-                                        {/*                    </div> */}
-
-
-
-                                        {/*                    </div>*/}
-
-
-
-
-
-                                        {/*            */}{/*<div key={6}>*/}
-                                        {/*            */}{/*    <h3>6</h3>*/}
-                                        {/*            */}{/*</div>*/}
-                                        {/*        </Slider>*/}
-                                        {/*        <div style={{ textAlign: "center" }}>*/}
-
-
-                                        {/*    <a class="indicator"  role="button">*/}
-                                        {/*        <img src={left} className="img-fluid btn-arrow" onClick={previous} />*/}
-                                        {/*    </a> &nbsp;&nbsp;*/}
-                                        {/*    <a class="w-aut indicator" role="button" >*/}
-                                        {/*        <img src={right} className="img-fluid btn-arrow" onClick={next} />*/}
-                                        {/*    </a>*/}
-                                        {/*        </div>*/}
-                                        {/*</div>*/}
-
 
                                     </div>
 
@@ -945,10 +786,10 @@ function KioskHandling() {
                                         </span>
 
 
-                                        <span className='technology badge rounded-pill  mt-2  me-3'>
-                                            <img src={bootstrap} className='img-fluid rounded-circle bg-white' />
-                                            <span>Bootstrap</span>
-                                        </span>
+                                        {/*<span className='technology badge rounded-pill  mt-2  me-3'>*/}
+                                        {/*    <img src={bootstrap} className='img-fluid rounded-circle bg-white' />*/}
+                                        {/*    <span>Bootstrap</span>*/}
+                                        {/*</span>*/}
                                     </div>
                                     <div onWheel={handleScroll4}>
                                         <Slider ref={sliderRef4} {...setting4}>
@@ -960,7 +801,7 @@ function KioskHandling() {
                                                         <div class="card-body">
 
                                                             <div className='mybtn text-center'>
-                                                                <h5 class="card-title mt-3 mb-3">Web Admin</h5>
+                                                                    <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Web Admin</h5>
                                                                 <a href="https://www.addant.com/#/solutions/casinomanagementsystem/webadmin" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                                             </div>
                                                         </div>
@@ -975,7 +816,7 @@ function KioskHandling() {
                                                     <div class="card-body">
 
                                                         <div className='mybtn text-center'>
-                                                            <h5 class="card-title mt-3 mb-3">Smart Web Platform</h5>
+                                                                <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Smart Web Platform</h5>
                                                             <a href="https://www.addant.com/#/solutions/smartcityplatform/smartwebplatform" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                                         </div>
                                                     </div>
@@ -991,43 +832,6 @@ function KioskHandling() {
                                             {/*</div>*/}
                                         </Slider>
                                     </div>
-                                    {/* 
-                                    <div className='gallery container-fluid mt-3'>
-                                        <div class="row ">
-
-                                            <div className='col-4 p-0'>
-                                                <div class="card-space">
-                                                    <div>
-                                                        <img src={webad} class="card-img-top" alt="..." />
-
-                                                        <div class="card-body">
-
-                                                            <div className='mybtn text-center'>
-                                                                <h5 class="card-title mt-3 mb-3">Web Admin</h5>
-                                                                <a href="https://www.addant.com/#/solutions/casinomanagementsystem/webadmin" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-
-                                            <div className='col-4 p-0'>
-                                                <div class="card-space">
-                                                    <img src={swp} class="card-img-top" alt="..." />
-
-                                                    <div class="card-body">
-
-                                                        <div className='mybtn text-center'>
-                                                            <h5 class="card-title mt-3 mb-3">Smart Web Platform</h5>
-                                                            <a href="https://www.addant.com/#/solutions/smartcityplatform/smartwebplatform" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> */}
                        
 
                                 </article>
@@ -1082,7 +886,7 @@ function KioskHandling() {
                                                         <div class="card-body">
 
                                                             <div className='mybtn text-center'>
-                                                                <h5 class="card-title mt-3 mb-3">Player Tracking Module</h5>
+                                                                    <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Player Tracking Module</h5>
                                                                 <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playertrackingmodule" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                                             </div>
                                                         </div>
@@ -1097,7 +901,7 @@ function KioskHandling() {
                                                     <div class="card-body">
 
                                                         <div className='mybtn text-center'>
-                                                            <h5 class="card-title mt-3 mb-3">Player App</h5>
+                                                                <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Player App</h5>
                                                             <a href="https://www.addant.com/#/solutions/casinomanagementsystem/playerapp" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                                         </div>
                                                     </div>
@@ -1108,7 +912,7 @@ function KioskHandling() {
                                                     <img src={webad} class="card-img-top" alt="..." />
                                                     <div class="card-body">
                                                         <div className='mybtn text-center'>
-                                                            <h5 class="card-title mt-3 mb-3">Web Admin</h5>
+                                                                <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Web Admin</h5>
                                                             <a href="https://www.addant.com/#/solutions/casinomanagementsystem/webadmin" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                                         </div>
                                                     </div>
@@ -1119,7 +923,7 @@ function KioskHandling() {
                                                     <img src={kis} class="card-img-top" alt="..." />
                                                     <div class="card-body">
                                                         <div className='mybtn text-center'>
-                                                            <h5 class="card-title mt-3 mb-3">Multi Service Kiosk</h5>
+                                                                <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Multi Service Kiosk</h5>
                                                             <a href="https://www.addant.com/#/solutions/smartcityplatform/multiservicekisokapplication" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                                         </div>
                                                     </div>
@@ -1130,7 +934,7 @@ function KioskHandling() {
                                                     <img src={fs} class="card-img-top" alt="..." />
                                                     <div class="card-body">
                                                         <div className='mybtn text-center'>
-                                                            <h5 class="card-title mt-3 mb-3">Floor Assistant</h5>
+                                                                <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Floor Assistant</h5>
                                                             <a href="https://www.addant.com/#/solutions/casinomanagementsystem/floorassistant" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                                         </div>
                                                     </div>
@@ -1189,7 +993,7 @@ function KioskHandling() {
                                                         <div class="card-body">
 
                                                             <div className='mybtn text-center'>
-                                                                <h5 class="card-title mt-3 mb-3">Web Admin</h5>
+                                                                    <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Web Admin</h5>
                                                                 <a href="https://www.addant.com/#/solutions/casinomanagementsystem/webadmin" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                                             </div>
                                                         </div>
@@ -1204,7 +1008,7 @@ function KioskHandling() {
                                                     <div class="card-body">
 
                                                         <div className='mybtn text-center'>
-                                                            <h5 class="card-title mt-3 mb-3">Smart Web Platform</h5>
+                                                                <h5 class="card-title mt-xxl-3 mb-xxl-3 mt-lg-2 mb-lg-2">Smart Web Platform</h5>
                                                             <a href="https://www.addant.com/#/solutions/smartcityplatform/smartwebplatform" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
                                                         </div>
                                                     </div>
@@ -1212,64 +1016,18 @@ function KioskHandling() {
                                             </div>
                                             <div key={3}>
                                                 <div class="card-space">
-                                                
-                                                
                                                 </div>
                                             </div>
-                                            {/*<div key={6}>*/}
-                                            {/*    <h3>6</h3>*/}
-                                            {/*</div>*/}
                                         </Slider>
                                     </div>
-                                    {/* <div className='gallery container-fluid mt-3'>
-                                        <div class="row ">
-
-                                            <div className='col-4 p-0'>
-                                                <div class="card-space">
-                                                    <div>
-                                                        <img src={webad} class="card-img-top" alt="..." />
-
-                                                        <div class="card-body">
-
-                                                            <div className='mybtn text-center'>
-                                                                <h5 class="card-title mt-3 mb-3">Web Admin</h5>
-                                                                <a href="https://www.addant.com/#/solutions/casinomanagementsystem/webadmin" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-
-                                            <div className='col-4 p-0'>
-                                                <div class="card-space">
-                                                    <img src={swp} class="card-img-top" alt="..." />
-
-                                                    <div class="card-body">
-
-                                                        <div className='mybtn text-center'>
-                                                            <h5 class="card-title mt-3 mb-3">Smart Web Platform</h5>
-                                                            <a href="https://www.addant.com/#/solutions/smartcityplatform/smartwebplatform" target="_blank" class="btn mo-knowmore mb-4">Know more</a>
-                                                        </div>
-                                                    </div>
-
-
-
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> */}
-                                
+                                   
 
                                     </article>
 
 
                                 </div>
                                 {/* PROGRESS 1 */}
-                                <div style={{display:activeDiv === 1 ? 'flex':'none'}} className='scroll-box'>
+                                <div style={{ display: activeDiv === 1 ? 'flex' : 'none' }} className='scroll-box scroll_mt '>
 
                                     <div className='scroll-box-1'>
                                         <div className='scroll-rl'>
@@ -1310,7 +1068,7 @@ function KioskHandling() {
 
                                 </div>
                                 {/* PROGRESS 2 */}
-                                <div style={{display:activeDiv === 2 ? 'flex':'none'}} className='scroll-box'>
+                                <div style={{ display: activeDiv === 2 ? 'flex' : 'none' }} className='scroll-box scroll_mt '>
 
 <div className='scroll-box-1'>
     <div className='scroll-rl'>
@@ -1351,7 +1109,7 @@ function KioskHandling() {
 
 </div>
 {/* PROGRESS 3 */}
-<div style={{display:activeDiv === 3 ? 'flex':'none'}} className='scroll-box'>
+                                <div style={{ display: activeDiv === 3 ? 'flex' : 'none' }} className='scroll-box scroll_mt '>
 
 <div className='scroll-box-1'>
     <div className='scroll-rl'>
@@ -1392,7 +1150,7 @@ function KioskHandling() {
 
 </div>
 {/* PROGRESS 4 */}
-<div style={{display:activeDiv === 4 ? 'flex':'none'}} className='scroll-box'>
+                                <div style={{ display: activeDiv === 4 ? 'flex' : 'none' }} className='scroll-box scroll_mt '>
 
 <div className='scroll-box-1'>
     <div className='scroll-rl'>
@@ -1433,7 +1191,7 @@ function KioskHandling() {
 
 </div>
 {/* PROGRESS 5 */}
-<div style={{display:activeDiv === 5 ? 'flex':'none'}} className='scroll-box'>
+                                <div style={{ display: activeDiv === 5 ? 'flex' : 'none' }} className='scroll-box scroll_mt '>
 
 <div className='scroll-box-1'>
     <div className='scroll-rl'>
@@ -1474,7 +1232,7 @@ function KioskHandling() {
 
 </div>
 {/* PROGRESS 6 */}
-<div style={{display:activeDiv === 6 ? 'flex':'none'}} className='scroll-box'>
+                                <div style={{ display: activeDiv === 6 ? 'flex' : 'none' }} className='scroll-box scroll_mt '>
 
 <div className='scroll-box-1'>
     <div className='scroll-rl'>

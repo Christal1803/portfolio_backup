@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { HashRouter } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { BrowserRouter as Router,Route,Routes} from 'react-router-dom'
@@ -27,42 +28,33 @@ import Newnav from './Kiosk&TouchScreen/Newnav/Newnav';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <Routes>
+        {/*<Router>*/}
+            <HashRouter>
+                <Routes>
+
+                    <Route path="Newnav" element={<Newnav />} />
+                    <Route path="demo" element={<Demo />} />
+                    <Route path="/" element={<App />} />
+                    <Route path="home" element={<KioskHandling />} />
+                    <Route path="partnership_Discovery" element={<Partnership_Discovery />} />
+                    <Route path="OnBoarding" element={<OnBoarding />} />
+                    <Route path="ExecutionPhase01" element={<ExecutionPhase01 />} />
+                    <Route path="ExecutionPhase02" element={<ExecutionPhase02 />} />
+                    <Route path="ExecutionPhase03" element={<ExecutionPhase03 />} />
+                    <Route path="ExecutionPhase04" element={<ExecutionPhase04 />} />
+                    <Route path="ExecutionPhase05" element={<ExecutionPhase05 />} />
+                    <Route path="ExecutionPhase06" element={<ExecutionPhase06 />} />
+                    <Route path="home/enagementModel" element={<Mversionenage />} />
+                    <Route path="home/kisok" element={<MversionKiosk />} />
+                    <Route path="home/mobile" element={<Mversionmob />} />
+                    <Route path="home/web" element={<Mversionweb />} />
+                    <Route path="home/data" element={<MversionData />} />
+                    <Route path="home/cloud" element={<Mversioncloud />} />
+                    <Route path="home" element={<Mversiontab />} />
+                </Routes>
+            </HashRouter>,
      
-      <Route path="Newnav" element={<Newnav />} />
-      <Route path="demo" element={<Demo />} />
-      <Route path="/" element={<App />} />
-      <Route path="home" element={<KioskHandling />} />
-      <Route path="partnership_Discovery" element={<Partnership_Discovery />} />
-      <Route path="OnBoarding" element={<OnBoarding />} />
-      <Route path="ExecutionPhase01" element={<ExecutionPhase01 />} />
-      <Route path="ExecutionPhase02" element={<ExecutionPhase02 />} />
-      <Route path="ExecutionPhase03" element={<ExecutionPhase03 />} />
-      <Route path="ExecutionPhase04" element={<ExecutionPhase04 />} />
-      <Route path="ExecutionPhase05" element={<ExecutionPhase05 />} />
-      <Route path="ExecutionPhase06" element={<ExecutionPhase06 />} />
-
-
-    
-                <Route path="home/enagementModel" element={<Mversionenage />} />
-                <Route path="home/kisok" element={<MversionKiosk />} />
-
-                <Route path="home/mobile" element={<Mversionmob />} />
-                <Route path="home/web" element={<Mversionweb />} />
-                <Route path="home/data" element={<MversionData />} />
-                <Route path="home/cloud" element={<Mversioncloud />} />
-                <Route path="home" element={<Mversiontab />} />
-
-
-
-
-
-
-      
-     
-      </Routes>
-    </Router>
+    {/*</Router>*/}
    
   </React.StrictMode>
 );

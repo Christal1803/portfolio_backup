@@ -93,12 +93,12 @@ class Newnav extends Component{
       <div>
             <nav class="navbar container-align qwer">
               <Link to={'/'}>
-                <a class="navbar-brand"><img src={logo} class="img-fluid" /></a>
+                <a class="navbar-brand"><img src={logo} class="height-mt" /></a>
                 </Link>
 
 
 
-                <img src={hum} class="img-fluid humburger" onClick={this.toggleModal} />
+                <img src={hum} class="humburger height-hb" onClick={this.toggleModal} />
             </nav>
 
 

@@ -1,7 +1,9 @@
 /* Christal */
 /* dummy test 09/05/2023 */
 
-
+.homeHt {
+    height: 100vh;
+}
 
 
 .react-horizontal-scrolling-menu--scroll-container {
@@ -127,7 +129,7 @@ span.technology.badge.rounded-pill.ms-3 {
 }
 
 .col-md-9.tab-content {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 0rem 1.5rem ;
     /* border: 1px solid #f8f8f8; */
     border-radius: 15px;
     /* height: 580px; */
@@ -327,7 +329,7 @@ span.carousel-control-next-icon {
   margin-right: 5%;
   right: 0;
   /* margin-right: 13%; */
-  margin-bottom: 10%;
+  margin-bottom: 15%;
   background-color: transparent;
   display: grid;
   place-items: center;
@@ -386,3 +388,97 @@ span.carousel-control-next-icon {
   background-color: gray;
 
 }
+/*.scroll_mt {
+    margin-top: 70px !important;
+}*/
+article#category_tab2 {
+    margin-bottom: 100px;
+}
+
+article#category_tab3 {
+    margin-bottom: 100px;
+}
+article#category_tab4 {
+    margin-bottom: 100px;
+}
+article#category_tab5 {
+    margin-bottom: 100px;
+}
+article#category_tab6 {
+    margin-bottom: 100px;
+}
+
+
+
+
+/* Laptop/ MAC */
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1919px) {
+    .tab-head {
+      
+        font-size: 14px;
+    }
+    a.nav-link {
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+    .sub-heading {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .col-md-9.tab-content {
+        padding: 0rem 1.5rem 0rem 1.5rem;
+    }
+    .solution_desc {
+        font-size: 12px;;
+    }
+    h5.card-title {
+        font-size: 14px;
+    }
+    .technology span {
+        font-size: 12px;
+    }
+    h5.card-title {
+        font-size: 12px;
+    }
+    .scroll_mt {
+        margin-top: -70px;
+    }
+    span.technology.badge.rounded-pill.mt-2 {
+        padding: 6px 25px 6px 7px;
+    }
+    .tech-stack {
+        font-size: 14px;
+        margin: 0px !important;
+    }
+    h5.card-title.mt-xxl-3.mb-xxl-3.mt-lg-2.mb-lg-2 {
+        font-size: 14px !important;
+    }
+    h5.card-title.mt-xxl-3\.mb-xxl-3\.mt-lg-2\.mb-lg-2 {
+        font-size: 14px !important;
+    }
+    article#category_tab2 {
+        margin-bottom: -10px;
+    }
+
+    article#category_tab3 {
+        margin-bottom: -10px;
+    }
+
+    article#category_tab4 {
+        margin-bottom: -10px;
+    }
+
+    article#category_tab5 {
+        margin-bottom: -10px;
+    }
+
+    article#category_tab6 {
+        margin-bottom: -10px;
+    }
+    .col-md-9.col-xxl-10.col-lg-9.tab-content {
+        margin: 0px !important;
+    }
+
+    }
+  

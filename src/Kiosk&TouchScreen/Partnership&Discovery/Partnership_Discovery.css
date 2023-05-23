@@ -128,3 +128,10 @@ color: #515151;
 	-webkit-animation-iteration-count:infinite;
 	-webkit-animation-direction: alternate;
 }
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1919px) {
+	.b-color {
+		
+		 margin: 20px 0rem; 
+	}
+}
